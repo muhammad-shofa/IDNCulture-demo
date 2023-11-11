@@ -9,16 +9,20 @@
 }
 
 :root {
-  --primary: #060918;
-  --secondary: #5d12d2;
+  --primary: #0c356a;
+  /* awal e 060918 */
+  /* lumayan 0C356A */
+  --secondary: #279eff;
+  /* 5d12d2 */
   /* 1640d6 */
   /* apik 6919ff */
+  /* lumayan 279EFF */
   --white-accent: #eeeeee;
 }
-
+/* 
 ::selection {
   background-color: var(--secondary);
-}
+} */
 
 body {
   min-height: 3000px;
@@ -54,6 +58,36 @@ nav {
   backdrop-filter: blur(4px);
   border-radius: 50px;
   border: 1px solid var(--white-accent);
+}
+
+/* menu icon */
+
+.menu-icon {
+  /* display: inline-block; */
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.close-icon .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.close-icon .line:nth-child(2) {
+  opacity: 0;
+}
+
+.close-icon .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 nav .humberger {
@@ -130,9 +164,9 @@ nav ul li .content-dropdown-culture {
 .hero .text-hero {
   max-width: 700px;
   height: max-content;
-  /* margin: auto; */
+  margin: auto;
   color: var(--white-accent);
-  /* text-align: center; */
+  text-align: center;
   margin-top: 50px;
 }
 
@@ -140,10 +174,10 @@ nav ul li .content-dropdown-culture {
   font-size: 55px;
 }
 
-.text-hero h1 b {
+/* .text-hero h1 b {
   background-color: var(--white-accent);
   color: var(--secondary);
-}
+} */
 
 .text-hero p {
   font-size: 28px;
@@ -154,17 +188,19 @@ nav ul li .content-dropdown-culture {
   width: max-content;
   height: 50px;
   border: 1px solid var(--white-accent);
+  color: var(--secondary);
   border-radius: 3px;
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 18px;
-  margin-top: 20px;
+  margin: 20px 10px;
   font-weight: 700;
   transition: 0.2s ease-in-out;
 }
 
 .text-hero a button:hover {
   cursor: pointer;
-  padding: 5px 15px;
+  padding: 5px 20px;
+  margin: 20px 5px;
   background: none;
   border-color: var(--white-accent);
   color: var(--white-accent);
@@ -178,28 +214,186 @@ nav ul li .content-dropdown-culture {
 .text-hero a .event:hover {
   color: var(--primary);
   background-color: var(--white-accent);
+  color: var(--secondary);
 }
 
-/* history */
+/* culture */
 
-.container-history {
+.container-culture {
   width: 100%;
   height: max-content;
   background-color: var(--primary);
 }
 
-.history {
+.culture {
   max-width: 1200px;
   min-height: 700px;
   margin: auto;
   padding: 100px 20px;
 }
 
-.text-history {
-  max-width: 700px;
+.text-culture {
+  max-width: 600px;
+  margin: auto;
+  color: var(--white-accent);
+  text-align: center;
+}
+
+.text-culture h1 {
+  font-size: 45px;
+}
+
+.text-culture p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.culture .road {
+  width: 100%;
+  min-height: 600px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.road img {
+  width: 50px;
+}
+
+.road .line-road-1 {
+  width: 100px;
+  height: 150px;
+  border-radius: 0 60% 60% 0;
+  border: 10px dashed var(--white-accent);
+  margin: auto;
+  margin-bottom: -2px;
+}
+
+.unvisible-line-road-1 {
+  width: 70px;
+  height: 150px;
+  margin-left: -25px;
+  margin-top: -10px;
+  background-color: var(--primary);
+}
+
+.road .line-road-2 {
+  width: 100px;
+  height: 150px;
+  border-radius: 60% 0 0 60%;
+  border: 10px dashed var(--white-accent);
+  margin: auto;
+  z-index: 1;
+}
+
+.unvisible-line-road-2 {
+  width: 70px;
+  height: 150px;
+  margin-left: 35px;
+  margin-top: -10px;
+  background-color: var(--primary);
+}
+
+.road .line-road-3 {
+  width: 100px;
+  height: 150px;
+  border-radius: 0 60% 60% 0;
+  border: 10px dashed var(--white-accent);
+  margin: auto;
+}
+
+.unvisible-line-road-3 {
+  width: 70px;
+  height: 150px;
+  margin-left: -25px;
+  margin-top: -10px;
+  background-color: var(--primary);
+}
+
+.road .line-road-4 {
+  width: 100px;
+  height: 150px;
+  border-radius: 60% 0 0 60%;
+  border: 10px dashed var(--white-accent);
+  margin: auto;
+}
+
+.unvisible-line-road-4 {
+  width: 70px;
+  height: 150px;
+  margin-left: 35px;
+  margin-top: -10px;
+  background-color: var(--primary);
+}
+
+/* destination */
+
+.container-destination {
+  width: 100%;
+  height: max-content;
+  background-color: var(--secondary);
+}
+
+.destination {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.text-destination {
   color: var(--white-accent);
 }
 
-.text-history h1 {
+.text-destination h1 {
   font-size: 45px;
+  color: var(--white-accent);
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  /* nav */
+
+  nav .menu-icon {
+    display: inline-block;
+  }
+
+  nav .hidden-ul {
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: absolute;
+    right: -200px;
+    margin-top: 80px;
+    padding: 10px 20px;
+    text-align: end;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: 1px solid var(--white-accent);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .show-ul {
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: absolute;
+    right: 30px;
+    margin-top: 80px;
+    padding: 10px 20px;
+    text-align: end;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: 1px solid var(--white-accent);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* hero */
+
+  .hero .text-hero h1 {
+    font-size: 40px;
+  }
+
+  .text-hero p {
+    font-size: 18px;
+  }
 }

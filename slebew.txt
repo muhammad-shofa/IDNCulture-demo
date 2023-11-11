@@ -1,0 +1,23 @@
+- DEKSTOP -
+hero -
+font size 
+h1 : 55px
+p : 28px
+
+culture -
+font size
+h1 : 45
+p : 18px
+
+
+- MOBILE -
+hero -
+font size
+h1 : 40
+p : 18
+
+culture -
+font size
+h1 : 30
+p : 18px
+

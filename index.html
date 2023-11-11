@@ -10,31 +10,16 @@
     <!-- navbar -->
     <div class="container-nav">
       <nav>
-        <div class="humberger" id="humberger">
-          <img
-            class="show-filter"
-            id="imgIcon"
-            src="./assets/icon/filter-left.svg"
-          />
-          <img
-            class="hidden-slash"
-            id="imgIconSlash"
-            src="./assets/icon/slash-lg.svg"
-          />
-        </div>
         <a href="./index.html#home">
           <span> <h1>IDNCulture</h1></span>
         </a>
-        <ul class="hidden-ul">
+        <ul class="hidden-ul" id="nav-ul">
           <li>
             <a href="index.html#home">Home</a>
           </li>
           <li>
-            <a href="./pages/history.html">History</a>
-          </li>
-          <li>
             <!-- class="dropdown-culture" -->
-            <a href="./pages/culture.html">
+            <a href="#culture">
               Culture
               <img
                 src="./assets/icon/chevron-down-solid.svg"
@@ -52,7 +37,6 @@
               </div> -->
             </a>
           </li>
-
           <li>
             <a href="#">Destination</a>
           </li>
@@ -66,6 +50,11 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="menu-icon" id="menu-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </nav>
     </div>
     <!-- parllax -->
@@ -82,7 +71,7 @@
             exploration is limitless.
           </p>
           <a href="#0">
-            <button>Explore Now</button>
+            <button>Explore</button>
           </a>
           <a href="#0">
             <button class="event">Events</button>
@@ -90,11 +79,43 @@
         </div>
       </section>
     </div>
-    <!-- history -->
-    <div class="container-history">
-      <section class="history" id="history">
-        <div class="text-history">
-          <h1>History</h1>
+    <!-- culture -->
+    <div class="container-culture">
+      <section class="culture" id="culture">
+        <div class="text-culture">
+          <h1>Discover Cultural Treasures</h1>
+          <p>
+            Allow me to guide you on a journey of digital exploration that
+            uncovers Indonesia's rich culture through revolutionary web design.
+            Here, every click is a doorway to an unforgettable adventure,
+            bringing you close to hidden charms.
+          </p>
+        </div>
+        <div class="road">
+          <img src="./assets/icon/location-dot-solid.svg" alt="Road" />
+          <div class="line-road-1">
+            <div class="unvisible-line-road-1"></div>
+          </div>
+          <div class="line-road-2">
+            <div class="unvisible-line-road-2"></div>
+          </div>
+          <div class="line-road-3">
+            <div class="unvisible-line-road-3"></div>
+          </div>
+          <div class="line-road-4">
+            <div class="unvisible-line-road-4"></div>
+          </div>
+          <div class="line-road-5">
+            <div class="unvisible-line-road-5"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- destination -->
+    <div class="container-destination">
+      <section class="destination" id="destination">
+        <div class="text-destination">
+          <h1>Destination</h1>
         </div>
       </section>
     </div>

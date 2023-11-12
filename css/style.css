@@ -18,6 +18,7 @@
   /* apik 6919ff */
   /* lumayan 279EFF */
   --white-accent: #eeeeee;
+  --red-accent: #cf0a0a;
 }
 /* 
 ::selection {
@@ -49,12 +50,12 @@ nav {
   margin-top: 10px;
   padding: 0 20px;
   border-radius: 50px;
-  border: 1px solid var(--secondary);
+  border: 1px solid transparent;
   transition: 0.2s ease-in-out;
 }
 
 .sticky {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(12, 52, 106, 0.7);
   backdrop-filter: blur(4px);
   border-radius: 50px;
   border: 1px solid var(--white-accent);
@@ -90,10 +91,6 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-nav .humberger {
-  display: none;
-}
-
 nav span {
   display: flex;
   gap: 10px;
@@ -117,9 +114,9 @@ nav ul li a {
   transition: 0.1s ease-in-out;
 }
 
-/* nav ul li a:hover {
+nav ul li a:hover {
   color: var(--secondary);
-} */
+}
 
 /* dropdown */
 
@@ -151,7 +148,10 @@ nav ul li .content-dropdown-culture {
 .container-hero {
   width: 100%;
   height: max-content;
-  background-color: var(--secondary);
+  background-image: url(../assets/images/bg-hero-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: var(--secondary); */
 }
 
 .hero {
@@ -174,11 +174,6 @@ nav ul li .content-dropdown-culture {
   font-size: 55px;
 }
 
-/* .text-hero h1 b {
-  background-color: var(--white-accent);
-  color: var(--secondary);
-} */
-
 .text-hero p {
   font-size: 28px;
   margin-top: 10px;
@@ -187,8 +182,9 @@ nav ul li .content-dropdown-culture {
 .text-hero a button {
   width: max-content;
   height: 50px;
-  border: 1px solid var(--white-accent);
-  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--white-accent);
+  background-color: var(--secondary);
   border-radius: 3px;
   padding: 0 15px;
   font-size: 18px;
@@ -202,13 +198,15 @@ nav ul li .content-dropdown-culture {
   padding: 5px 20px;
   margin: 20px 5px;
   background: none;
-  border-color: var(--white-accent);
-  color: var(--white-accent);
+  border-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--white-accent);
 }
 
 .text-hero a .event {
   background: none;
   color: var(--white-accent);
+  border: 1px solid var(--white-accent);
 }
 
 .text-hero a .event:hover {
@@ -222,7 +220,7 @@ nav ul li .content-dropdown-culture {
 .container-culture {
   width: 100%;
   height: max-content;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .culture {
@@ -273,6 +271,32 @@ nav ul li .content-dropdown-culture {
   height: 150px;
   margin-left: -25px;
   margin-top: -10px;
+  background-color: var(--secondary);
+}
+
+.road .circle-road-1 {
+  width: 45px;
+  height: 45px;
+  background-color: var(--white-accent);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-road-1 .child-circle-road-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+
+.circle-road-1:hover .child-circle-road-1 {
+  cursor: pointer;
   background-color: var(--primary);
 }
 
@@ -282,7 +306,6 @@ nav ul li .content-dropdown-culture {
   border-radius: 60% 0 0 60%;
   border: 10px dashed var(--white-accent);
   margin: auto;
-  z-index: 1;
 }
 
 .unvisible-line-road-2 {
@@ -290,39 +313,60 @@ nav ul li .content-dropdown-culture {
   height: 150px;
   margin-left: 35px;
   margin-top: -10px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.road .circle-road-2 {
+  width: 45px;
+  height: 45px;
+  background-color: var(--white-accent);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-road-2 .child-circle-road-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary);
 }
 
 .road .line-road-3 {
   width: 100px;
-  height: 150px;
-  border-radius: 0 60% 60% 0;
+  height: 180px;
+  border-radius: 0 90% 90% 0;
   border: 10px dashed var(--white-accent);
   margin: auto;
 }
 
 .unvisible-line-road-3 {
   width: 70px;
-  height: 150px;
+  height: 180px;
   margin-left: -25px;
   margin-top: -10px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .road .line-road-4 {
   width: 100px;
-  height: 150px;
-  border-radius: 60% 0 0 60%;
+  height: 180px;
+  border-radius: 100% 0 0 100%;
   border: 10px dashed var(--white-accent);
   margin: auto;
 }
 
 .unvisible-line-road-4 {
   width: 70px;
-  height: 150px;
+  height: 180px;
   margin-left: 35px;
   margin-top: -10px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /* destination */
@@ -330,7 +374,7 @@ nav ul li .content-dropdown-culture {
 .container-destination {
   width: 100%;
   height: max-content;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .destination {
@@ -341,7 +385,10 @@ nav ul li .content-dropdown-culture {
 }
 
 .text-destination {
+  max-width: 900px;
   color: var(--white-accent);
+  text-align: center;
+  margin: auto;
 }
 
 .text-destination h1 {
@@ -349,7 +396,193 @@ nav ul li .content-dropdown-culture {
   color: var(--white-accent);
 }
 
-/* media query */
+.all-card-destination {
+  max-width: 100%;
+  height: max-content;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.favorite .empty-heart {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: -40px;
+  fill: var(--white-accent);
+  display: block;
+}
+
+.favorite:hover {
+  cursor: pointer;
+}
+
+.favorite .empty-heart:hover {
+  fill: var(--red-accent);
+  color: var(--white-accent);
+}
+
+.favorite .full-heart {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: -40px;
+  fill: var(--red-accent);
+  display: none;
+}
+
+.card-destination-1 {
+  width: 400px;
+  background-image: url(../assets/images/prambanan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white-accent);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-destination-1 a {
+  color: var(--white-accent);
+}
+
+.card-destination-1 h2 {
+  width: max-content;
+  background: none;
+  padding: 2px 5px;
+}
+
+.iya:hover .card-destination-1 h2 {
+  color: var(--secondary);
+  padding: 2px 5px;
+  background-color: var(--white-accent);
+  transition: 0.3s ease-in-out;
+}
+
+.card-destination-1:hover {
+  filter: grayscale(0%);
+}
+
+.card-destination-2 {
+  width: 440px;
+  height: 300px;
+  background-image: url(../assets/images/bali.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white-accent);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-destination-2:hover {
+  filter: grayscale(0%);
+}
+
+.card-destination-3 {
+  width: 300px;
+  height: 300px;
+  background-image: url(../assets/images/labuan-bajo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  color: var(--white-accent);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-destination-3:hover {
+  filter: grayscale(0%);
+}
+
+.card-destination-4 {
+  width: 300px;
+  height: 300px;
+  background-image: url(../assets/images/bg-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white-accent);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-destination-4:hover {
+  filter: grayscale(0%);
+}
+
+.card-destination-5 {
+  width: 440px;
+  height: 300px;
+  background-image: url(../assets/images/borobudur.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: -140px;
+  color: var(--white-accent);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card-destination-5:hover {
+  filter: grayscale(0%);
+}
+
+/* .card-destination img {
+  width: 300px;
+} */
+
+/* media query laptop */
+
+@media screen and (max-width: 1200px) {
+  /* destination */
+
+  .card-destination-1 {
+    width: 50%;
+  }
+
+  .two-card-1 {
+    width: 45%;
+  }
+  .card-destination-2 {
+    width: 100%;
+  }
+
+  .card-destination-3 {
+    width: 100%;
+  }
+
+  .two-card-2 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .two-card-2 a {
+    width: 48%;
+  }
+
+  .card-destination-4 {
+    width: 100%;
+  }
+  .card-destination-5 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+/* media query tablet */
 @media screen and (max-width: 768px) {
   /* nav */
 
@@ -366,7 +599,8 @@ nav ul li .content-dropdown-culture {
     margin-top: 80px;
     padding: 10px 20px;
     text-align: end;
-    background-color: var(--primary);
+    background-color: rgb(12, 52, 106, 0.7);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid var(--white-accent);
     transition: all 0.3s ease-in-out;
@@ -381,7 +615,8 @@ nav ul li .content-dropdown-culture {
     margin-top: 80px;
     padding: 10px 20px;
     text-align: end;
-    background-color: var(--primary);
+    background-color: rgb(12, 52, 106, 0.7);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid var(--white-accent);
     transition: all 0.3s ease-in-out;
@@ -389,11 +624,31 @@ nav ul li .content-dropdown-culture {
 
   /* hero */
 
-  .hero .text-hero h1 {
+  .text-hero h1 {
     font-size: 40px;
   }
 
   .text-hero p {
     font-size: 18px;
   }
+
+  /* culture */
+
+  .text-culture h1 {
+    font-size: 30px;
+  }
+
+  .text-culture p {
+    font-size: 18px;
+  }
+}
+
+/* media query smartphone */
+@media screen and (max-width: 600px) {
+  /* hero */
+
+  .hero .text-hero h1 {
+    font-size: 35px;
+  }
+
 }

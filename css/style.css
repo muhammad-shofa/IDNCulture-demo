@@ -18,15 +18,12 @@
   /* apik 6919ff */
   /* lumayan 279EFF */
   --white-accent: #eeeeee;
+  --black-accent: #272727;
   --red-accent: #cf0a0a;
 }
-/* 
-::selection {
-  background-color: var(--secondary);
-} */
 
 body {
-  min-height: 3000px;
+  min-height: 5000px;
 }
 
 /* nav */
@@ -200,7 +197,6 @@ nav ul li .content-dropdown-culture {
   background: none;
   border-color: var(--secondary);
   color: var(--secondary);
-  background-color: var(--white-accent);
 }
 
 .text-hero a .event {
@@ -220,7 +216,7 @@ nav ul li .content-dropdown-culture {
 .container-culture {
   width: 100%;
   height: max-content;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .culture {
@@ -374,7 +370,7 @@ nav ul li .content-dropdown-culture {
 .container-destination {
   width: 100%;
   height: max-content;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .destination {
@@ -443,10 +439,12 @@ nav ul li .content-dropdown-culture {
   padding: 20px;
   color: var(--white-accent);
   filter: grayscale(100%);
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
 }
 
 .card-destination-1 a {
+  width: max-content;
   color: var(--white-accent);
 }
 
@@ -456,7 +454,7 @@ nav ul li .content-dropdown-culture {
   padding: 2px 5px;
 }
 
-.iya:hover .card-destination-1 h2 {
+.empty-div:hover .card-destination-1 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
@@ -477,7 +475,26 @@ nav ul li .content-dropdown-culture {
   padding: 20px;
   color: var(--white-accent);
   filter: grayscale(100%);
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
+}
+
+.card-destination-2 a {
+  width: max-content;
+  color: var(--white-accent);
+}
+
+.card-destination-2 h2 {
+  width: max-content;
+  background: none;
+  padding: 2px 5px;
+}
+
+.empty-div:hover .card-destination-2 h2 {
+  color: var(--secondary);
+  padding: 2px 5px;
+  background-color: var(--white-accent);
+  transition: 0.3s ease-in-out;
 }
 
 .card-destination-2:hover {
@@ -495,7 +512,26 @@ nav ul li .content-dropdown-culture {
   margin-top: 10px;
   color: var(--white-accent);
   filter: grayscale(100%);
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
+}
+
+.card-destination-3 a {
+  width: max-content;
+  color: var(--white-accent);
+}
+
+.card-destination-3 h2 {
+  width: max-content;
+  background: none;
+  padding: 2px 5px;
+}
+
+.empty-div:hover .card-destination-3 h2 {
+  color: var(--secondary);
+  padding: 2px 5px;
+  background-color: var(--white-accent);
+  transition: 0.3s ease-in-out;
 }
 
 .card-destination-3:hover {
@@ -512,7 +548,26 @@ nav ul li .content-dropdown-culture {
   padding: 20px;
   color: var(--white-accent);
   filter: grayscale(100%);
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
+}
+
+.card-destination-4 a {
+  width: max-content;
+  color: var(--white-accent);
+}
+
+.card-destination-4 h2 {
+  width: max-content;
+  background: none;
+  padding: 2px 5px;
+}
+
+.empty-div:hover .card-destination-4 h2 {
+  color: var(--secondary);
+  padding: 2px 5px;
+  background-color: var(--white-accent);
+  transition: 0.3s ease-in-out;
 }
 
 .card-destination-4:hover {
@@ -531,16 +586,123 @@ nav ul li .content-dropdown-culture {
   margin-left: -140px;
   color: var(--white-accent);
   filter: grayscale(100%);
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
+}
+
+.card-destination-5 a {
+  width: max-content;
+  color: var(--white-accent);
+}
+
+.card-destination-5 h2 {
+  width: max-content;
+  background: none;
+  padding: 2px 5px;
+}
+
+.empty-div:hover .card-destination-5 h2 {
+  color: var(--secondary);
+  padding: 2px 5px;
+  background-color: var(--white-accent);
+  transition: 0.3s ease-in-out;
 }
 
 .card-destination-5:hover {
   filter: grayscale(0%);
 }
 
-/* .card-destination img {
-  width: 300px;
-} */
+.all-card-destination .view-more {
+  width: max-content;
+  height: 50px;
+  border: 1px solid var(--secondary);
+  color: var(--white-accent);
+  background-color: var(--secondary);
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 18px;
+  margin: 20px 10px;
+  font-weight: 700;
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
+  transition: 0.2s ease-in-out;
+}
+
+.view-more:hover {
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 20px 5px;
+  background: none;
+  border-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--white-accent);
+}
+
+/* wonderland */
+
+.container-wonderland {
+  width: 100%;
+  height: 550px;
+  background-image: url(../assets/images/bali.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wonderland {
+  max-width: 1200px;
+  min-height: 550px;
+  margin: auto;
+  padding: 100px 0px;
+}
+
+.text-wonderland {
+  text-align: center;
+  color: var(--white-accent);
+}
+
+.text-wonderland h1 {
+  font-size: 45px;
+}
+
+.video-wonderland {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.video-wonderland iframe {
+  min-width: 100%;
+  max-width: 980px;
+  height: 470px;
+  border-radius: 10px;
+  margin: auto;
+  border: none;
+}
+
+/* explore */
+
+.container-explore {
+  width: 100%;
+  height: max-content;
+  background-color: var(--secondary);
+}
+
+.explore {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  padding: 250px 20px 100px 20px;
+}
+
+.text-explore {
+  color: var(--white-accent);
+  text-align: center;
+}
+
+.text-explore h1 {
+  font-size: 45px;
+}
 
 /* media query laptop */
 
@@ -580,6 +742,11 @@ nav ul li .content-dropdown-culture {
     width: 100%;
     margin-left: 0;
     margin-top: 0;
+  }
+
+  /* explore*/
+  .explore {
+    padding: 200px 20px 100px 20px;
   }
 }
 
@@ -642,6 +809,11 @@ nav ul li .content-dropdown-culture {
   .text-culture p {
     font-size: 18px;
   }
+
+  /* explore*/
+  .explore {
+    padding: 100px 20px;
+  }
 }
 
 /* media query smartphone */
@@ -651,5 +823,4 @@ nav ul li .content-dropdown-culture {
   .hero .text-hero h1 {
     font-size: 35px;
   }
-
 }

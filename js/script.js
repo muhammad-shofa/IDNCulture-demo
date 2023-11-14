@@ -21,6 +21,38 @@ menuIcon.addEventListener("click", function () {
   }
 });
 
+// popup explore
+document.addEventListener("DOMContentLoaded", () => {
+  let triggerPopup = document.getElementById("trigger-popup");
+  let popup = document.getElementById("container-popup");
+  let closePopupIcon = document.getElementById("close-popup-icon");
+
+  triggerPopup.addEventListener("click", showPopup);
+  closePopupIcon.addEventListener("click", closePopup);
+
+  function showPopup() {
+    if (popup.style.display == "none") {
+      popup.style.display = "block";
+    } else {
+      popup.style.display = "none";
+    }
+  }
+
+  function closePopup() {
+    if (popup.style.display == "block") {
+      popup.style.display = "none";
+    } else {
+      popup.style.display = "block";
+    }
+  }
+
+  window.onclick = function (event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };
+});
+
 // fav destination
 // 1
 let favDestination = document.getElementById("favorite-1");

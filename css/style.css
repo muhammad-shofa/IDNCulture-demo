@@ -405,6 +405,75 @@ nav ul li .content-dropdown-culture {
   color: var(--white-accent);
 }
 
+/* popup explore */
+.container-popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-explore-1 {
+  max-width: 900px;
+  height: max-content;
+  padding: 10px;
+  margin: auto;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: var(--white-accent);
+}
+
+.popup-explore-1 .flex-popup {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-popup {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url(../assets/images/prambanan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-popup {
+  max-width: 50%;
+}
+
+.text-popup h2 {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.text-popup p {
+  font-size: 18px;
+}
+
+.popup-explore-1 svg {
+  width: 20px;
+  height: 20px;
+  fill: #eeeeee;
+  margin-left: 40px;
+}
+
+.popup-explore-1 svg:hover {
+  cursor: pointer;
+}
+
+/* all card explore */
+
 .all-card-explore {
   max-width: 100%;
   height: max-content;

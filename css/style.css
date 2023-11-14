@@ -200,13 +200,13 @@ nav ul li .content-dropdown-culture {
   color: var(--secondary);
 }
 
-.text-hero a .event {
+.text-hero a .hero-contact-btn {
   background: none;
   color: var(--secondary);
   border: 1px solid var(--secondary);
 }
 
-.text-hero a .event:hover {
+.text-hero a .hero-contact-btn:hover {
   color: var(--primary);
   background-color: var(--secondary);
   color: var(--white-accent);

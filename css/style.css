@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
 }
 
+/* warna kapan-kapan bisa berubah */
 :root {
   --primary: #eeeeee;
   /* awal e 060918 */
@@ -201,14 +202,14 @@ nav ul li .content-dropdown-culture {
 
 .text-hero a .event {
   background: none;
-  color: var(--white-accent);
-  border: 1px solid var(--white-accent);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
 }
 
 .text-hero a .event:hover {
   color: var(--primary);
-  background-color: var(--white-accent);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--white-accent);
 }
 
 /* culture */
@@ -222,7 +223,6 @@ nav ul li .content-dropdown-culture {
     rgba(128, 200, 246, 1) 0%,
     rgba(57, 87, 237, 1) 100%
   );
-  /* background-color: var(--primary); */
 }
 
 .culture {
@@ -246,18 +246,75 @@ nav ul li .content-dropdown-culture {
   width: 100%;
   display: flex;
   gap: 20px;
-  /* flex-wrap: wrap; */
+  flex-grow: 1;
   text-align: end;
+  margin-top: 20px;
 }
 
-.culture img {
-  max-width: 450px;
+.culture .image-culture {
+  width: 450px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/wayang.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 0px 20px 50px 0px var(--black-accent);
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-culture:hover {
+  filter: brightness(80%);
+}
+
+.image-culture:hover .text-image-culture {
+  opacity: 1;
+  background-color: var(--white-accent);
+  color: var(--secondary);
+}
+
+.text-image-culture {
+  text-align: center;
+  opacity: 0;
+}
+
+.text-image-culture a {
+  color: var(--secondary);
+}
+
+.text-image-culture h2 {
+  padding: 2px 5px;
+}
+
+.culture .image-culture-2 {
+  width: 450px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/kecak.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-culture-2:hover {
+  filter: brightness(80%);
+}
+
+.image-culture-2:hover .text-image-culture {
+  opacity: 1;
+  background-color: var(--white-accent);
+  color: var(--secondary);
 }
 
 .text-culture {
   max-width: 600px;
+  flex-basis: 200;
   margin: auto;
   color: var(--white-accent);
 }
@@ -296,41 +353,59 @@ nav ul li .content-dropdown-culture {
   background-color: var(--white-accent);
 }
 
-/* destination */
-
-.container-destination {
-  width: 100%;
-  height: max-content;
-  background: rgb(57, 87, 237);
-  background: linear-gradient(
-    120deg,
-    rgba(57, 87, 237, 1) 0%,
-    rgba(128, 200, 246, 1) 100%
-  );
-  /* background-image: linear-gradient(to bottom #3957ed, #80c8f6); */
-  /* background-color: var(--secondary); */
+.text-culture .view-culture-2 {
+  width: max-content;
+  height: 50px;
+  border: 1px solid var(--secondary);
+  color: var(--white-accent);
+  background-color: var(--secondary);
+  border-radius: 3px;
+  padding: 0 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 700;
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
+  transition: 0.2s ease-in-out;
 }
 
-.destination {
+.view-culture-2:hover {
+  cursor: pointer;
+  padding: 5px 30px;
+  margin-right: -5px;
+  background: none;
+  border-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--white-accent);
+}
+
+/* explore */
+
+.container-explore {
+  width: 100%;
+  height: max-content;
+  background-color: var(--secondary);
+}
+
+.explore {
   max-width: 1200px;
   min-height: 700px;
   margin: auto;
   padding: 100px 20px;
 }
 
-.text-destination {
+.text-explore {
   max-width: 900px;
   color: var(--white-accent);
   text-align: center;
   margin: auto;
 }
 
-.text-destination h1 {
+.text-explore h1 {
   font-size: 45px;
   color: var(--white-accent);
 }
 
-.all-card-destination {
+.all-card-explore {
   max-width: 100%;
   height: max-content;
   margin-top: 50px;
@@ -367,7 +442,7 @@ nav ul li .content-dropdown-culture {
   display: none;
 }
 
-.card-destination-1 {
+.card-explore-1 {
   width: 400px;
   height: 610px;
   background-image: url(../assets/images/prambanan.jpg);
@@ -381,29 +456,29 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-destination-1 a {
+.card-explore-1 a {
   width: max-content;
   color: var(--white-accent);
 }
 
-.card-destination-1 h2 {
+.card-explore-1 h2 {
   width: max-content;
   background: none;
   padding: 2px 5px;
 }
 
-.empty-div:hover .card-destination-1 h2 {
+.empty-div:hover .card-explore-1 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
   transition: 0.3s ease-in-out;
 }
 
-.card-destination-1:hover {
+.card-explore-1:hover {
   filter: grayscale(0%);
 }
 
-.card-destination-2 {
+.card-explore-2 {
   width: 440px;
   height: 300px;
   background-image: url(../assets/images/bali.jpg);
@@ -417,29 +492,29 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-destination-2 a {
+.card-explore-2 a {
   width: max-content;
   color: var(--white-accent);
 }
 
-.card-destination-2 h2 {
+.card-explore-2 h2 {
   width: max-content;
   background: none;
   padding: 2px 5px;
 }
 
-.empty-div:hover .card-destination-2 h2 {
+.empty-div:hover .card-explore-2 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
   transition: 0.3s ease-in-out;
 }
 
-.card-destination-2:hover {
+.card-explore-2:hover {
   filter: grayscale(0%);
 }
 
-.card-destination-3 {
+.card-explore-3 {
   width: 300px;
   height: 300px;
   background-image: url(../assets/images/labuan-bajo.jpg);
@@ -454,29 +529,29 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-destination-3 a {
+.card-explore-3 a {
   width: max-content;
   color: var(--white-accent);
 }
 
-.card-destination-3 h2 {
+.card-explore-3 h2 {
   width: max-content;
   background: none;
   padding: 2px 5px;
 }
 
-.empty-div:hover .card-destination-3 h2 {
+.empty-div:hover .card-explore-3 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
   transition: 0.3s ease-in-out;
 }
 
-.card-destination-3:hover {
+.card-explore-3:hover {
   filter: grayscale(0%);
 }
 
-.card-destination-4 {
+.card-explore-4 {
   width: 300px;
   height: 300px;
   background-image: url(../assets/images/bg-hero-2.jpg);
@@ -490,29 +565,29 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-destination-4 a {
+.card-explore-4 a {
   width: max-content;
   color: var(--white-accent);
 }
 
-.card-destination-4 h2 {
+.card-explore-4 h2 {
   width: max-content;
   background: none;
   padding: 2px 5px;
 }
 
-.empty-div:hover .card-destination-4 h2 {
+.empty-div:hover .card-explore-4 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
   transition: 0.3s ease-in-out;
 }
 
-.card-destination-4:hover {
+.card-explore-4:hover {
   filter: grayscale(0%);
 }
 
-.card-destination-5 {
+.card-explore-5 {
   width: 440px;
   height: 300px;
   background-image: url(../assets/images/borobudur.jpg);
@@ -528,29 +603,29 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-destination-5 a {
+.card-explore-5 a {
   width: max-content;
   color: var(--white-accent);
 }
 
-.card-destination-5 h2 {
+.card-explore-5 h2 {
   width: max-content;
   background: none;
   padding: 2px 5px;
 }
 
-.empty-div:hover .card-destination-5 h2 {
+.empty-div:hover .card-explore-5 h2 {
   color: var(--secondary);
   padding: 2px 5px;
   background-color: var(--white-accent);
   transition: 0.3s ease-in-out;
 }
 
-.card-destination-5:hover {
+.card-explore-5:hover {
   filter: grayscale(0%);
 }
 
-.all-card-destination .view-more {
+.all-card-explore .view-more {
   width: max-content;
   height: 50px;
   border: 1px solid var(--secondary);
@@ -619,46 +694,107 @@ nav ul li .content-dropdown-culture {
   box-shadow: 0px 20px 50px 0px var(--black-accent);
 }
 
-/* explore */
+/* gallery */
 
-.container-explore {
+.container-gallery {
   width: 100%;
   height: max-content;
-  background: rgb(57, 87, 237);
+  background: rgb(128, 200, 246);
   background: linear-gradient(
-    120deg,
-    rgba(57, 87, 237, 1) 0%,
-    rgba(128, 200, 246, 1) 100%
+    220deg,
+    rgba(128, 200, 246, 1) 0%,
+    rgba(57, 87, 237, 1) 100%
   );
-  /* background-color: var(--secondary); */
 }
 
-.explore {
+.gallery {
   max-width: 1200px;
   min-height: 700px;
   margin: auto;
-  padding: 250px 20px 100px 20px;
+  padding: 200px 20px 100px 20px;
 }
 
-.text-explore {
+.text-gallery {
+  max-width: 900px;
   color: var(--white-accent);
   text-align: center;
+  margin: auto;
 }
 
-.text-explore h1 {
+.text-gallery h1 {
   font-size: 45px;
+  color: var(--white-accent);
+}
+
+.all-card-gallery {
+  width: 100%;
+  height: max-content;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.all-card-gallery img {
+  width: 370px;
+  height: 250px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.zoom-effect {
+  height: 250px;
+
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 20px 50px 0px var(--black-accent);
+}
+
+.card-gallery:hover img {
+  transform: scale(1.04);
+  filter: brightness(80%);
+}
+
+/* contact */
+
+.container-contact {
+  width: 100%;
+  height: max-content;
+
+  background-color: var(--secondary);
+}
+
+.contact {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.text-contact {
+  max-width: 900px;
+  color: var(--white-accent);
+  text-align: center;
+  margin: auto;
+}
+
+.text-contact h1 {
+  font-size: 45px;
+  color: var(--white-accent);
 }
 
 /* media query laptop */
 
 @media screen and (max-width: 1200px) {
-  /* destination */
+  /* explore */
 
   .empty-div {
     width: 50%;
   }
 
-  .card-destination-1 {
+  .card-explore-1 {
     width: 100%;
   }
 
@@ -666,11 +802,11 @@ nav ul li .content-dropdown-culture {
     width: 40%;
   }
 
-  .card-destination-2 {
+  .card-explore-2 {
     width: 100%;
   }
 
-  .card-destination-3 {
+  .card-explore-3 {
     width: 100%;
   }
 
@@ -685,11 +821,11 @@ nav ul li .content-dropdown-culture {
     width: 48%;
   }
 
-  .card-destination-4 {
+  .card-explore-4 {
     width: 100%;
   }
 
-  .card-destination-5 {
+  .card-explore-5 {
     width: 100%;
     margin-left: 0;
     margin-top: 0;

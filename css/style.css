@@ -146,7 +146,7 @@ nav ul li .content-dropdown-culture {
 .container-hero {
   width: 100%;
   height: max-content;
-  background-image: url(../assets/images/bg-hero-2.jpg);
+  background-image: url(../assets/images/bromo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: var(--secondary); */
@@ -238,7 +238,6 @@ nav ul li .content-dropdown-culture {
   width: 100%;
   display: flex;
   gap: 20px;
-  /* flex-wrap: wrap; */
   margin-bottom: 20px;
 }
 
@@ -246,7 +245,6 @@ nav ul li .content-dropdown-culture {
   width: 100%;
   display: flex;
   gap: 20px;
-  flex-grow: 1;
   text-align: end;
   margin-top: 20px;
 }
@@ -254,9 +252,6 @@ nav ul li .content-dropdown-culture {
 .culture .image-culture {
   width: 450px;
   height: 550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../assets/images/wayang.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -269,31 +264,9 @@ nav ul li .content-dropdown-culture {
   filter: brightness(80%);
 }
 
-.image-culture:hover .text-image-culture {
-  opacity: 1;
-  background-color: var(--white-accent);
-  color: var(--secondary);
-}
-
-.text-image-culture {
-  text-align: center;
-  opacity: 0;
-}
-
-.text-image-culture a {
-  color: var(--secondary);
-}
-
-.text-image-culture h2 {
-  padding: 2px 5px;
-}
-
 .culture .image-culture-2 {
   width: 450px;
   height: 550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../assets/images/kecak.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,15 +279,8 @@ nav ul li .content-dropdown-culture {
   filter: brightness(80%);
 }
 
-.image-culture-2:hover .text-image-culture {
-  opacity: 1;
-  background-color: var(--white-accent);
-  color: var(--secondary);
-}
-
 .text-culture {
   max-width: 600px;
-  flex-basis: 200;
   margin: auto;
   color: var(--white-accent);
 }
@@ -418,7 +384,11 @@ nav ul li .content-dropdown-culture {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.popup-explore-1 {
+.container-popup:hover {
+  cursor: zoom-out;
+}
+
+.popup-explore {
   max-width: 900px;
   height: max-content;
   padding: 10px;
@@ -431,18 +401,58 @@ nav ul li .content-dropdown-culture {
   color: var(--white-accent);
 }
 
-.popup-explore-1 .flex-popup {
+.popup-explore:hover {
+  cursor: default;
+}
+
+.popup-explore .flex-popup {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.img-popup {
+.img-popup-1 {
   width: 350px;
   height: 450px;
   border-radius: 10px;
-  background-image: url(../assets/images/prambanan.jpg);
+  background-image: url(../assets/images/prambanan-small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-popup-2 {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url(../assets/images/bali.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-popup-3 {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url(../assets/images/labuan-bajo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-popup-4 {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url(../assets/images/bromo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-popup-5 {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url(../assets/images/borobudur.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -461,14 +471,14 @@ nav ul li .content-dropdown-culture {
   font-size: 18px;
 }
 
-.popup-explore-1 svg {
+.popup-explore svg {
   width: 20px;
   height: 20px;
   fill: #eeeeee;
   margin-left: 40px;
 }
 
-.popup-explore-1 svg:hover {
+.popup-explore svg:hover {
   cursor: pointer;
 }
 
@@ -514,7 +524,7 @@ nav ul li .content-dropdown-culture {
 .card-explore-1 {
   width: 400px;
   height: 610px;
-  background-image: url(../assets/images/prambanan.jpg);
+  background-image: url(../assets/images/prambanan-medium.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -523,11 +533,6 @@ nav ul li .content-dropdown-culture {
   filter: grayscale(100%);
   box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
-}
-
-.card-explore-1 a {
-  width: max-content;
-  color: var(--white-accent);
 }
 
 .card-explore-1 h2 {
@@ -559,11 +564,6 @@ nav ul li .content-dropdown-culture {
   filter: grayscale(100%);
   box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
-}
-
-.card-explore-2 a {
-  width: max-content;
-  color: var(--white-accent);
 }
 
 .card-explore-2 h2 {
@@ -598,11 +598,6 @@ nav ul li .content-dropdown-culture {
   transition: 0.2s ease-in-out;
 }
 
-.card-explore-3 a {
-  width: max-content;
-  color: var(--white-accent);
-}
-
 .card-explore-3 h2 {
   width: max-content;
   background: none;
@@ -623,7 +618,7 @@ nav ul li .content-dropdown-culture {
 .card-explore-4 {
   width: 300px;
   height: 300px;
-  background-image: url(../assets/images/bg-hero-2.jpg);
+  background-image: url(../assets/images/bromo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -632,11 +627,6 @@ nav ul li .content-dropdown-culture {
   filter: grayscale(100%);
   box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
-}
-
-.card-explore-4 a {
-  width: max-content;
-  color: var(--white-accent);
 }
 
 .card-explore-4 h2 {
@@ -670,11 +660,6 @@ nav ul li .content-dropdown-culture {
   filter: grayscale(100%);
   box-shadow: 0px 20px 50px 0px var(--black-accent);
   transition: 0.2s ease-in-out;
-}
-
-.card-explore-5 a {
-  width: max-content;
-  color: var(--white-accent);
 }
 
 .card-explore-5 h2 {
@@ -859,43 +844,33 @@ nav ul li .content-dropdown-culture {
 @media screen and (max-width: 1200px) {
   /* explore */
 
-  .empty-div {
-    width: 50%;
-  }
-
   .card-explore-1 {
-    width: 100%;
-  }
-
-  .two-card-1 {
-    width: 40%;
+    max-width: 400px;
   }
 
   .card-explore-2 {
-    width: 100%;
+    max-width: auto;
   }
 
   .card-explore-3 {
-    width: 100%;
+    width: auto;
   }
 
   .two-card-2 {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
   }
 
-  .two-card-2 {
-    width: 48%;
-  }
-
   .card-explore-4 {
-    width: 100%;
+    width: 400px;
   }
 
   .card-explore-5 {
-    width: 100%;
+    width: 400px;
+
     margin-left: 0;
     margin-top: 0;
   }
@@ -958,6 +933,22 @@ nav ul li .content-dropdown-culture {
 
   /* culture */
 
+  .content-culture-1 {
+    flex-wrap: wrap;
+  }
+
+  .content-culture-2 {
+    flex-wrap: wrap;
+  }
+
+  .image-culture {
+    width: 450px;
+  }
+
+  .text-culture {
+    width: auto;
+  }
+
   .text-culture h1 {
     font-size: 30px;
   }
@@ -970,6 +961,40 @@ nav ul li .content-dropdown-culture {
   .explore {
     padding: 100px 20px;
   }
+
+  .card-explore-1 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .two-card-1 {
+    width: auto;
+  }
+
+  .card-explore-2 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .card-explore-3 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .two-card-2 {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .card-explore-4 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .card-explore-5 {
+    max-width: 400px;
+    height: 350px;
+  }
 }
 
 /* media query smartphone */
@@ -978,5 +1003,47 @@ nav ul li .content-dropdown-culture {
 
   .hero .text-hero h1 {
     font-size: 35px;
+  }
+
+  /* explore */
+
+  .card-explore-1 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .two-card-1 {
+    width: auto;
+  }
+
+  .card-explore-2 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .card-explore-3 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .two-card-2 {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .card-explore-4 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  .card-explore-5 {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  /* gallery */
+
+  .gallery {
+    padding: 250px 20px 100px 20px;
   }
 }

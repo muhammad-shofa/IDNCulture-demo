@@ -1,9 +1,38 @@
 let nav = document.querySelector("nav");
+let containerNav = document.getElementById("container-nav");
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 20) {
-    nav.classList.add("sticky");
+    containerNav.classList.add("sticky");
   } else {
-    nav.classList.remove("sticky");
+    containerNav.classList.remove("sticky");
+  }
+});
+
+// change theme
+let changeTheme = document.getElementById("change-theme");
+let darkIcon = document.getElementById("dark-icon");
+let lightIcon = document.getElementById("light-icon");
+
+let body = document.querySelector("body");
+
+changeTheme.addEventListener("click", () => {
+  if (darkIcon.classList.contains("dark-icon")) {
+    changeTheme.classList.add("black-bg-theme");
+    darkIcon.classList.remove("dark-icon");
+    darkIcon.classList.add("change-dark-icon");
+    lightIcon.classList.remove("light-icon");
+    lightIcon.classList.add("change-light-icon");
+    body.style.backgroundColor("var(--black-accent)");
+    body.style.color("var(--black-accent)");
+  } else {
+    changeTheme.classList.remove("black-bg-theme");
+
+    darkIcon.classList.remove("change-dark-icon");
+    darkIcon.classList.add("dark-icon");
+    lightIcon.classList.remove("change-light-icon");
+    lightIcon.classList.add("light-icon");
+    body.style.backgroundColor("var(--white-accent)");
+    body.style.color("var(--white-accent)");
   }
 });
 

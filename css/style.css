@@ -1,30 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
-/* warna kapan-kapan bisa berubah */
 :root {
-  --primary: #eeeeee;
-  /* awal e 060918 */
-  /* lumayan 0C356A */
-  --secondary: #279eff;
-  /* 5d12d2 */
-  /* 1640d6 */
-  /* apik 6919ff */
-  /* lumayan 279EFF */
+  --primary: #041562;
+  --secondary: #da1212;
   --white-accent: #eeeeee;
   --black-accent: #272727;
-  --red-accent: #cf0a0a;
+  --font-size-heading1: 45px;
+  --font-size-heading2: 35px;
 }
 
-body {
-  min-height: 5000px;
+/* body {
+  background-color: var(--background-dark-mode);
+  transition: 0.3s ease-in-out;
+} */
+
+/* .dark-mode {
+  --background-dark-mode: #272727;
+  --color-dark-mode: #eeeeee;
+  transition: 0.3s ease-in-out;
+} */
+
+.container-loading {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: var(--secondary);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.hiddenToTop {
+  position: absolute;
+  top: -2000px;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+
+.hiddenToTop .loading-content {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.loading-content {
+  font-size: var(--font-size-heading2);
+  color: var(--white-accent);
+}
+
+.loading-content svg {
+  margin-bottom: -10px;
+  fill: #eeeeee;
+  animation: spinLoading 1s linear infinite;
+}
+
+@keyframes spinLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* nav */
@@ -35,7 +82,7 @@ body {
   position: fixed;
   background: none;
   padding: 0 20px;
-  z-index: 999;
+  z-index: 8;
   transition: 0.2s ease-in-out;
 }
 
@@ -46,7 +93,6 @@ nav {
   justify-content: space-between;
   line-height: 70px;
   margin: auto;
-  transition: 0.2s ease-in-out;
 }
 
 .sticky {
@@ -57,12 +103,14 @@ nav {
   -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
 }
 
-.sticky span h1 {
+.sticky span {
+  font-size: 24px;
   color: var(--secondary);
 }
 
 .sticky ul li a {
-  color: var(--black-accent);
+  color: var(--color-dark-mode);
+  /* color: var(--black-accent); */
 }
 .sticky ul li a:hover {
   color: var(--secondary);
@@ -109,7 +157,9 @@ nav span {
   align-items: center;
 }
 
-nav span h1 {
+nav span {
+  font-size: 24px;
+  font-weight: 700;
   color: var(--white-accent);
 }
 
@@ -129,31 +179,6 @@ nav ul li a:hover {
   color: var(--secondary);
 }
 
-/* dropdown */
-
-nav ul li a .icon-dropdown-culture {
-  width: 15px;
-  margin-bottom: -2px;
-}
-/*
-nav ul li .dropdown-culture:hover .content-dropdown-culture {
-  display: block;
-}
-
-nav ul li .content-dropdown-culture {
-  display: none;
-  border: 2px solid var(--white-accent);
-  margin-top: -25px;
-  padding: 0 10px;
-  background-color: var(--primary);
-}
-
-.content-dropdown-culture ul {
-  display: block;
-  color: var(--white-accent);
-  gap: 0;
-} */
-
 .container-change-theme {
   width: 60px;
   display: flex;
@@ -163,8 +188,6 @@ nav ul li .content-dropdown-culture {
 .change-theme {
   width: 60px;
   height: 25px;
-  /* display: flex; */
-  /* line-height: 70px; */
   border-radius: 30px;
   padding: 2px;
   background-color: var(--primary);
@@ -210,7 +233,6 @@ nav ul li .content-dropdown-culture {
   padding: 2px;
   margin-top: -72px;
   margin-bottom: 25px;
-  /* margin-left: 35px; */
   margin-right: 0px;
   fill: var(--white-accent);
   float: right;
@@ -233,7 +255,7 @@ nav ul li .content-dropdown-culture {
 .container-hero {
   width: 100%;
   height: max-content;
-  background-image: url(../assets/images/bromo.jpg);
+  background-image: url(../assets/images/bg-hero-sea-50.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -246,7 +268,7 @@ nav ul li .content-dropdown-culture {
 }
 
 .hero .text-hero {
-  max-width: 700px;
+  max-width: 850px;
   height: max-content;
   margin: auto;
   color: var(--white-accent);
@@ -255,7 +277,12 @@ nav ul li .content-dropdown-culture {
 }
 
 .text-hero h1 {
-  font-size: 55px;
+  font-size: 45px;
+}
+
+.text-hero h1 b {
+  color: var(--secondary);
+  background-color: var(--white-accent);
 }
 
 .text-hero p {
@@ -266,7 +293,7 @@ nav ul li .content-dropdown-culture {
 .text-hero a button {
   width: max-content;
   height: 50px;
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   color: var(--white-accent);
   background-color: var(--secondary);
   border-radius: 3px;
@@ -289,7 +316,7 @@ nav ul li .content-dropdown-culture {
 .text-hero a .hero-contact-btn {
   background: none;
   color: var(--secondary);
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
 }
 
 .text-hero a .hero-contact-btn:hover {
@@ -303,12 +330,13 @@ nav ul li .content-dropdown-culture {
 .container-culture {
   width: 100%;
   height: max-content;
-  background: rgb(128, 200, 246);
+  background-color: var(--secondary);
+  /* background: rgb(128, 200, 246);
   background: linear-gradient(
     220deg,
     rgba(128, 200, 246, 1) 0%,
     rgba(57, 87, 237, 1) 100%
-  );
+  ); */
 }
 
 .culture {
@@ -443,7 +471,7 @@ nav ul li .content-dropdown-culture {
 .container-explore {
   width: 100%;
   height: max-content;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .explore {
@@ -461,7 +489,7 @@ nav ul li .content-dropdown-culture {
 }
 
 .text-explore h1 {
-  font-size: 45px;
+  font-size: var(--font-size-heading1);
   color: var(--white-accent);
 }
 
@@ -861,12 +889,7 @@ nav ul li .content-dropdown-culture {
 .container-gallery {
   width: 100%;
   height: max-content;
-  background: rgb(128, 200, 246);
-  background: linear-gradient(
-    220deg,
-    rgba(128, 200, 246, 1) 0%,
-    rgba(57, 87, 237, 1) 100%
-  );
+  background-color: var(--secondary);
 }
 
 .gallery {
@@ -907,7 +930,6 @@ nav ul li .content-dropdown-culture {
 
 .zoom-effect {
   height: 250px;
-
   margin: 0 auto;
   overflow: hidden;
   border-radius: 12px;
@@ -926,8 +948,7 @@ nav ul li .content-dropdown-culture {
 .container-contact {
   width: 100%;
   height: max-content;
-
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .contact {
@@ -999,36 +1020,64 @@ nav ul li .content-dropdown-culture {
     display: inline-block;
   }
 
-  nav .hidden-ul {
-    width: max-content;
-    /* width: 100%; */
+  .hidden-ul {
+    width: 110%;
     height: 100vh;
     display: block;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
-    left: 0;
-    margin-right: -1000px;
-    margin-top: 70px;
+    right: -1000px;
     padding: 100px 0px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--black-accent);
+    background-color: #ffffffb3;
     backdrop-filter: blur(4px);
     transition: all 0.3s ease-in-out;
   }
 
-  nav .show-ul {
-    width: 100%;
+  .sticky .hidden-ul {
+    width: 110%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    margin-top: 70px;
+    padding: 100px 0px;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: #ffffffb3;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .show-ul {
+    width: 110%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    padding: 100px 0px;
+    text-align: center;
+    color: var(--black-accent);
+    background-color: #ffffffb3;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sticky .show-ul {
+    width: 110%;
     height: 100vh;
     display: block;
     margin-top: 70px;
     position: absolute;
     top: 0;
-    left: 0;
-    margin-right: 0px;
-
+    right: -20px;
     margin-top: 70px;
     padding: 100px 0px;
     text-align: center;
+    color: var(--black-accent);
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     transition: all 0.3s ease-in-out;

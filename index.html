@@ -78,9 +78,9 @@
           <div></div>
 
           <div class="menu-icon" id="menu-icon">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+            <span class="line" id="line-1"></span>
+            <span class="line" id="line-2"></span>
+            <span class="line" id="line-3"></span>
           </div>
         </nav>
       </div>
@@ -99,7 +99,7 @@
               </p>
               <div data-aos="fade-up" data-aos-duration="900">
                 <a href="#culture">
-                  <button>Explore</button>
+                  <button>Go Explore</button>
                 </a>
                 <a href="#contact">
                   <button class="hero-contact-btn">Contact</button>
@@ -112,40 +112,29 @@
       <!-- culture -->
       <div class="container-culture">
         <section class="culture" id="culture">
-          <div class="content-culture-1">
-            <div class="image-culture"></div>
-            <div class="text-culture">
-              <h1>Heritage Exploration, Discover Uniqueness</h1>
-              <p>
-                Ancient stories and unforgettable art. Every ritual, every
-                painting, is a precious piece of heritage that lives on. Let us
-                discover the uniqueness that engages the heart and soul.
-              </p>
-              <a href="#0">
-                <button class="view-culture">View</button>
-              </a>
-            </div>
+          <div class="container-img-culture-1"></div>
+          <div class="text-culture-1">
+            <h1 data-aos="fade-up" data-aos-duration="700">Indonesia</h1>
+            <p data-aos="fade-up" data-aos-duration="750">
+              Indonesia, a vast archipelago in Southeast Asia, boasts a rich and
+              diverse cultural tapestry shaped by over 300 ethnic groups. The
+              country's cultural landscape is characterized by a harmonious
+              blend of traditions, languages, and customs, with predominant
+              influences from Islam alongside a spirit of religious tolerance.
+            </p>
           </div>
-          <div class="content-culture-2">
-            <div class="text-culture">
-              <h1>Culture</h1>
-              <p>
-                Indonesia has a variety of cultures from each tribe from Sabang
-                to Merauke.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                voluptatibus corrupti exercitationem possimus perspiciatis,
-                mollitia necessitatibus tempora, obcaecati similique tempore
-                quae odio saepe? Optio illum necessitatibus mollitia nostrum,
-                alias harum?
-              </p>
-              <a href="#0">
-                <button class="view-culture-2">View</button>
-              </a>
-            </div>
-            <div class="image-culture-2"></div>
+          <div class="text-culture-2">
+            <h1 data-aos="fade-up" data-aos-duration="700">Batik</h1>
+            <p data-aos="fade-up" data-aos-duration="750">
+              Traditional arts such as shadow puppetry (Wayang Kulit) and batik
+              craftsmanship, as well as region-specific dances and music,
+              contribute to the nation's vibrant heritage. Ceremonies marking
+              life events, a flavorful cuisine featuring aromatic spices, and a
+              deep sense of community through values like "gotong royong"
+              further define Indonesian culture.
+            </p>
           </div>
+          <div class="container-img-culture-2"></div>
         </section>
       </div>
       <!-- explore -->
@@ -309,7 +298,7 @@
             <div class="empty-div">
               <div class="card-explore-1" onclick='showPopup("1")'>
                 <h2>Prambanan Temple</h2>
-                <div class="rate">⭐⭐⭐⭐⭐</div>
+                <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                 <div class="favorite" id="favorite-1">
                   <svg
                     class="empty-heart"
@@ -340,7 +329,7 @@
               <div class="empty-div">
                 <div class="card-explore-2" onclick='showPopup("2")'>
                   <h2>Bali</h2>
-                  <div class="rate">⭐⭐⭐⭐⭐</div>
+                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-2">
                     <svg
                       class="empty-heart"
@@ -370,7 +359,7 @@
               <div class="empty-div">
                 <div class="card-explore-3" onclick='showPopup("3")'>
                   <h2>Labuan Bajo</h2>
-                  <div class="rate">⭐⭐⭐⭐⭐</div>
+                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-3">
                     <svg
                       class="empty-heart"
@@ -402,7 +391,7 @@
               <div class="empty-div">
                 <div class="card-explore-4" onclick='showPopup("4")'>
                   <h2>Bromo</h2>
-                  <div class="rate">⭐⭐⭐⭐⭐</div>
+                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-4">
                     <svg
                       class="empty-heart"
@@ -432,7 +421,7 @@
               <div class="empty-div">
                 <div class="card-explore-5" onclick='showPopup("5")'>
                   <h2>Borobudur</h2>
-                  <div class="rate">⭐⭐⭐⭐⭐</div>
+                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-5">
                     <svg
                       class="empty-heart"
@@ -498,35 +487,50 @@
               archipelago.
             </p>
           </div>
-          <div class="all-card-gallery">
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
+          <div class="all-img-gallery">
+            <div class="img-gallery-1">
+              <div class="slide-container-1">
+                <img src="./assets/images/bromo.jpg " alt="bromo" />
+                <img src="./assets/images/kecak.jpg" alt="kecak" />
+                <img
+                  src="./assets/images/prambanan-medium.jpg"
+                  alt="prambanan"
+                />
+                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
+                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
+                <img src="./assets/images/bali.jpg" alt="bali" />
+                <img src="./assets/images/batik.jpg " alt="batik" />
+                <img src="./assets/images/wayang.jpg" alt="wayang" />
               </div>
             </div>
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
+            <div class="img-gallery-2">
+              <div class="slide-container-2">
+                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
+                <img src="./assets/images/bali.jpg" alt="bali" />
+                <img src="./assets/images/batik.jpg " alt="batik" />
+                <img src="./assets/images/wayang.jpg" alt="wayang" />
+                <img src="./assets/images/bromo.jpg " alt="bromo" />
+                <img src="./assets/images/kecak.jpg" alt="kecak" />
+                <img
+                  src="./assets/images/prambanan-medium.jpg "
+                  alt="prambanan"
+                />
+                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
               </div>
             </div>
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
-              </div>
-            </div>
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
-              </div>
-            </div>
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
-              </div>
-            </div>
-            <div class="zoom-effect">
-              <div class="card-gallery">
-                <img src="./assets/images/kecak.jpg" alt="kecak dance" />
+            <div class="img-gallery-3">
+              <div class="slide-container-3">
+                <img src="./assets/images/bromo.jpg " alt="bromo" />
+                <img src="./assets/images/kecak.jpg" alt="kecak" />
+                <img
+                  src="./assets/images/prambanan-medium.jpg"
+                  alt="prambanan"
+                />
+                <img src="./assets/images/wayang.jpg" alt="wayang" />
+                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
+                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
+                <img src="./assets/images/bali.jpg" alt="bali" />
+                <img src="./assets/images/batik.jpg " alt="batik" />
               </div>
             </div>
           </div>

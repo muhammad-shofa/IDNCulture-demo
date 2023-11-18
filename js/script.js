@@ -1,8 +1,8 @@
+// loading
 let loading = document.getElementById("loading");
 let allContent = document.getElementById("all-content");
 
 document.addEventListener("DOMContentLoaded", loadingTime);
-
 function loadingTime() {
   allContent.style.display = "none";
   setTimeout(showAllContent, 2500);
@@ -13,6 +13,7 @@ function loadingTime() {
   }
 }
 
+// sticky nav
 let nav = document.querySelector("nav");
 let containerNav = document.getElementById("container-nav");
 window.addEventListener("scroll", () => {
@@ -20,6 +21,29 @@ window.addEventListener("scroll", () => {
     containerNav.classList.add("sticky");
   } else {
     containerNav.classList.remove("sticky");
+  }
+});
+
+// icon navbar
+let menuIcon = document.getElementById("menu-icon");
+// let lineMenuIcon1 = document.getElementById("line-1");
+// let lineMenuIcon2 = document.getElementById("line-2");
+// let lineMenuIcon3 = document.getElementById("line-3");
+menuIcon.addEventListener("click", function () {
+  this.classList.toggle("close-icon");
+  const navUl = document.getElementById("nav-ul");
+  if (navUl.classList.contains("hidden-ul")) {
+    navUl.classList.remove("hidden-ul");
+    navUl.classList.add("show-ul");
+    // lineMenuIcon1.style.backgroundColor = "var(--black-accent)";
+    // lineMenuIcon2.style.backgroundColor = "var(--black-accent)";
+    // lineMenuIcon3.style.backgroundColor = "var(--black-accent)";
+  } else {
+    navUl.classList.remove("show-ul");
+    navUl.classList.add("hidden-ul");
+    // lineMenuIcon1.style.backgroundColor = "var(--white-accent)";
+    // lineMenuIcon2.style.backgroundColor = "var(--white-accent)";
+    // lineMenuIcon3.style.backgroundColor = "var(--white-accent)";
   }
 });
 
@@ -50,40 +74,7 @@ window.addEventListener("scroll", () => {
 //   }
 // });
 
-// icon navbar
-let menuIcon = document.getElementById("menu-icon");
-menuIcon.addEventListener("click", function () {
-  this.classList.toggle("close-icon");
-  const navUl = document.getElementById("nav-ul");
-  if (navUl.classList.contains("hidden-ul")) {
-    navUl.classList.remove("hidden-ul");
-    navUl.classList.add("show-ul");
-  } else {
-    navUl.classList.remove("show-ul");
-    navUl.classList.add("hidden-ul");
-  }
-});
-
-// popup explore
-function showPopup(popupId) {
-  let containerPopup = document.getElementById("container-popup-" + popupId);
-  if (containerPopup.style.display == "none") {
-    containerPopup.style.display = "block";
-  } else {
-    containerPopup.style.display = "none";
-  }
-}
-
-function closePopup(popupId) {
-  let containerPopup = document.getElementById("container-popup-" + popupId);
-  if (containerPopup.style.display == "block") {
-    containerPopup.style.display = "none";
-  } else {
-    containerPopup.style.display = "block";
-  }
-}
-
-// fav destination
+// variable popup and fav
 // 1
 let favDestination = document.getElementById("favorite-1");
 let emptyHeart = document.getElementById("empty-heart");
@@ -105,6 +96,26 @@ let favDestination5 = document.getElementById("favorite-5");
 let emptyHeart5 = document.getElementById("empty-heart-5");
 let fullHeart5 = document.getElementById("full-heart-5");
 
+// function popup explore
+function showPopup(popupId) {
+  let containerPopup = document.getElementById("container-popup-" + popupId);
+  if (containerPopup.style.display == "none") {
+    containerPopup.style.display = "block";
+  } else {
+    containerPopup.style.display = "none";
+  }
+}
+
+function closePopup(popupId) {
+  let containerPopup = document.getElementById("container-popup-" + popupId);
+  if (containerPopup.style.display == "block") {
+    containerPopup.style.display = "none";
+  } else {
+    containerPopup.style.display = "block";
+  }
+}
+
+// function fav destination
 favDestination.addEventListener("click", () => {
   if (emptyHeart.style.display == "block") {
     fullHeart.style.display = "block";
@@ -154,3 +165,13 @@ favDestination5.addEventListener("click", () => {
     fullHeart5.style.display = "none";
   }
 });
+
+// gallery animation
+let copy1 = document.querySelector(".slide-container-1").cloneNode(true);
+document.querySelector(".img-gallery-1").appendChild(copy1);
+// gallery animation 2
+let copy2 = document.querySelector(".slide-container-2").cloneNode(true);
+document.querySelector(".img-gallery-2").appendChild(copy2);
+// gallery animation 3
+let copy3 = document.querySelector(".slide-container-3").cloneNode(true);
+document.querySelector(".img-gallery-3").appendChild(copy3);

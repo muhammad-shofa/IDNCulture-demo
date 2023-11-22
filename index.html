@@ -12,7 +12,6 @@
     <!-- loading -->
     <div class="container-loading" id="loading">
       <div class="loading-content">
-        Loading
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
@@ -36,11 +35,14 @@
             <li>
               <a href="#home">Home</a>
             </li>
-            <li>
-              <a href="#culture">Culture</a>
+            <li id="dropdown-explore">
+              <a id="text-culture" href="#culture"
+                >Culture
+                <img src="./assets/icon/chevron-down-solid.svg" alt="" />
+              </a>
             </li>
             <li>
-              <a href="#explore">Explore</a>
+              <a href="#explore">Explore </a>
             </li>
             <li>
               <a href="#gallery">Gallery</a>
@@ -49,40 +51,156 @@
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <!-- <div class="container-change-theme">
-          <div class="change-theme" id="change-theme">
-            <svg
-              id="dark-icon"
-              class="dark-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 384 512"
-            >
-              <path
-                d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
-              />
-            </svg>
-            <svg
-              id="light-icon"
-              class="light-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 512 512"
-            >
-              <path
-                d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"
-              />
-            </svg>
-          </div>
-        </div> -->
           <div></div>
-
+          <!-- <div class="change-lang">
+            <img
+              class="lang-id"
+              src="./assets/icon/lang-id.jpg"
+              alt="lang id"
+            />
+            <div class="line-y-lang"></div>
+            <img
+              class="lang-en"
+              src="./assets/icon/lang-en.jpg"
+              alt="lang en"
+            />
+          </div> -->
           <div class="menu-icon" id="menu-icon">
             <span class="line" id="line-1"></span>
             <span class="line" id="line-2"></span>
             <span class="line" id="line-3"></span>
           </div>
         </nav>
+      </div>
+      <!-- content dropdown -->
+      <div class="container-dropdown" id="container-dropdown">
+        <div class="dropdown">
+          <div class="jawa">
+            <h2>Jawa</h2>
+            <ul>
+              <li>
+                <a href="#0">Batik</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gamelan</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Keris</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Nasi Liwet</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Wayang Kulit</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="kalimantan">
+            <h2>Kalimantan</h2>
+            <ul>
+              <li>
+                <a href="#0">King baba</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Sape</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Mandau</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Asam Pedas</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Zapin</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sumatra">
+            <h2>Sumatra</h2>
+            <ul>
+              <li>
+                <a href="#0">Minangkabau</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gendang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Klewang</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Rendang</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Randai</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sulawesi">
+            <h2>Sulawesi</h2>
+            <ul>
+              <li>
+                <a href="#0">Mappettong</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Kolintang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Panabas</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Konro</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Tor-Tor</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="papua">
+            <h2>Papua</h2>
+            <ul>
+              <li>
+                <a href="#0">Koteka</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Tifa</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Kombia Axe</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Papeda</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Baliem Valley</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- hero -->
       <div class="container-hero">
@@ -152,153 +270,111 @@
           <!-- all popup explore -->
           <div class="container-popup" id="container-popup-1">
             <div class="popup-explore">
-              <div class="flex-popup">
-                <div class="img-popup-1"></div>
-                <div class="text-popup">
-                  <h2>Prambanan Temple</h2>
-                  <p>
-                    candi prambanan is the largest Hindu temple in Indonesia
-                    built in the 9th century AD. The temple, which is also
-                    referred to as Rara Jonggrang, is dedicated to Trimurti, the
-                    three main Hindu gods, namely the god Brahma as the creator
-                    god, the god Vishnu as the preserver god, and the god Shiva
-                    as the god of destruction. Based on the Siwagrha
-                    inscription, the original name of this temple complex is
-                    Siwagrha (Sanskrit meaning 'House of Shiva'), and indeed in
-                    the garbagriha (main room) of this temple resides a
-                    three-meter-high statue of Shiva Mahadeva, due to the Shiva
-                    sect that prioritizes the worship of the god Shiva in this
-                    temple.
-                  </p>
-                </div>
-              </div>
-              <svg
-                id="close-popup-icon"
-                onclick="closePopup('1')"
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              <div class="img-popup-1">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('1')"
                 />
-              </svg>
+              </div>
+              <div class="text-popup">
+                <h2>Prambanan Temple</h2>
+                <p>
+                  candi prambanan is the largest Hindu temple in Indonesia built
+                  in the 9th century AD. The temple, which is also referred to
+                  as Rara Jonggrang, is dedicated to Trimurti, the three main
+                  Hindu gods, namely the god Brahma as the creator god, the god
+                  Vishnu as the preserver god, and the god Shiva as the god of
+                  destruction.
+                </p>
+              </div>
             </div>
           </div>
           <div class="container-popup" id="container-popup-2">
             <div class="popup-explore">
-              <div class="flex-popup">
-                <div class="img-popup-2"></div>
-                <div class="text-popup">
-                  <h2>Bali</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae labore dolor at minus nostrum! Autem vel consequuntur
-                    eaque eius in recusandae exercitationem, expedita repellat,
-                    quam sint ratione nisi temporibus totam.
-                  </p>
-                </div>
-              </div>
-              <svg
-                id="close-popup-icon"
-                onclick='closePopup("2")'
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              <div class="img-popup-2">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('2')"
                 />
-              </svg>
+              </div>
+              <div class="text-popup">
+                <h2>Bali</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae labore dolor at minus nostrum! Autem vel consequuntur
+                  eaque eius in recusandae exercitationem, expedita repellat,
+                  quam sint ratione nisi temporibus totam.
+                </p>
+              </div>
             </div>
           </div>
           <div class="container-popup" id="container-popup-3">
             <div class="popup-explore">
-              <div class="flex-popup">
-                <div class="img-popup-3"></div>
-                <div class="text-popup">
-                  <h2>Labuan Bajo</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                    sequi quo consequatur laudantium tempora, animi, aliquam
-                    aliquid accusantium saepe enim provident minima.
-                  </p>
-                </div>
-              </div>
-              <svg
-                id="close-popup-icon"
-                onclick='closePopup("3")'
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              <div class="img-popup-3">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('3')"
                 />
-              </svg>
+              </div>
+              <div class="text-popup">
+                <h2>Labuan Bajo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
             </div>
           </div>
           <div class="container-popup" id="container-popup-4">
             <div class="popup-explore">
-              <div class="flex-popup">
-                <div class="img-popup-4"></div>
-                <div class="text-popup">
-                  <h2>Bromo</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                    sequi quo consequatur laudantium tempora, animi, aliquam
-                    aliquid accusantium saepe enim provident minima.
-                  </p>
-                </div>
-              </div>
-              <svg
-                id="close-popup-icon"
-                onclick='closePopup("4")'
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              <div class="img-popup-4">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('4')"
                 />
-              </svg>
+              </div>
+              <div class="text-popup">
+                <h2>Bromo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
             </div>
           </div>
           <div class="container-popup" id="container-popup-5">
             <div class="popup-explore">
-              <div class="flex-popup">
-                <div class="img-popup-5"></div>
-                <div class="text-popup">
-                  <h2>Borobudur</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                    sequi quo consequatur laudantium tempora, animi, aliquam
-                    aliquid accusantium saepe enim provident minima.
-                  </p>
-                </div>
-              </div>
-              <svg
-                id="close-popup-icon"
-                onclick='closePopup("5")'
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              <div class="img-popup-5">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('5')"
                 />
-              </svg>
+              </div>
+              <div class="text-popup">
+                <h2>Borobudur</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="all-card-explore">
             <div class="empty-div">
               <div class="card-explore-1" onclick='showPopup("1")'>
-                <h2>Prambanan Temple</h2>
-                <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
+                <h2>Candi Prambanan</h2>
                 <div class="favorite" id="favorite-1">
                   <svg
                     class="empty-heart"
@@ -329,7 +405,6 @@
               <div class="empty-div">
                 <div class="card-explore-2" onclick='showPopup("2")'>
                   <h2>Bali</h2>
-                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-2">
                     <svg
                       class="empty-heart"
@@ -359,7 +434,6 @@
               <div class="empty-div">
                 <div class="card-explore-3" onclick='showPopup("3")'>
                   <h2>Labuan Bajo</h2>
-                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-3">
                     <svg
                       class="empty-heart"
@@ -391,7 +465,6 @@
               <div class="empty-div">
                 <div class="card-explore-4" onclick='showPopup("4")'>
                   <h2>Bromo</h2>
-                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-4">
                     <svg
                       class="empty-heart"
@@ -421,7 +494,6 @@
               <div class="empty-div">
                 <div class="card-explore-5" onclick='showPopup("5")'>
                   <h2>Borobudur</h2>
-                  <!-- <div class="rate">⭐⭐⭐⭐⭐</div> -->
                   <div class="favorite" id="favorite-5">
                     <svg
                       class="empty-heart"
@@ -449,7 +521,7 @@
                 </div>
               </div>
             </div>
-            <a href="#0">
+            <a href="./pages/all-culture.html" target="_blank">
               <button class="view-more">View More</button>
             </a>
           </div>
@@ -490,48 +562,246 @@
           <div class="all-img-gallery">
             <div class="img-gallery-1">
               <div class="slide-container-1">
-                <img src="./assets/images/bromo.jpg " alt="bromo" />
-                <img src="./assets/images/kecak.jpg" alt="kecak" />
-                <img
-                  src="./assets/images/prambanan-medium.jpg"
-                  alt="prambanan"
-                />
-                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
-                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
-                <img src="./assets/images/bali.jpg" alt="bali" />
-                <img src="./assets/images/batik.jpg " alt="batik" />
-                <img src="./assets/images/wayang.jpg" alt="wayang" />
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg"
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
               </div>
             </div>
             <div class="img-gallery-2">
               <div class="slide-container-2">
-                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
-                <img src="./assets/images/bali.jpg" alt="bali" />
-                <img src="./assets/images/batik.jpg " alt="batik" />
-                <img src="./assets/images/wayang.jpg" alt="wayang" />
-                <img src="./assets/images/bromo.jpg " alt="bromo" />
-                <img src="./assets/images/kecak.jpg" alt="kecak" />
-                <img
-                  src="./assets/images/prambanan-medium.jpg "
-                  alt="prambanan"
-                />
-                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg "
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
               </div>
             </div>
             <div class="img-gallery-3">
               <div class="slide-container-3">
-                <img src="./assets/images/bromo.jpg " alt="bromo" />
-                <img src="./assets/images/kecak.jpg" alt="kecak" />
-                <img
-                  src="./assets/images/prambanan-medium.jpg"
-                  alt="prambanan"
-                />
-                <img src="./assets/images/wayang.jpg" alt="wayang" />
-                <img src="./assets/images/labuan-bajo.jpg" alt="labuan bajo" />
-                <img src="./assets/images/borobudur.jpg" alt="borobudur" />
-                <img src="./assets/images/bali.jpg" alt="bali" />
-                <img src="./assets/images/batik.jpg " alt="batik" />
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg"
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+          <!-- popup gallery -->
+          <div class="container-popup-gallery">
+            <div
+              class="popup-gallery"
+              id="popup-gallery-bromo"
+              onclick="closePopupGallery('bromo')"
+            >
+              <img
+                src="./assets/images/bromo.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-bali">
+              <img
+                src="./assets/images/bali.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-prambanan">
+              <img
+                src="./assets/images/prambanan-medium.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-batik">
+              <img
+                src="./assets/images/batik.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-wayang">
+              <img
+                src="./assets/images/wayang.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-labuan-bajo">
+              <img
+                src="./assets/images/labuan-bajo.jpg"
+                alt="Labuan Bajo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-kecak">
+              <img
+                src="./assets/images/kecak.jpg"
+                alt="kecak"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-borobudur">
+              <img
+                src="./assets/images/borobudur.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
             </div>
           </div>
         </section>
@@ -542,8 +812,80 @@
           <div class="text-contact">
             <h1>contact</h1>
           </div>
+          <div class="row">
+            <div class="contact-left">
+              <p class="sub-title">Contact Me</p>
+              <p class="penting">
+                <i class="fa-solid fa-paper-plane"></i>
+                indonesia@gmail.com
+              </p>
+              <p class="penting">
+                <i class="fa-solid fa-phone"></i> 08*-*-**77
+              </p>
+              <div class="social-icons">
+                <a href="https://www.youtube.com/@S-CYP/about"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <a href="" class="btn btn2">Do not press</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
         </section>
       </div>
+    </div>
+
+    <!-- back to top -->
+    <a href="#home">
+      <div class="back-to-top" id="back-to-top">
+        <img src="./assets/icon/chevron-up-solid.svg" alt="back to top" />
+      </div>
+    </a>
+    <!-- whats new? -->
+    <div class="update" id="update">
+      <h3>
+        Whats new?
+        <img
+          src="./assets/icon/xmark-solid.svg"
+          alt="close update"
+          id="close-update"
+        />
+      </h3>
+      <p><i>22-11-23</i></p>
+      <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
+      <ul>
+        <li>Menambah Dropdown pada nav culture (belum responsive)</li>
+        <li>Merubah tampilan popup</li>
+        <li>Merubah beberapa style</li>
+        <li>Menambah fungsi Back to top</li>
+        <li>Menambah efek zoom dan popup pada gallery</li>
+        <li>Menambah section contact (belum 100%)</li>
+        <li>Fix Bugs (style nabrak, js, dll)</li>
+      </ul>
     </div>
 
     <!-- js -->

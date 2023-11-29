@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IDNCulture." />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>IDNCulture</title>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="container-loading" id="loading">
+      <div class="loading-content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M222.7 32.1c5 16.9-4.6 34.8-21.5 39.8C121.8 95.6 64 169.1 64 256c0 106 86 192 192 192s192-86 192-192c0-86.9-57.8-160.4-137.1-184.1c-16.9-5-26.6-22.9-21.5-39.8s22.9-26.6 39.8-21.5C434.9 42.1 512 140 512 256c0 141.4-114.6 256-256 256S0 397.4 0 256C0 140 77.1 42.1 182.9 10.6c16.9-5 34.8 4.6 39.8 21.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- all content -->
+    <div class="all-content" id="all-content">
+      <!-- navbar -->
+      <div class="container-nav" id="container-nav">
+        <nav data-aos="fade-down">
+          <a href="./index.html#home">
+            <span>IDNCulture</span>
+          </a>
+          <ul class="hidden-ul" id="nav-ul">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li id="dropdown-explore">
+              <a id="text-culture" href="#culture"
+                >Culture
+                <img src="./assets/icon/chevron-down-solid.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#explore">Explore </a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- <div></div> -->
+          <div class="change-lang">
+            <a href="index-id.html" class="lang-active">
+              <img
+                class="lang-id"
+                src="./assets/images/lang-id.jpg"
+                alt="lang id"
+              />
+            </a>
+            <div class="line-y-lang"></div>
+            <a href="index.html">
+              <img
+                class="lang-en"
+                src="./assets/images/lang-en.jpg"
+                alt="lang en"
+              />
+            </a>
+          </div>
+          <div class="menu-icon" id="menu-icon">
+            <span class="line" id="line-1"></span>
+            <span class="line" id="line-2"></span>
+            <span class="line" id="line-3"></span>
+          </div>
+        </nav>
+      </div>
+      <!-- content dropdown -->
+      <div class="container-dropdown" id="container-dropdown">
+        <div class="dropdown">
+          <div class="jawa">
+            <h2>Jawa</h2>
+            <ul>
+              <li>
+                <a href="#0">Batik</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gamelan</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Keris</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Nasi Liwet</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Wayang Kulit</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="kalimantan">
+            <h2>Kalimantan</h2>
+            <ul>
+              <li>
+                <a href="#0">King baba</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Sape</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Mandau</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Asam Pedas</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Zapin</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sumatra">
+            <h2>Sumatra</h2>
+            <ul>
+              <li>
+                <a href="#0">Minangkabau</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Gendang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Klewang</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Rendang</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Randai</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="sulawesi">
+            <h2>Sulawesi</h2>
+            <ul>
+              <li>
+                <a href="#0">Mappettong</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Kolintang</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Panabas</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Konro</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Tari Tor-Tor</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+          <div class="papua">
+            <h2>Papua</h2>
+            <ul>
+              <li>
+                <a href="#0">Koteka</a>
+                <!-- pakaian adat -->
+              </li>
+              <li>
+                <a href="#0">Tifa</a>
+                <!-- alat musik -->
+              </li>
+              <li>
+                <a href="#0">Kombia Axe</a>
+                <!-- senjata tradisional -->
+              </li>
+              <li>
+                <a href="#0">Papeda</a>
+                <!-- makanan khas -->
+              </li>
+              <li>
+                <a href="#0">Baliem Valley</a>
+                <!-- kesenian -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- hero -->
+      <div class="container-hero">
+        <section class="hero" id="home">
+          <div class="text-hero">
+            <div data-aos="fade-up">
+              <h1 data-aos="fade-up" data-aos-duration="700">
+                Selamat datang di Jelajah Digital Kekayaan
+                <b>Budaya Indonesia</b>
+                <!-- Welcome to Digital Exploration of <b>Indonesia's Cultural</b>
+                Treasures -->
+              </h1>
+              <p data-aos="fade-up" data-aos-duration="800">
+                Selamat datang di tempat di mana teknologi bertemu dengan
+                tradisi, dan eksplorasi budaya tanpa batas.
+              </p>
+              <div data-aos="fade-up" data-aos-duration="900">
+                <a href="#culture">
+                  <button>Jelajahi</button>
+                </a>
+                <a href="#contact">
+                  <button class="hero-contact-btn">Kontak</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- culture -->
+      <div class="container-culture">
+        <section class="culture" id="culture">
+          <div class="container-img-culture-1"></div>
+          <div class="text-culture-1">
+            <h1 data-aos="fade-up" data-aos-duration="700">Indonesia</h1>
+            <p data-aos="fade-up" data-aos-duration="750">
+              Indonesia, negara kepulauan yang luas di Asia Tenggara, memiliki
+              permadani budaya yang kaya dan beragam yang dibentuk oleh lebih
+              dari 300 kelompok etnis. Lanskap budaya negara ini ditandai dengan
+              perpaduan yang harmonis antara tradisi, bahasa, dan adat istiadat,
+              dengan pengaruh utama dari Islam di samping semangat toleransi
+              beragama.
+            </p>
+          </div>
+          <div class="text-culture-2">
+            <h1 data-aos="fade-up" data-aos-duration="700">Batik</h1>
+            <p data-aos="fade-up" data-aos-duration="750">
+              Kesenian tradisional seperti wayang kulit dan kerajinan batik,
+              serta tarian dan musik khas daerah, turut menyumbangkan warisan
+              budaya bangsa yang kaya. Upacara-upacara yang menandai
+              peristiwa-peristiwa penting dalam kehidupan, masakan beraroma
+              rempah-rempah, dan rasa kebersamaan yang mendalam melalui
+              nilai-nilai seperti "gotong royong" semakin mendefinisikan budaya
+              Indonesia.
+            </p>
+          </div>
+          <div class="container-img-culture-2"></div>
+        </section>
+      </div>
+      <!-- explore -->
+      <div class="container-explore">
+        <section class="explore" id="explore">
+          <div class="text-explore">
+            <h1>Wisata Budaya di Ujung Jari Kamu</h1>
+            <p>
+              Dari situs bersejarah hingga pusat seni kontemporer, kami
+              mengundang Anda untuk membenamkan diri dalam pesona destinasi
+              budaya Indonesia. Dengan panduan interaktif dan pengalaman
+              virtual, setiap penjelajahan akan menjadi perjalanan yang tak
+              terlupakan.
+            </p>
+          </div>
+          <!-- all popup explore -->
+          <div class="container-popup" id="container-popup-1">
+            <div class="popup-explore">
+              <div class="img-popup-1">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('1')"
+                />
+              </div>
+              <div class="text-popup">
+                <h2>Prambanan Temple</h2>
+                <p>
+                  candi prambanan is the largest Hindu temple in Indonesia built
+                  in the 9th century AD. The temple, which is also referred to
+                  as Rara Jonggrang, is dedicated to Trimurti, the three main
+                  Hindu gods, namely the god Brahma as the creator god, the god
+                  Vishnu as the preserver god, and the god Shiva as the god of
+                  destruction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-popup" id="container-popup-2">
+            <div class="popup-explore">
+              <div class="img-popup-2">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('2')"
+                />
+              </div>
+              <div class="text-popup">
+                <h2>Bali</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae labore dolor at minus nostrum! Autem vel consequuntur
+                  eaque eius in recusandae exercitationem, expedita repellat,
+                  quam sint ratione nisi temporibus totam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-popup" id="container-popup-3">
+            <div class="popup-explore">
+              <div class="img-popup-3">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('3')"
+                />
+              </div>
+              <div class="text-popup">
+                <h2>Labuan Bajo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-popup" id="container-popup-4">
+            <div class="popup-explore">
+              <div class="img-popup-4">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('4')"
+                />
+              </div>
+              <div class="text-popup">
+                <h2>Bromo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-popup" id="container-popup-5">
+            <div class="popup-explore">
+              <div class="img-popup-5">
+                <img
+                  src="./assets/icon/xmark-solid.svg"
+                  alt="close popup icon"
+                  onclick="closePopup('5')"
+                />
+              </div>
+              <div class="text-popup">
+                <h2>Borobudur</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
+                  sequi quo consequatur laudantium tempora, animi, aliquam
+                  aliquid accusantium saepe enim provident minima.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-card-explore">
+            <div class="empty-div">
+              <div class="card-explore-1" onclick='showPopup("1")'>
+                <h2>Candi Prambanan</h2>
+                <div class="favorite" id="favorite-1">
+                  <svg
+                    class="empty-heart"
+                    id="empty-heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                    />
+                  </svg>
+                  <svg
+                    class="full-heart"
+                    id="full-heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="two-card-1">
+              <div class="empty-div">
+                <div class="card-explore-2" onclick='showPopup("2")'>
+                  <h2>Bali</h2>
+                  <div class="favorite" id="favorite-2">
+                    <svg
+                      class="empty-heart"
+                      id="empty-heart-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                      />
+                    </svg>
+                    <svg
+                      class="full-heart"
+                      id="full-heart-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="empty-div">
+                <div class="card-explore-3" onclick='showPopup("3")'>
+                  <h2>Labuan Bajo</h2>
+                  <div class="favorite" id="favorite-3">
+                    <svg
+                      class="empty-heart"
+                      id="empty-heart-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                      />
+                    </svg>
+                    <svg
+                      class="full-heart"
+                      id="full-heart-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="two-card-2">
+              <div class="empty-div">
+                <div class="card-explore-4" onclick='showPopup("4")'>
+                  <h2>Bromo</h2>
+                  <div class="favorite" id="favorite-4">
+                    <svg
+                      class="empty-heart"
+                      id="empty-heart-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                      />
+                    </svg>
+                    <svg
+                      class="full-heart"
+                      id="full-heart-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="empty-div">
+                <div class="card-explore-5" onclick='showPopup("5")'>
+                  <h2>Borobudur</h2>
+                  <div class="favorite" id="favorite-5">
+                    <svg
+                      class="empty-heart"
+                      id="empty-heart-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                      />
+                    </svg>
+                    <svg
+                      class="full-heart"
+                      id="full-heart-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="./pages/all-culture.html" target="_blank">
+              <button class="view-more">View More</button>
+            </a>
+          </div>
+        </section>
+      </div>
+      <!-- wonderland -->
+      <div class="container-wonderland">
+        <section class="wonderland">
+          <div class="text-wonderland">
+            <h1>Indonesia Is A Wonderland</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              quam quod incidunt.
+            </p>
+          </div>
+          <div class="video-wonderland">
+            <iframe
+              src="https://www.youtube.com/embed/aKtb7Y3qOck?si=JaY_4oFOBfQ7mH8w&amp;controls=0"
+              title="YouTube video player"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <!-- gallery -->
+      <div class="container-gallery">
+        <section class="gallery" id="gallery">
+          <div class="text-gallery">
+            <h1>
+              Stepping into the <br />
+              World of Virtual Artwork
+            </h1>
+            <p>
+              Our gallery is a visual offering of the beauty of Indonesian
+              culture. Happy exploring, stepping into the visual heritage of the
+              archipelago.
+            </p>
+          </div>
+          <div class="all-img-gallery">
+            <div class="img-gallery-1">
+              <div class="slide-container-1">
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg"
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="img-gallery-2">
+              <div class="slide-container-2">
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg "
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="img-gallery-3">
+              <div class="slide-container-3">
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bromo.jpg "
+                    alt="bromo"
+                    onclick="showPopupGallery('bromo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/kecak.jpg"
+                    alt="kecak"
+                    onclick="showPopupGallery('kecak')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/prambanan-medium.jpg"
+                    alt="prambanan"
+                    onclick="showPopupGallery('prambanan')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/wayang.jpg"
+                    alt="wayang"
+                    onclick="showPopupGallery('wayang')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/labuan-bajo.jpg"
+                    alt="labuan bajo"
+                    onclick="showPopupGallery('labuan-bajo')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/borobudur.jpg"
+                    alt="borobudur"
+                    onclick="showPopupGallery('borobudur')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/bali.jpg"
+                    alt="bali"
+                    onclick="showPopupGallery('bali')"
+                  />
+                </div>
+                <div class="frame-zoom">
+                  <img
+                    src="./assets/images/batik.jpg "
+                    alt="batik"
+                    onclick="showPopupGallery('batik')"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- popup gallery -->
+          <div class="container-popup-gallery">
+            <div
+              class="popup-gallery"
+              id="popup-gallery-bromo"
+              onclick="closePopupGallery('bromo')"
+            >
+              <img
+                src="./assets/images/bromo.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-bali">
+              <img
+                src="./assets/images/bali.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-prambanan">
+              <img
+                src="./assets/images/prambanan-medium.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-batik">
+              <img
+                src="./assets/images/batik.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-wayang">
+              <img
+                src="./assets/images/wayang.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-labuan-bajo">
+              <img
+                src="./assets/images/labuan-bajo.jpg"
+                alt="Labuan Bajo"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-kecak">
+              <img
+                src="./assets/images/kecak.jpg"
+                alt="kecak"
+                id="img-popup-gallery"
+              />
+            </div>
+            <div class="popup-gallery" id="popup-gallery-borobudur">
+              <img
+                src="./assets/images/borobudur.jpg"
+                alt="Bromo"
+                id="img-popup-gallery"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- contact -->
+      <div class="container-contact">
+        <section class="contact" id="contact">
+          <div class="text-contact">
+            <h1>contact</h1>
+          </div>
+          <div class="row">
+            <div class="contact-left">
+              <p class="sub-title">Contact Me</p>
+              <p class="penting">
+                <i class="fa-solid fa-paper-plane"></i>
+                indonesia@gmail.com
+              </p>
+              <p class="penting">
+                <i class="fa-solid fa-phone"></i> 08*-*-**77
+              </p>
+              <div class="social-icons">
+                <a href="https://www.youtube.com/@S-CYP/about"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <a href="" class="btn btn2">Do not press</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- back to top -->
+    <a href="#home">
+      <div class="back-to-top" id="back-to-top">
+        <img src="./assets/icon/chevron-up-solid.svg" alt="back to top" />
+      </div>
+    </a>
+    <!-- whats new? -->
+    <!-- <div class="update" id="update">
+      <h3>
+        Whats new?
+        <img
+          src="./assets/icon/xmark-solid.svg"
+          alt="close update"
+          id="close-update"
+        />
+      </h3>
+      <p><i>22-11-23</i></p>
+      <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
+      <ul>
+        <li>Menambah Dropdown pada nav culture (belum responsive)</li>
+        <li>Merubah tampilan popup</li>
+        <li>Merubah beberapa style</li>
+        <li>Menambah fungsi Back to top</li>
+        <li>Menambah efek zoom dan popup pada gallery</li>
+        <li>Menambah section contact (belum 100%)</li>
+        <li>Fix Bugs (style nabrak, js, dll)</li>
+      </ul>
+    </div> -->
+
+    <!-- js -->
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -20,6 +20,7 @@
   /* font dekstop */
   --font-size-dekstop-heading-1: 45px;
   --font-size-dekstop-heading-2: 30px;
+  --font-size-dekstop-heading-3: 25px;
   --font-size-p: 18px;
   /* font mobile */
   --font-size-mobile-heading-1: 25px;
@@ -43,9 +44,9 @@ p {
   transition: 0.3s ease-in-out;
 } */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* .dark-mode {
   --background-dark-mode: #272727;
@@ -120,8 +121,8 @@ nav {
 }
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
@@ -207,48 +208,63 @@ nav ul #dropdown-explore img {
   height: 15px;
 }
 
-/* nav .change-lang {
-  width: 100px;
-  display: inline-flex;
+nav .change-lang {
+  width: 70px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2px;
-  border: 2px solid var(--secondary);
+  gap: 10px;
 }
 
-.change-lang .lang-id {
+.change-lang a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-active img {
+  filter: none;
+}
+
+.lang-id {
   width: 20px;
   height: 20px;
-  margin: 0 2px;
   border-radius: 50%;
-  transition: all 0.2s ease-in-out;
+  filter: grayscale(1);
+  transition: all 0.1s ease-in-out;
 }
 
-.change-lang .lang-en {
-  width: 20px;
-  height: 20px;
-  margin: 0 2px;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-}
-
-.change-lang .lang-id:hover {
+.lang-id:hover {
   width: 22px;
   height: 22px;
-  margin: 1px;
+  cursor: pointer;
 }
 
-.change-lang .lang-en:hover {
-  width: 22px;
-  height: 22px;
-  margin: 1px;
-}
-
-.change-lang .line-y-lang {
+.line-y-lang {
   width: 2px;
   height: 20px;
+  background-color: var(--white-accent);
+}
+
+.sticky .line-y-lang {
   background-color: var(--black-accent);
-} */
+}
+
+.lang-en {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  filter: grayscale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+.lang-en:hover {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
 
 /* 
 .container-change-theme {
@@ -1177,6 +1193,115 @@ form .btn2 {
   font-weight: 700;
 }
 
+/* footer */
+
+.container-footer {
+  width: 100%;
+  height: max-content;
+  background-color: var(--black-accent);
+}
+
+footer {
+  max-width: 1200px;
+  min-height: 400px;
+  margin: auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: var(--white-accent);
+}
+
+footer h3 {
+  font-size: var(--font-size-dekstop-heading-3);
+  /* color: var(--secondary); */
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: var(--font-size-p);
+}
+
+.subscribe {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.subscribe .your-email {
+  max-width: 350px;
+}
+
+.your-email input {
+  background: none;
+  padding: 8px;
+  border: 2px solid var(--white-accent);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.your-email button {
+  max-width: 100px;
+  background-color: var(--white-accent);
+  padding: 8px;
+  color: var(--black-accent);
+  border: 2px solid var(--white-accent);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.your-email button:hover {
+  cursor: pointer;
+}
+
+footer .about-idnculture {
+  max-width: 350px;
+  height: max-content;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .navigation {
+  max-width: 350px;
+  height: max-content;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  color: var(--white-accent);
+}
+
+footer ul li a:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.support {
+  max-width: 350px;
+}
+
+.sosmed {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  gap: 10px;
+}
+
+.sosmed img {
+  width: 20px;
+}
+
 /* back to top */
 
 .back-to-top {
@@ -1203,7 +1328,7 @@ form .btn2 {
 
 .update {
   max-width: 350px;
-  height: max-content;
+  height: 400px;
   padding: 20px;
   position: fixed;
   bottom: 20px;
@@ -1212,6 +1337,10 @@ form .btn2 {
   border-radius: 10px;
   border: 2px solid var(--black-accent);
   display: block;
+  overflow-y: scroll;
+}
+.update::-webkit-scrollbar {
+  display: none;
 }
 
 .update h3 {

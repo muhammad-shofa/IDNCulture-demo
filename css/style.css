@@ -84,18 +84,31 @@ p {
   color: var(--white-accent);
 }
 
-.loading-content svg {
-  margin-bottom: -10px;
-  fill: #eeeeee;
-  animation: spinLoading 1s linear infinite;
+/* new spinner */
+
+.spinner-load {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--white-accent);
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 70deg,
+      #0000 71deg 90deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 10.1px),
+      #000 calc(100% - 9px)
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: spinner-mv2oco 1s infinite;
 }
 
-@keyframes spinLoading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+@keyframes spinner-mv2oco {
+  to {
+    transform: rotate(0.5turn);
   }
 }
 
@@ -919,31 +932,118 @@ nav .change-lang {
   -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
 }
 
+/* blog */
+
+.container-blog {
+  width: 100%;
+  height: max-content;
+  background-color: var(--secondary);
+}
+
+.blog {
+  max-width: 100%;
+  min-height: 700px;
+  margin: auto;
+  padding: 200px 20px 100px 20px;
+}
+
+.text-blog {
+  text-align: center;
+  color: var(--white-accent);
+  margin: 50px 0 30px 0;
+}
+
+.splide__slide {
+  max-width: 1000px;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.splide__slide:hover img {
+  filter: brightness(0.5);
+  transform: scale(1.06);
+}
+
+.splide__slide:hover .text-card-blog {
+  margin-top: -220px;
+}
+
+.text-card-blog {
+  width: 100%;
+  height: 220px;
+  background-color: var(--white-accent);
+  color: var(--black-accent);
+  padding: 20px;
+  margin-top: -170px;
+  text-align: start;
+  position: relative;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-card-blog h2 {
+  color: var(--secondary);
+}
+
+.blog-read-more {
+  width: 100%;
+  height: 100px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+.blog-read-more a {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  /* border: 2px solid var(--secondary); */
+  /* background-color: transparent; */
+  color: var(--secondary);
+  font-weight: 700;
+}
+
 /* gallery */
 
 .container-gallery {
   width: 100%;
   height: max-content;
-  background-color: var(--secondary);
+  background-color: var(--white-accent);
 }
 
 .gallery {
   max-width: 100%;
   min-height: 700px;
   margin: auto;
-  padding: 200px 0px 100px 0px;
+  padding: 100px 0px;
 }
 
 .text-gallery {
   max-width: 900px;
-  color: var(--white-accent);
+  color: var(--secondary);
   text-align: center;
   margin: auto;
 }
 
 .text-gallery h1 {
-  font-size: var(--font-size-dekstop-heading-1);
-  color: var(--white-accent);
+  /* font-size: var(--font-size-dekstop-heading-1); */
+  color: var(--secondary);
 }
 
 .all-img-gallery {
@@ -982,7 +1082,8 @@ nav .change-lang {
   width: 350px;
   height: 250px;
   overflow: hidden;
-  border: 3px solid var(--white-accent);
+  margin: 5px 5px;
+  border: 1px solid var(--black-accent);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -994,7 +1095,7 @@ nav .change-lang {
 .img-gallery-1 {
   width: 100%;
   overflow: hidden;
-  background-color: var(--secondary);
+  background-color: var(--white-accent);
   white-space: nowrap;
   position: relative;
 }
@@ -1006,7 +1107,7 @@ nav .change-lang {
 .img-gallery-2 {
   width: 100%;
   overflow: hidden;
-  background-color: var(--secondary);
+  background-color: var(--white-accent);
   white-space: nowrap;
   position: relative;
 }
@@ -1018,7 +1119,7 @@ nav .change-lang {
 .img-gallery-3 {
   width: 100%;
   overflow: hidden;
-  background-color: var(--secondary);
+  background-color: var(--white-accent);
   white-space: nowrap;
   position: relative;
 }
@@ -1069,7 +1170,7 @@ nav .change-lang {
 .container-contact {
   width: 100%;
   height: max-content;
-  background-color: var(--white-accent);
+  background-color: var(--secondary);
 }
 
 .contact {
@@ -1542,6 +1643,18 @@ footer ul li a:hover {
   .container-popup {
     padding: 100px 20px;
   }
+
+  /* blog */
+
+  .splide__slide {
+    width: 100%;
+    margin: 10px 50px;
+    padding: 0;
+  }
+
+  /* .splide__slide img {
+    padding: 0;
+  } */
 
   /* gallery */
 

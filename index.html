@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="IDNCulture." />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>IDNCulture</title>
   </head>
@@ -12,15 +16,7 @@
     <!-- loading -->
     <div class="container-loading" id="loading">
       <div class="loading-content">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1em"
-          viewBox="0 0 512 512"
-        >
-          <path
-            d="M222.7 32.1c5 16.9-4.6 34.8-21.5 39.8C121.8 95.6 64 169.1 64 256c0 106 86 192 192 192s192-86 192-192c0-86.9-57.8-160.4-137.1-184.1c-16.9-5-26.6-22.9-21.5-39.8s22.9-26.6 39.8-21.5C434.9 42.1 512 140 512 256c0 141.4-114.6 256-256 256S0 397.4 0 256C0 140 77.1 42.1 182.9 10.6c16.9-5 34.8 4.6 39.8 21.5z"
-          />
-        </svg>
+        <div class="spinner-load"></div>
       </div>
     </div>
     <!-- all content -->
@@ -45,13 +41,15 @@
               <a href="#explore">Explore </a>
             </li>
             <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
               <a href="#gallery">Gallery</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <!-- <div></div> -->
           <div class="change-lang">
             <a href="./id/index-id.html">
               <img
@@ -549,6 +547,106 @@
           </div>
         </section>
       </div>
+      <!-- blog -->
+      <div class="container-blog">
+        <section class="blog" id="blog">
+          <div class="text-blog">
+            <h1>Latest news about Indonesian culture</h1>
+            <p>Find out more news about cultures in Indonesia.</p>
+            <section class="splide" aria-labelledby="carousel-heading">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                    <div class="text-card-blog">
+                      <p>1 minutes ago</p>
+                      <h2>
+                        This Workspace Interior Design Combines Modern Nuances
+                        and Indonesian Culture
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Voluptatem, assumenda harum vero nobis modi quos
+                        fugit ab nemo saepe repellat, atque dolore sunt iure
+                        cumque. Officia neque commodi libero sint?
+                      </p>
+                    </div>
+                    <div class="blog-read-more">
+                      <a href="#0">Read more</a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/images/blog/blog-2.jpg" alt="" />
+                    <div class="text-card-blog">
+                      <p>5 minutes ago</p>
+                      <h2>Best coffee recommendations in yogyakarta</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Molestias veniam doloribus non voluptate libero
+                        velit provident alias incidunt accusantium quo. Nostrum,
+                        voluptatibus. Et veritatis minus beatae soluta est
+                        laboriosam consequatur.
+                      </p>
+                    </div>
+                    <div class="blog-read-more">
+                      <a href="#0">Read more</a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/images/blog/blog-3.jpg" alt="" />
+                    <div class="text-card-blog">
+                      <p>1 hour ago</p>
+                      <h2>25+ Newest tourist attractions in Indonesia</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde veritatis, rem suscipit nesciunt magni quo amet
+                        facere error quidem perferendis ut quasi recusandae quod
+                        fuga, atque dolorum illo et porro.
+                      </p>
+                    </div>
+                    <div class="blog-read-more">
+                      <a href="#0">Read more</a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/images/blog/blog-4.jpg" alt="" />
+                    <div class="text-card-blog">
+                      <p>48 minutes ago</p>
+                      <h2>5 Recommended camping spots in Indonesia</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Cupiditate mollitia iusto provident obcaecati ea.
+                        Quo, excepturi. Accusantium tempore explicabo unde
+                        pariatur nemo maxime corporis consectetur asperiores
+                        dolorum doloremque, fuga nostrum!
+                      </p>
+                    </div>
+                    <div class="blog-read-more">
+                      <a href="#0">Read more</a>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/images/blog/blog-5.webp" alt="" />
+                    <div class="text-card-blog">
+                      <p>3 hour ago</p>
+                      <h2>Historical painting of indonesia</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate laboriosam pariatur numquam, dolor ipsam
+                        natus nemo quaerat eveniet, deserunt esse odit ea quia
+                        qui rerum quis? Et blanditiis similique sunt.
+                      </p>
+                    </div>
+                    <div class="blog-read-more">
+                      <a href="#0">Read more</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
       <!-- gallery -->
       <div class="container-gallery">
         <section class="gallery" id="gallery">
@@ -958,8 +1056,13 @@
           id="close-update"
         />
       </h3>
-      <p><i>29-11-23</i></p>
+      <p><i>30-11-23</i></p>
       <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
+      <ul>
+        <li>Menambah section blog</li>
+        <li>Memperbaiki halaman bahasa indonesia</li>
+      </ul>
+      <p><i>29-11-23</i></p>
       <ul>
         <li>Menambah fitur ganti bahasa</li>
         <li>Untuk bahasa indonesia belum 100%</li>
@@ -967,7 +1070,6 @@
       </ul>
       <br />
       <p><i>22-11-23</i></p>
-      <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
       <ul>
         <li>Menambah Dropdown pada nav culture (belum responsive)</li>
         <li>Merubah tampilan popup</li>
@@ -981,9 +1083,21 @@
 
     <!-- js -->
     <script src="./js/script.js"></script>
+    <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <!-- slide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          padding: "5rem",
+        });
+        splide.mount();
+      });
     </script>
   </body>
 </html>

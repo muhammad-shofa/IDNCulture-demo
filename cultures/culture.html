@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IDNCulture." />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/culture-style.css" />
+    <title>IDNCulture</title>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="container-loading" id="loading">
+      <div class="loading-content">
+        <div class="spinner-load"></div>
+      </div>
+    </div>
+    <!-- all content -->
+    <div class="all-content" id="all-content">
+      <!-- navbar -->
+      <div class="container-nav" id="container-nav">
+        <nav data-aos="fade-down">
+          <a href="./index.html#home">
+            <span>IDNCulture</span>
+          </a>
+          <ul class="hidden-ul-culture" id="nav-ul">
+            <li>
+              <a href="../index.html#home">Home</a>
+            </li>
+            <li>
+              <a href="#culture"> Culture </a>
+            </li>
+            <li>
+              <a href="#explore">Explore </a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="change-lang">
+            <a href="./id/index-id.html">
+              <img
+                class="lang-id"
+                src="../assets/images/lang-id.jpg"
+                alt="lang id"
+              />
+            </a>
+            <div class="line-y-lang"></div>
+            <a href="index.html" class="lang-active">
+              <img
+                class="lang-en"
+                src="../assets/images/lang-en.jpg"
+                alt="lang en"
+              />
+            </a>
+          </div>
+          <div class="menu-icon" id="menu-icon-cultures">
+            <span class="line" id="line-1-cultures"></span>
+            <span class="line" id="line-2-cultures"></span>
+            <span class="line" id="line-3-cultures"></span>
+          </div>
+        </nav>
+      </div>
+
+      <!-- <div class="container-info">
+      <div class="side-bar"> -->
+      <div class="container-side">
+        <div class="tab">
+          <span>Jawa</span>
+          <button class="tablinks active" onclick="openCity(event, 'Batik')">
+            Batik
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Dance')">
+            Traditional Dance
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Music')">
+            Traditional Musical Instruments
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'House')">
+            Traditional House
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Activity')">
+            Traditional Activites
+          </button>
+        </div>
+
+        <div id="Batik" class="tabcontent">
+          <div class="container-explore">
+            <section class="explore" id="explore">
+              <div class="text-explore">
+                <h1>Javanese Batik</h1>
+                <p>
+                  Each batik piece is a masterpiece, reflecting significant
+                  cultural and social importance in Java, often used in
+                  ceremonies, celebrations, and daily wear, symbolizing the
+                  island's unique cultural identity.
+                </p>
+                <div class="batik">
+                  <div class="all-img-batik">
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-cirebon.JPG" />
+                      <h3>Batik Cirebon (West Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-cianjur.jpg" />
+                      <h3>Batik Cianjur (West Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-banten.jpg" />
+                      <h3>Batik Banten (West Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img
+                        src="../assets/images/cultures/batik-pekalongan.jpg"
+                      />
+                      <h3>Batik Pekalongan (Central Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-jogja.jpg" />
+                      <h3>Batik Jogja (Central Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-solo.jpg" />
+                      <h3>Batik Solo (Central Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img
+                        src="../assets/images/cultures/batik-bojonegoro.jpg"
+                      />
+                      <h3>Batik Bojonegoro (East Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-magetan.jpg" />
+                      <h3>Batik Magetan (East Java)</h3>
+                    </div>
+                    <div class="batik-jawa">
+                      <img src="../assets/images/cultures/batik-gedhog.jpg" />
+                      <h3>Batik Gedhog (East Java)</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="Dance" class="tabcontent">
+          <div class="container-explore">
+            <section class="explore" id="explore">
+              <div class="text-explore">
+                <h1>Traditional Dances From Java</h1>
+                <p>
+                  Indonesia is a country known for its diverse and rich culture,
+                  where every ethnic group has its own captivating traditional
+                  dance. This cultural wealth is particularly evident in Java,
+                  an island with a deep cultural history that hosts a variety of
+                  traditional dances. Among these, Javanese dance forms are
+                  especially noteworthy for their grace and intricacy.
+                </p>
+                <div class="dance">
+                  <div class="all-img-dance">
+                    <img
+                      src="../assets/images/cultures/tari-cokek-jakarta.jpg"
+                    />
+                    <h2>Cokek Dance, DKI Jakarta (West Java)</h2>
+                    <p>
+                      The term "Cokek" is rooted in the Hokkian language and
+                      finds its cultural expression in West Java, Indonesia.
+                      Originating from the Hokkian word "chiou-khek," meaning
+                      "singing a song," Cokek is a captivating dance form that
+                      takes center stage during various entertainment events in
+                      the region. Typically accompanied by the lively tunes of
+                      Gambang Kromong music, this traditional performance art
+                      creates a vibrant and engaging atmosphere. <br /><br />
+
+                      In the West Java tradition, Cokek dancers showcase their
+                      expertise by seamlessly combining dance and song. The
+                      rhythmic movements are accentuated by the dancers' skilled
+                      synchronization with the Gambang Kromong music, providing
+                      a harmonious blend of auditory and visual delights. A
+                      distinctive feature of Cokek is the emphasis on expressive
+                      hip movements, adding a sensual and dynamic element to the
+                      performance. <br /><br />
+
+                      As the dancers move gracefully, they not only demonstrate
+                      technical proficiency but also use their movements to
+                      convey emotions and tell a compelling story. This unique
+                      combination of singing, dancing, and expressive
+                      storytelling through hip movements makes Cokek a cherished
+                      cultural tradition in West Java, enchanting audiences
+                      during various celebrations and events in the region.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/tari-jaipong-sunda.jpg"
+                    />
+                    <h2>Jaipong Dance, Sunda (West Java)</h2>
+                    <p>
+                      The Jaipong Dance, a captivating traditional Indonesian
+                      dance, is renowned for its lively and fast-paced rhythm
+                      that echoes the vibrant cultural spirit of the region.
+                      This dynamic dance form is a celebration of the rich
+                      heritage of Indonesia, and its distinctiveness lies in the
+                      dancers' exceptional ability to improvise. Jaipong
+                      dancers, adorned in colorful traditional attire,
+                      skillfully navigate the intricate movements with a
+                      spontaneous flair, creating a performance that is both
+                      visually stunning and culturally significant. The dance is
+                      a testament to the country's artistic diversity, and it
+                      holds a special place in the hearts of Indonesians, often
+                      being featured prominently in traditional ceremonies and
+                      events. <br /><br />
+
+                      The heart of the Jaipong Dance lies in its rhythmic
+                      intensity, captivating audiences with its energetic beats
+                      and expressive choreography. Each performance becomes a
+                      unique and engaging experience as the dancers skillfully
+                      improvise, infusing the dance with a sense of spontaneity
+                      and liveliness. The fast-paced movements reflect the
+                      dynamism of Indonesian culture, creating a visual
+                      spectacle that transcends generations. Whether performed
+                      during festive celebrations or cultural events, the
+                      Jaipong Dance serves as a cultural beacon, connecting
+                      communities and preserving the rich tapestry of
+                      Indonesia's artistic legacy.<br /><br />
+
+                      Beyond its role in traditional ceremonies, the Jaipong
+                      Dance has evolved into a symbol of cultural pride and
+                      identity for the Indonesian people. The dance not only
+                      showcases the country's artistic prowess but also serves
+                      as a means of cultural expression, fostering a sense of
+                      unity and belonging. Passed down through generations, the
+                      Jaipong Dance continues to thrive, captivating audiences
+                      with its mesmerizing blend of tradition and spontaneity.
+                      As an integral part of Indonesia's cultural heritage, this
+                      dance form stands as a testament to the nation's enduring
+                      commitment to preserving and celebrating its rich cultural
+                      legacy.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/tari-serimpi-jogja.jpg"
+                    />
+                    <h2>Serimpi Dance, Jogja (Central Java)</h2>
+                    <p>
+                      The Serimpi Dance, originating from the cultural heartland
+                      of Central Java, Indonesia, stands as a testament to the
+                      rich heritage associated with the royal palaces of
+                      Yogyakarta and Surakarta. This ritualized dance form is
+                      deeply rooted in the traditions of the Javanese court,
+                      particularly epitomizing the elegance that characterizes
+                      the royal Javanese culture. Renowned for its graceful
+                      movements and symbolic significance, the Serimpi Dance has
+                      become an emblem of the ruler's power and the refined
+                      essence of Javanese civilization.<br /><br />
+
+                      While the Serimpi Dance initially found its place within
+                      the courtly settings of the two Keratons, it has
+                      transcended these boundaries to become a cherished
+                      cultural treasure embraced by common Javanese people.
+                      Beyond the palace walls, the dance is frequently performed
+                      during ceremonies and festivals, symbolizing a connection
+                      between the royal and everyday realms. Even today, the
+                      Serimpi Dance remains an integral part of court
+                      ceremonies, with princesses dedicatedly rehearsing various
+                      forms of Srimpi in the pendopo pavilion within the palace.
+                      This enduring practice underscores the dance's resilience
+                      and its continued significance in preserving and
+                      celebrating the cultural identity of Central Java.<br /><br />
+
+                      As a dance deeply embedded in the fabric of Indonesian
+                      tradition, the Serimpi Dance reflects the enduring spirit
+                      of Javanese culture. Its graceful and intricate movements
+                      not only serve as a captivating artistic expression but
+                      also carry layers of historical and symbolic meaning. In
+                      essence, the Serimpi Dance is a living testament to the
+                      cultural richness of Central Java, showcasing a harmonious
+                      blend of tradition, refinement, and the enduring legacy of
+                      royal courts.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/tari-remo-jombang.jpg"
+                    />
+                    <h2>Remo Dance, Jombang (East Java)</h2>
+                    <p>
+                      The Remo Dance, originating from the cultural tapestry of
+                      East Java, specifically Jombang, is a captivating
+                      traditional performance deeply embedded in the welcoming
+                      rituals of the region. Traditionally accompanied by the
+                      enchanting melodies of gamelan music, this dance has
+                      evolved over time to embrace both male and female dancers.
+                      Originally a male-dominated art form, the Remo Dance now
+                      boasts the graceful movements of female performers who
+                      have seamlessly integrated the masculine nuances required
+                      for its proper execution. The dance serves as a vibrant
+                      cultural expression that extends a warm welcome to guests,
+                      creating an atmosphere of celebration and communal joy.<br /><br />
+
+                      At its core, the Remo Dance is distinguished by its
+                      dynamic and lively footwork, which forms the crux of the
+                      performance. The dancers, adorned with bells on their
+                      ankles, create a melodic rhythm as they move, producing a
+                      harmonious symphony that resonates with the spirit of the
+                      dance. These bells, ringing in synchrony with the dancers'
+                      movements, add a layer of auditory delight to the visual
+                      spectacle, enhancing the overall sensory experience. The
+                      dance not only showcases the physical prowess of the
+                      performers but also reflects the cultural identity and
+                      hospitality ingrained in the traditions of Jombang, East
+                      Java.<br /><br />
+
+                      Rooted in the traditions of East Java, the Remo Dance
+                      continues to be a vibrant and evolving cultural practice.
+                      Its ability to transcend gender boundaries and adapt to
+                      contemporary expressions underscores its enduring
+                      significance in the local heritage. As the dance welcomes
+                      guests with its lively and rhythmic choreography, it
+                      becomes a living embodiment of the rich cultural legacy of
+                      Jombang, contributing to the dynamic tapestry of
+                      Indonesia's diverse traditional performing arts.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/tari-reog-ponorogo.jpg"
+                    />
+                    <h2>Reog Dance, Ponorogo (East Java)</h2>
+                    <p>
+                      The Reog Dance, originating from Ponorogo, East Java,
+                      Indonesia, is a captivating traditional performance that
+                      unfolds a rich narrative through the artistry of a group
+                      of dancers adorned in elaborate costumes and masks. This
+                      mesmerizing dance is deeply rooted in local folklore and
+                      typically recounts the legendary tale of King Kerono and
+                      his valiant soldiers who courageously faced the formidable
+                      Singabarong monster. The dancers skillfully use their
+                      ornate masks to portray characters and express the
+                      emotions of the narrative, creating a visual spectacle
+                      that captivates audiences.<br /><br />
+
+                      This unique dance form is not merely a form of
+                      entertainment but holds cultural significance as it is
+                      often showcased during traditional ceremonies and events.
+                      The Reog Dance has become an integral part of the cultural
+                      fabric in the region, symbolizing bravery, heroism, and
+                      the triumph of good over evil. The performers, through
+                      intricate choreography and dynamic movements, bring to
+                      life the mythical battle between King Kerono and the
+                      monstrous Singabarong, creating an immersive experience
+                      that allows spectators to connect with the rich cultural
+                      heritage of East Java.<br /><br />
+
+                      Beyond its artistic expression, the Reog Dance serves as a
+                      testament to the preservation of local traditions and
+                      folklore, acting as a link between the past and the
+                      present. As communities come together to witness this
+                      mesmerizing performance, they not only celebrate their
+                      cultural identity but also contribute to the continuity of
+                      a cherished art form that has been passed down through
+                      generations in Ponorogo. The Reog Dance, with its vibrant
+                      costumes, compelling narrative, and cultural significance,
+                      stands as a testament to the enduring beauty of
+                      Indonesia's diverse and rich heritage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="Music" class="tabcontent">
+          <div class="container-explore">
+            <section class="explore" id="explore">
+              <div class="text-explore">
+                <h1>Traditional Musical Instruments From Java</h1>
+                <p>
+                  In Java, Indonesia, traditional musical instruments play a
+                  vital role in shaping the island's cultural identity. The
+                  music they create isn't just for entertainment; it's deeply
+                  woven into daily life, featured prominently in ceremonies,
+                  celebrations, and rituals. These instruments are more than
+                  just tools for artistic expression; they are living symbols of
+                  Java's rich cultural heritage, connecting the present
+                  generation with their roots and fostering a strong sense of
+                  identity among the Javanese people.
+                </p>
+                <div class="music">
+                  <div class="all-img-music">
+                    <img
+                      src="../assets/images/cultures/musik-angklung-jawabarat.jpg"
+                    />
+                    <h2>Angklung (West Java)</h2>
+                    <p>
+                      Angklung, a traditional instrument originating from
+                      Indonesia, particularly West Java, holds a unique cultural
+                      significance that resonates both nationally and
+                      internationally. Crafted from bamboo, the Angklung is a
+                      musical marvel known for its melodious tones and
+                      distinctive resonant sound. Its name is derived from the
+                      onomatopoeic "ang-klung-klung," representing the sound
+                      produced when the instrument is played. The Angklung is
+                      often associated with communal performances, where groups
+                      of players collaborate to create intricate and harmonious
+                      melodies. This communal aspect not only showcases the
+                      instrument's musical prowess but also reflects the spirit
+                      of togetherness and unity deeply ingrained in Indonesian
+                      culture.<br /><br />
+
+                      The Angklung's rich heritage has earned it a place on the
+                      UNESCO Intangible Cultural Heritage of Humanity list,
+                      recognizing its cultural importance and the craftsmanship
+                      involved in its creation. Each bamboo tube is meticulously
+                      tuned to produce specific pitches, contributing to the
+                      instrument's ability to play complex compositions. Beyond
+                      its cultural roots, the Angklung has become a symbol of
+                      Indonesia's artistic identity, celebrated both locally and
+                      globally. As it continues to captivate audiences around
+                      the world, the Angklung stands as a testament to the
+                      vibrant and diverse musical traditions that contribute to
+                      Indonesia's cultural tapestry.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/musik-rebab-jawabarat.jpg"
+                    />
+                    <h2>Rebab (West Java)</h2>
+                    <p>
+                      The Rebab, a traditional instrument hailing from Indonesia
+                      with deep roots in West Java, is a stringed instrument
+                      that holds a distinguished place in the country's musical
+                      heritage. Constructed with a slender wooden body and a
+                      unique, rounded soundbox, the Rebab showcases the
+                      meticulous craftsmanship of Indonesian artisans. Its
+                      strings are traditionally made from animal gut or
+                      horsehair, and the instrument is played with a bow,
+                      producing hauntingly beautiful and resonant tones. Often
+                      featured in traditional Gamelan ensembles and classical
+                      Javanese music, the Rebab plays a vital role in conveying
+                      the emotional nuances of the compositions, adding a touch
+                      of melancholy or ecstasy to the overall musical
+                      experience.<br /><br />
+
+                      The Rebab's cultural significance extends beyond its
+                      musical capabilities, embodying the rich history and
+                      traditions of Indonesia. Its presence in various
+                      ceremonies, rituals, and performances underscores its role
+                      as a symbol of cultural identity. The instrument has also
+                      evolved over time, adapting to different regional styles
+                      and musical genres, demonstrating its versatility and
+                      enduring appeal in both traditional and contemporary
+                      Indonesian music. As a testament to its importance, the
+                      Rebab serves as a bridge connecting the past and present,
+                      resonating with the spirit of West Java's cultural
+                      heritage.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/musik-gambang-jawatengah.jpg"
+                    />
+                    <h2>Gambang (Central Java)</h2>
+                    <p>
+                      The Gambang is a traditional musical instrument
+                      originating from Central Java, Indonesia, and holds a
+                      significant place in the rich cultural heritage of the
+                      region. This instrument is a xylophone-like percussion
+                      device made from wooden bars that are struck with mallets
+                      to produce melodious tones. The Gambang typically features
+                      a set of wooden keys arranged in a specific order,
+                      supported by a resonator made from bamboo or other
+                      materials. Musicians play the Gambang by striking the
+                      wooden bars with soft-headed mallets, creating a
+                      distinctive and enchanting sound that is often associated
+                      with Javanese traditional music.<br /><br />
+
+                      In traditional Javanese gamelan ensembles, the Gambang
+                      plays a crucial role, providing a unique timbre and
+                      contributing to the overall harmonic texture of the music.
+                      The instrument is often played in conjunction with other
+                      traditional instruments such as the bonang, saron, and
+                      kendhang, creating a symphony of sounds that reflect the
+                      cultural identity of Central Java. The Gambang has
+                      transcended its historical roots and is still cherished
+                      today, not only for its musical significance but also for
+                      its cultural and artistic value in preserving the musical
+                      traditions of Indonesia.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/musik-bonang-jawatimur.jpg"
+                    />
+                    <h2>Bonang (East Java)</h2>
+                    <p>
+                      The Bonang is a traditional Javanese musical instrument
+                      hailing from East Java, Indonesia, and is a vital
+                      component of the gamelan ensemble. This percussion
+                      instrument consists of a series of small, kettle-shaped
+                      gongs suspended on a wooden frame. The bonang is played
+                      using a pair of mallets, typically made of wood or bamboo,
+                      striking the gongs to produce resonant, metallic tones.
+                      The gongs are arranged in two rows, with the upper row
+                      known as the "panembung" and the lower row as the "pelog."
+                      Each gong in the bonang set is tuned to specific pitches,
+                      creating a complex and layered sound when played
+                      together.<br /><br />
+
+                      In Javanese gamelan music, the bonang plays a crucial role
+                      in establishing the melody and providing intricate
+                      ornamentation. It often serves as a rhythmic and melodic
+                      guide for the entire ensemble, setting the tone and
+                      contributing to the mesmerizing and hypnotic quality of
+                      the music. The bonang is not only a musical instrument but
+                      also a cultural symbol, representing the rich traditions
+                      and artistic expressions of East Java. Its presence in
+                      gamelan orchestras highlights the importance of this
+                      instrument in preserving and showcasing the unique musical
+                      heritage of Indonesia.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/musik-ketipung-jawatimur.jpg"
+                    />
+                    <h2>Ketipung (East Java)</h2>
+                    <p>
+                      The Ketipung is a traditional percussion instrument
+                      originating from East Java, Indonesia, and is an integral
+                      part of the country's rich musical heritage. This
+                      instrument is often used in traditional Javanese and
+                      Balinese gamelan ensembles, contributing to the rhythmic
+                      foundation of the music. The Ketipung typically consists
+                      of a cylindrical body made of wood or metal, covered with
+                      a stretched membrane on one or both ends. Musicians play
+                      the Ketipung by striking the membrane with their hands or
+                      mallets, producing a resonant and distinctive sound that
+                      adds depth and texture to the ensemble's overall sonic
+                      landscape.<br /><br />
+
+                      In traditional Indonesian music, the Ketipung is known for
+                      its versatility and ability to convey a wide range of
+                      emotions. Its rhythmic patterns and dynamic variations
+                      contribute to the lively and expressive nature of the
+                      music, whether it's accompanying dance performances,
+                      wayang kulit (shadow puppetry), or other cultural events.
+                      The Ketipung's presence in Indonesian music reflects the
+                      country's commitment to preserving and celebrating its
+                      cultural identity, providing a unique auditory experience
+                      that continues to captivate audiences both in Indonesia
+                      and around the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="House" class="tabcontent">
+          <div class="container-explore">
+            <section class="explore" id="explore">
+              <div class="text-explore">
+                <h1>Traditional House In Java</h1>
+                <p>
+                  Traditional houses in Java showcase a unique fusion of
+                  indigenous design and historical influences, featuring
+                  steep-pitched roofs, intricate wooden carvings, and a seamless
+                  integration with the environment. Emphasizing a connection to
+                  nature, these houses embody Javanese aesthetic values through
+                  open spaces, well-ventilated interiors, and local materials.
+                  Beyond their architectural significance, these dwellings serve
+                  as living symbols of Javanese culture, encapsulating
+                  traditions, social structures, and spiritual beliefs, ensuring
+                  the preservation of the island's rich heritage for generations
+                  to come.
+                </p>
+                <div class="house">
+                  <div class="all-img-house">
+                    <img
+                      src="../assets/images/cultures/Rumah-kebaya-betawi.jpg"
+                    />
+                    <h2>Kebaya House, DKI Jakarta (West Java)</h2>
+                    <p>
+                      Rumah Kebaya, a traditional Indonesian house, is a
+                      captivating reflection of Javanese cultural richness and
+                      artistic finesse. The house is adorned with intricate
+                      wooden carvings that portray symbolic motifs and patterns.
+                      These carvings serve as more than mere decorations; they
+                      narrate tales from Javanese mythology, religious beliefs,
+                      and historical events. The vibrant colors used in the
+                      exterior paintwork symbolize the lively spirit and warmth
+                      of the community. Rumah Kebaya's layout is thoughtfully
+                      designed, emphasizing communal living, fostering strong
+                      family bonds, and creating spaces for various traditional
+                      ceremonies and rituals. As a testament to Indonesia's
+                      diverse architectural heritage, Rumah Kebaya stands proud,
+                      offering a glimpse into the soul of Javanese culture.<br /><br />
+
+                      In addition to its aesthetic charm, Rumah Kebaya embodies
+                      the Javanese philosophy of life. The elevated foundation
+                      and steep roofs provide not only functional benefits in
+                      tropical climates but also carry symbolic significance,
+                      representing protection and spirituality. The house
+                      becomes a canvas for cultural expression, showcasing the
+                      artistic prowess of local craftsmen. The integration of
+                      art and architecture in Rumah Kebaya reflects the deep
+                      connection between the physical and metaphysical aspects
+                      of Javanese life. It stands as a living heritage,
+                      preserving centuries-old traditions and embodying the
+                      enduring spirit of a people deeply rooted in their
+                      cultural identity.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/rumah-badui-banten.jpg"
+                    />
+                    <h2>Badui House, Banten (West Java)</h2>
+                    <p>
+                      Rumah Baduy not only serves as a physical shelter but
+                      encapsulates the very ethos of the Baduy community's
+                      unique way of life. Constructed primarily from bamboo and
+                      thatch, the houses seamlessly blend into the lush natural
+                      surroundings, emphasizing the community's commitment to
+                      sustainability and harmony with nature. The simplicity of
+                      the architecture reflects the Baduy people's intentional
+                      rejection of modern influences, embodying a dedication to
+                      preserving their cultural identity. In a world marked by
+                      rapid urbanization and technological advancements, Rumah
+                      Baduy stands as a poignant symbol of cultural resilience,
+                      emphasizing the importance of maintaining a delicate
+                      balance between tradition and the environment. Each house
+                      becomes a sanctuary, preserving the age-old customs,
+                      rituals, and values that define the Baduy way of life.<br /><br />
+
+                      The Baduy people's adherence to traditional customs is not
+                      limited to the physical structure of their houses but
+                      extends to every aspect of their lives. Rumah Baduy
+                      becomes a haven where the community fosters a deep
+                      connection with their ancestral roots, ensuring that their
+                      cultural heritage is passed down from generation to
+                      generation. The intentional simplicity of the architecture
+                      is a reflection of the Baduy people's commitment to a
+                      lifestyle that minimizes external influences, fostering a
+                      sense of community and preserving the intrinsic values
+                      that define their identity.
+                    </p>
+                    <img
+                      src="../assets/images/cultures/rumah-joglo-jateng.jpg"
+                    />
+                    <h2>Joglo House, Jogja (Central Java)</h2>
+                    <p>
+                      The allure of Rumah Joglo extends beyond its architectural
+                      grandeur; it encapsulates the very essence of Javanese
+                      philosophy and cosmology. The four-tiered roof, a distinct
+                      feature of this traditional house, represents the
+                      hierarchical structure of the universe in Javanese
+                      beliefs. Each tier signifies a different realm – the realm
+                      of the divine, the realm of human life, the realm of
+                      plants and animals, and the realm of the underworld. These
+                      layers not only add visual grandiosity but also imbue the
+                      house with profound spiritual symbolism. The detailed
+                      carvings, often showcasing scenes from epics like the
+                      Ramayana and Mahabharata, serve as visual narratives
+                      connecting inhabitants with their cultural roots. Beyond
+                      its aesthetics, Rumah Joglo is a living testament to the
+                      Javanese way of life, fostering a harmonious coexistence
+                      with nature, community, and the divine.<br /><br />
+
+                      The spatial layout of Rumah Joglo is designed to reflect
+                      the Javanese philosophy of life, emphasizing harmony and
+                      balance in every aspect. The central pavilion and separate
+                      structures for different functions create a sense of
+                      interconnectedness while providing functional spaces for
+                      various activities. The house serves as more than a
+                      dwelling; it becomes a sacred space where cultural
+                      traditions are preserved and celebrated. Rumah Joglo
+                      stands as a living testament to the artistic brilliance of
+                      Javanese craftsmen, embodying the spiritual and cultural
+                      values deeply rooted in Javanese society.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="Activity" class="tabcontent">
+          <div class="container-explore">
+            <section class="explore" id="explore">
+              <div class="text-explore">
+                <h1>Batik Jawa</h1>
+                <p>
+                  From historic sites to contemporary art centers, we invite you
+                  to immerse yourself in the charm of Indonesia's cultural
+                  destinations. With interactive guides and virtual experiences,
+                  each explore is an unforgettable journey.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="../js/culture-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

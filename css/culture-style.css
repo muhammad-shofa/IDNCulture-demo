@@ -1,0 +1,211 @@
+@import url(./style.css);
+
+nav span {
+  color: var(--secondary);
+}
+
+nav ul li a {
+  color: var(--black-accent);
+}
+
+.line-y-lang {
+  background-color: var(--black-accent);
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 15%;
+  height: 100vh;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.tab span {
+  font-size: var(--font-size-dekstop-heading-1);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: var(--black-accent);
+  font-size: 15px;
+  padding: 18px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--gainsboro-accent);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: var(--chinese-silver-accent);
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* float: left; */
+  /* padding: 0px 12px; */
+  border: 1px solid #ccc;
+  width: 85%;
+  margin-left: 15%;
+  /* bentar */
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* .tabcontent.active {
+  display:block;
+} */
+
+#Batik {
+  display: block;
+}
+
+.container-explore {
+  width: 100%;
+  height: max-content;
+  background-color: var(--white-accent);
+  /* position: fixed; */
+}
+
+.explore {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.text-explore {
+  max-width: 1200px;
+  color: var(--black-accent);
+  text-align: center;
+  margin: auto;
+}
+
+.text-explore h1 {
+  color: var(--secondary);
+}
+
+/* batik */
+.batik {
+  width: 100%;
+}
+
+.batik .all-img-batik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.batik .all-img-batik img {
+  width: 300px;
+  height: 200px;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+/* tari */
+.dance {
+  width: 100%;
+}
+
+.dance .all-img-dance {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dance img {
+  width: 500px;
+  height: 350px;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+/* .dance .right {
+  justify-content: flex-end;
+  width: 500px;
+  height: 350px;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 15px;
+} */
+
+.dance h3 {
+  text-align: center;
+  /* margin-top: 60px; */
+}
+
+.dance p {
+  text-align: start;
+  margin-top: 20px;
+}
+
+/* music */
+.music {
+  width: 100%;
+}
+
+.music .all-img-music {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.music img {
+  width: 500px;
+  height: 350px;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.music p {
+  text-align: start;
+  margin-top: 20px;
+}
+
+/* house */
+
+.house {
+  width: 100%;
+}
+
+.house .all-img-house {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.house img {
+  width: 500px;
+  height: 350px;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.house p {
+  text-align: start;
+  margin-top: 20px;
+}
+

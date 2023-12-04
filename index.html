@@ -31,7 +31,7 @@
             <li>
               <a href="#home">Home</a>
             </li>
-            <li id="dropdown-explore">
+            <li id="dropdown-explore" onmouseover="showDropDown()">
               <a id="text-culture" href="#culture"
                 >Culture
                 <img src="./assets/icon/chevron-down-solid.svg" alt="" />
@@ -261,7 +261,7 @@
       <div class="container-explore">
         <section class="explore" id="explore">
           <div class="text-explore">
-            <h1>Cultural Excursions at Your Fingertips</h1>
+            <h1><b>Cultural Excursions</b> at Your Fingertips</h1>
             <p>
               From historic sites to contemporary art centers, we invite you to
               immerse yourself in the charm of Indonesia's cultural
@@ -269,264 +269,55 @@
               each explore is an unforgettable journey.
             </p>
           </div>
-          <!-- all popup explore -->
-          <div class="container-popup" id="container-popup-1">
-            <div class="popup-explore">
-              <div class="img-popup-1">
-                <img
-                  src="./assets/icon/xmark-solid.svg"
-                  alt="close popup icon"
-                  onclick="closePopup('1')"
-                />
-              </div>
-              <div class="text-popup">
-                <h2>Prambanan Temple</h2>
-                <p>
-                  candi prambanan is the largest Hindu temple in Indonesia built
-                  in the 9th century AD. The temple, which is also referred to
-                  as Rara Jonggrang, is dedicated to Trimurti, the three main
-                  Hindu gods, namely the god Brahma as the creator god, the god
-                  Vishnu as the preserver god, and the god Shiva as the god of
-                  destruction.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-popup" id="container-popup-2">
-            <div class="popup-explore">
-              <div class="img-popup-2">
-                <img
-                  src="./assets/icon/xmark-solid.svg"
-                  alt="close popup icon"
-                  onclick="closePopup('2')"
-                />
-              </div>
-              <div class="text-popup">
-                <h2>Bali</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae labore dolor at minus nostrum! Autem vel consequuntur
-                  eaque eius in recusandae exercitationem, expedita repellat,
-                  quam sint ratione nisi temporibus totam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-popup" id="container-popup-3">
-            <div class="popup-explore">
-              <div class="img-popup-3">
-                <img
-                  src="./assets/icon/xmark-solid.svg"
-                  alt="close popup icon"
-                  onclick="closePopup('3')"
-                />
-              </div>
-              <div class="text-popup">
-                <h2>Labuan Bajo</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                  sequi quo consequatur laudantium tempora, animi, aliquam
-                  aliquid accusantium saepe enim provident minima.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-popup" id="container-popup-4">
-            <div class="popup-explore">
-              <div class="img-popup-4">
-                <img
-                  src="./assets/icon/xmark-solid.svg"
-                  alt="close popup icon"
-                  onclick="closePopup('4')"
-                />
-              </div>
-              <div class="text-popup">
-                <h2>Bromo</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                  sequi quo consequatur laudantium tempora, animi, aliquam
-                  aliquid accusantium saepe enim provident minima.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-popup" id="container-popup-5">
-            <div class="popup-explore">
-              <div class="img-popup-5">
-                <img
-                  src="./assets/icon/xmark-solid.svg"
-                  alt="close popup icon"
-                  onclick="closePopup('5')"
-                />
-              </div>
-              <div class="text-popup">
-                <h2>Borobudur</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  beatae laudantium corporis iure fuga? Necessitatibus ad, aut
-                  sequi quo consequatur laudantium tempora, animi, aliquam
-                  aliquid accusantium saepe enim provident minima.
-                </p>
-              </div>
-            </div>
-          </div>
-
+          <!-- content card ke 2 kali -->
           <div class="all-card-explore">
-            <div class="empty-div">
-              <div class="card-explore-1" onclick='showPopup("1")'>
-                <h2>Candi Prambanan</h2>
-                <div class="favorite" id="favorite-1">
-                  <svg
-                    class="empty-heart"
-                    id="empty-heart"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
-                    />
-                  </svg>
-                  <svg
-                    class="full-heart"
-                    id="full-heart"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                    />
-                  </svg>
-                </div>
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="./assets/images/bali.jpg" alt="explore 1" />
+              </div>
+              <h2>Bali</h2>
+              <p>
+                Bali is not just about its natural beauty, the island is also
+                brimming with cultural diversity and spirituality.
+              </p>
+              <div class="read-more-explore-1">
+                <a href="#0">Read more</a>
               </div>
             </div>
-            <div class="two-card-1">
-              <div class="empty-div">
-                <div class="card-explore-2" onclick='showPopup("2")'>
-                  <h2>Bali</h2>
-                  <div class="favorite" id="favorite-2">
-                    <svg
-                      class="empty-heart"
-                      id="empty-heart-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
-                      />
-                    </svg>
-                    <svg
-                      class="full-heart"
-                      id="full-heart-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="./assets/images/bromo.jpg" alt="explore 2" />
               </div>
-              <div class="empty-div">
-                <div class="card-explore-3" onclick='showPopup("3")'>
-                  <h2>Labuan Bajo</h2>
-                  <div class="favorite" id="favorite-3">
-                    <svg
-                      class="empty-heart"
-                      id="empty-heart-3"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
-                      />
-                    </svg>
-                    <svg
-                      class="full-heart"
-                      id="full-heart-3"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+              <h2>Bromo</h2>
+              <p>
+                Experience the wonders of nature at Mount Bromo, one of
+                Indonesia's most iconic destinations. The panoramic sunrise at
+                Puncak Pananjakan will hypnotize you, providing a view of the
+                reddening sky and the sea of mist that envelops the valley.
+              </p>
+              <div class="read-more-explore-2">
+                <a href="#0">Read more</a>
               </div>
             </div>
-            <div class="two-card-2">
-              <div class="empty-div">
-                <div class="card-explore-4" onclick='showPopup("4")'>
-                  <h2>Bromo</h2>
-                  <div class="favorite" id="favorite-4">
-                    <svg
-                      class="empty-heart"
-                      id="empty-heart-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
-                      />
-                    </svg>
-                    <svg
-                      class="full-heart"
-                      id="full-heart-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+            <div class="card-explore">
+              <div class="zoom-effect-explore">
+                <img src="./assets/images/borobudur.jpg" alt="explore 3" />
               </div>
-              <div class="empty-div">
-                <div class="card-explore-5" onclick='showPopup("5")'>
-                  <h2>Borobudur</h2>
-                  <div class="favorite" id="favorite-5">
-                    <svg
-                      class="empty-heart"
-                      id="empty-heart-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
-                      />
-                    </svg>
-                    <svg
-                      class="full-heart"
-                      id="full-heart-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+              <h2>Borobudur</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus, tenetur! Repellat nihil repudiandae libero suscipit
+                soluta sint, dicta debitis ipsa, minima eum adipisci possimus
+                accusamus eos, vero quo ad ex!
+              </p>
+              <div class="read-more-explore-3">
+                <a href="#0">Read more</a>
               </div>
             </div>
-            <a href="./pages/all-culture.html" target="_blank">
-              <button class="view-more">View More</button>
-            </a>
           </div>
+          <a class="more-culture-btn" href="./cultures/culture.html">
+            <button>More Culture</button>
+          </a>
         </section>
       </div>
       <!-- wonderland -->
@@ -539,11 +330,12 @@
               quam quod incidunt.
             </p>
           </div>
-          <div class="video-wonderland">
-            <iframe
-              src="https://www.youtube.com/embed/aKtb7Y3qOck?si=JaY_4oFOBfQ7mH8w&amp;controls=0"
-              title="YouTube video player"
-            ></iframe>
+          <div class="container-video-wonderland">
+            <div class="video-wonderland">
+              <iframe
+                src="https://www.youtube.com/embed/aKtb7Y3qOck?si=JaY_4oFOBfQ7mH8w&amp;controls=0"
+              ></iframe>
+            </div>
           </div>
         </section>
       </div>
@@ -553,97 +345,225 @@
           <div class="text-blog">
             <h1>Latest news about Indonesian culture</h1>
             <p>Find out more news about cultures in Indonesia.</p>
-            <section class="splide" aria-labelledby="carousel-heading">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <img src="./assets/images/blog/blog-1.jpg" alt="" />
-                    <div class="text-card-blog">
-                      <p>1 minutes ago</p>
-                      <h2>
-                        This Workspace Interior Design Combines Modern Nuances
-                        and Indonesian Culture
-                      </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Voluptatem, assumenda harum vero nobis modi quos
-                        fugit ab nemo saepe repellat, atque dolore sunt iure
-                        cumque. Officia neque commodi libero sint?
-                      </p>
-                    </div>
-                    <div class="blog-read-more">
-                      <a href="#0">Read more</a>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./assets/images/blog/blog-2.jpg" alt="" />
-                    <div class="text-card-blog">
-                      <p>5 minutes ago</p>
-                      <h2>Best coffee recommendations in yogyakarta</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Molestias veniam doloribus non voluptate libero
-                        velit provident alias incidunt accusantium quo. Nostrum,
-                        voluptatibus. Et veritatis minus beatae soluta est
-                        laboriosam consequatur.
-                      </p>
-                    </div>
-                    <div class="blog-read-more">
-                      <a href="#0">Read more</a>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./assets/images/blog/blog-3.jpg" alt="" />
-                    <div class="text-card-blog">
-                      <p>1 hour ago</p>
-                      <h2>25+ Newest tourist attractions in Indonesia</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Unde veritatis, rem suscipit nesciunt magni quo amet
-                        facere error quidem perferendis ut quasi recusandae quod
-                        fuga, atque dolorum illo et porro.
-                      </p>
-                    </div>
-                    <div class="blog-read-more">
-                      <a href="#0">Read more</a>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./assets/images/blog/blog-4.jpg" alt="" />
-                    <div class="text-card-blog">
-                      <p>48 minutes ago</p>
-                      <h2>5 Recommended camping spots in Indonesia</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Cupiditate mollitia iusto provident obcaecati ea.
-                        Quo, excepturi. Accusantium tempore explicabo unde
-                        pariatur nemo maxime corporis consectetur asperiores
-                        dolorum doloremque, fuga nostrum!
-                      </p>
-                    </div>
-                    <div class="blog-read-more">
-                      <a href="#0">Read more</a>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./assets/images/blog/blog-5.webp" alt="" />
-                    <div class="text-card-blog">
-                      <p>3 hour ago</p>
-                      <h2>Historical painting of indonesia</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Cupiditate laboriosam pariatur numquam, dolor ipsam
-                        natus nemo quaerat eveniet, deserunt esse odit ea quia
-                        qui rerum quis? Et blanditiis similique sunt.
-                      </p>
-                    </div>
-                    <div class="blog-read-more">
-                      <a href="#0">Read more</a>
-                    </div>
-                  </li>
-                </ul>
+          </div>
+          <div class="splide" aria-labelledby="carousel-heading">
+            <div class="title-hot-news">
+              <h2>Hot News Today</h2>
+              <img src="./assets/icon/fire-solid.svg" alt="fire icon" />
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>1 minutes ago</p>
+                    <h2>
+                      This Workspace Interior Design Combines Modern Nuances and
+                      Indonesian Culture
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Voluptatem, assumenda harum vero nobis modi quos fugit ab
+                      nemo saepe repellat, atque dolore sunt iure cumque.
+                      Officia neque commodi libero sint? Lorem ipsum dolor sit
+                      amet consectetur, adipisicing elit. Delectus molestias
+                      quod tempora odio illum ullam qui ipsum, animi impedit
+                      eveniet amet cupiditate reprehenderit odit sequi iure in
+                      saepe, minima vitae.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Read more</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="./assets/images/blog/blog-2.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>5 minutes ago</p>
+                    <h2>Best coffee recommendations in yogyakarta</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Molestias veniam doloribus non voluptate libero velit
+                      provident alias incidunt accusantium quo. Nostrum,
+                      voluptatibus. Et veritatis minus beatae soluta est
+                      laboriosam consequatur. Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. Dolorum blanditiis officia
+                      dolores fuga iste maiores debitis quasi suscipit nulla
+                      tempora numquam tempore maxime aut in magnam eius
+                      possimus, animi quaerat?
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Read more</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="./assets/images/blog/blog-3.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>1 hour ago</p>
+                    <h2>25+ Newest tourist attractions in Indonesia</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Unde veritatis, rem suscipit nesciunt magni quo amet
+                      facere error quidem perferendis ut quasi recusandae quod
+                      fuga, atque dolorum illo et porro. Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Explicabo eum adipisci
+                      odit exercitationem natus magni blanditiis! Autem
+                      repellendus reiciendis repudiandae dicta nisi consequatur
+                      distinctio id voluptates. Cumque illum magni provident?
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Read more</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="./assets/images/blog/blog-4.jpg" alt="" />
+                  <div class="text-card-blog">
+                    <p>48 minutes ago</p>
+                    <h2>5 Recommended camping spots in Indonesia</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Cupiditate mollitia iusto provident obcaecati ea. Quo,
+                      excepturi. Accusantium tempore explicabo unde pariatur
+                      nemo maxime corporis consectetur asperiores dolorum
+                      doloremque, fuga nostrum! Lorem ipsum, dolor sit amet
+                      consectetur adipisicing elit. Vero aspernatur repudiandae
+                      saepe accusantium nihil sapiente corrupti illo officiis
+                      animi. Provident facere animi repellendus voluptas
+                      obcaecati ducimus placeat dolores beatae quasi.
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Read more</a>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="./assets/images/blog/blog-5.webp" alt="" />
+                  <div class="text-card-blog">
+                    <p>3 hour ago</p>
+                    <h2>Historical painting of indonesia</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate laboriosam pariatur numquam, dolor ipsam natus
+                      nemo quaerat eveniet, deserunt esse odit ea quia qui rerum
+                      quis? Et blanditiis similique sunt. Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Quidem, temporibus
+                      voluptatem accusamus quia eaque architecto dolor
+                      perferendis ut dignissimos libero consectetur, animi
+                      maiores dolorum illum delectus et, ipsa optio obcaecati!
+                    </p>
+                  </div>
+                  <div class="blog-read-more-hot">
+                    <a href="#0">Read more</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="latest-news">
+            <div class="title-latest-news">
+              <h2>Latest News</h2>
+              <img src="./assets/icon/newspaper-regular.svg" alt="news icon" />
+            </div>
+            <div class="all-card-news">
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
               </div>
-            </section>
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-news">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+                <div class="text-latest-card-news">
+                  <p class="news-date">11/30/2023</p>
+                  <h3>Historical painting of indonesia</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam dolorum, molestiae recusandae quaerat eligendi
+                    unde nam, vero quidem nisi excepturi assumenda harum rerum
+                    similique maxime itaque deserunt quia corporis facilis.
+                  </p>
+                  <div class="blog-read-more-latest">
+                    <a href="#0">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -1005,14 +925,14 @@
               </li>
             </ul>
           </div>
-          <div class="blog">
+          <div class="blog-footer">
             <h3>Blog</h3>
             <ul>
-              <li><a href="#0">Jawa</a></li>
-              <li><a href="#0">Kalimantan</a></li>
-              <li><a href="#0">Sumatra</a></li>
-              <li><a href="#0">Sulawesi</a></li>
-              <li><a href="#0">Papua</a></li>
+              <li><a href="#0">Hot</a></li>
+              <li><a href="#0">Latest</a></li>
+              <li><a href="#0">Culture</a></li>
+              <li><a href="#0">Destinations</a></li>
+              <li><a href="#0">Foods</a></li>
             </ul>
           </div>
           <div class="support">
@@ -1056,12 +976,23 @@
           id="close-update"
         />
       </h3>
-      <p><i>30-11-23</i></p>
       <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
+      <p><i>4-11-23</i> <b>(NEW)</b></p>
+      <ul>
+        <li>Menambah halaman baru page culture (belum responsive)</li>
+        <li>Menambah file js baru untuk page culture</li>
+        <li>Mengubah tampilan section explore</li>
+        <li>Memperbaiki wonderland menjadi responsive</li>
+        <li>Menambah beberapa card di section blog</li>
+      </ul>
+      <br />
+      <p><i>30-11-23</i></p>
       <ul>
         <li>Menambah section blog</li>
         <li>Memperbaiki halaman bahasa indonesia</li>
+        <li>Loading baru</li>
       </ul>
+      <br />
       <p><i>29-11-23</i></p>
       <ul>
         <li>Menambah fitur ganti bahasa</li>
@@ -1080,7 +1011,6 @@
         <li>Fix Bugs (style nabrak, js, dll)</li>
       </ul>
     </div>
-
     <!-- js -->
     <script src="./js/script.js"></script>
     <!-- aos -->

@@ -4,35 +4,16 @@ const allContent = document.getElementById("all-content");
 // sticky nav
 let nav = document.querySelector("nav");
 let containerNav = document.getElementById("container-nav");
+let containerNavCulture = document.getElementById("container-nav-cultures");
 // back to top
 let backToTop = document.getElementById("back-to-top");
 // icon navbar
 let menuIcon = document.getElementById("menu-icon");
+let menuIconCultures = document.getElementById("menu-icon-cultures");
 // dropdown
 let triggerDropdown = document.getElementById("dropdown-explore");
 let textCulture = document.getElementById("text-culture");
 let containerDropdown = document.getElementById("container-dropdown");
-// variable fav
-// 1
-let favDestination = document.getElementById("favorite-1");
-let emptyHeart = document.getElementById("empty-heart");
-let fullHeart = document.getElementById("full-heart");
-// 2
-let favDestination2 = document.getElementById("favorite-2");
-let emptyHeart2 = document.getElementById("empty-heart-2");
-let fullHeart2 = document.getElementById("full-heart-2");
-// 3
-let favDestination3 = document.getElementById("favorite-3");
-let emptyHeart3 = document.getElementById("empty-heart-3");
-let fullHeart3 = document.getElementById("full-heart-3");
-// 4
-let favDestination4 = document.getElementById("favorite-4");
-let emptyHeart4 = document.getElementById("empty-heart-4");
-let fullHeart4 = document.getElementById("full-heart-4");
-// 5
-let favDestination5 = document.getElementById("favorite-5");
-let emptyHeart5 = document.getElementById("empty-heart-5");
-let fullHeart5 = document.getElementById("full-heart-5");
 // gallery animation
 let copy1 = document.querySelector(".slide-container-1").cloneNode(true);
 let copy2 = document.querySelector(".slide-container-2").cloneNode(true);
@@ -50,7 +31,7 @@ closeUpdate.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", loadingTime);
 function loadingTime() {
   allContent.style.display = "none";
-  setTimeout(showAllContent, 1500); // 2500
+  setTimeout(showAllContent, 2500); // 2500
 
   function showAllContent() {
     loading.classList.add("hiddenToTop");
@@ -126,71 +107,12 @@ function closePopup(popupId) {
   }
 }
 
-// function fav destination
-
-// favDestination.addEventListener("click", showFullHeart());
-// function showFullHeart() {
-//   if (emptyHeart.style.display == "block" && event.target != showPopup) {
-//     fullHeart.style.display = "block";
-//     emptyHeart.style.display = "none";
-//   }
-// }
-// if (emptyHeart.style.display == "block") {
-//   fullHeart.style.display = "block";
-//   emptyHeart.style.display = "none";
-// } else {
-//   emptyHeart.style.display = "block";
-//   fullHeart.style.display = "none";
-// }
-// });
-
-favDestination2.addEventListener("click", () => {
-  if (emptyHeart2.style.display == "block") {
-    fullHeart2.style.display = "block";
-    emptyHeart2.style.display = "none";
-  } else {
-    emptyHeart2.style.display = "block";
-    fullHeart2.style.display = "none";
-  }
-});
-
-favDestination3.addEventListener("click", () => {
-  if (emptyHeart3.style.display == "block") {
-    fullHeart3.style.display = "block";
-    emptyHeart3.style.display = "none";
-  } else {
-    emptyHeart3.style.display = "block";
-    fullHeart3.style.display = "none";
-  }
-});
-
-favDestination4.addEventListener("click", () => {
-  if (emptyHeart4.style.display == "block") {
-    fullHeart4.style.display = "block";
-    emptyHeart4.style.display = "none";
-  } else {
-    emptyHeart4.style.display = "block";
-    fullHeart4.style.display = "none";
-  }
-});
-
-favDestination5.addEventListener("click", () => {
-  if (emptyHeart5.style.display == "block") {
-    fullHeart5.style.display = "block";
-    emptyHeart5.style.display = "none";
-  } else {
-    emptyHeart5.style.display = "block";
-    fullHeart5.style.display = "none";
-  }
-});
-
 // gallery animation
 document.querySelector(".img-gallery-1").appendChild(copy1);
 document.querySelector(".img-gallery-2").appendChild(copy2);
 document.querySelector(".img-gallery-3").appendChild(copy3);
 
 // popop gallery
-
 function showPopupGallery(idPopupGalleryName) {
   let popupGallery = document.getElementById(
     "popup-gallery-" + idPopupGalleryName
@@ -207,6 +129,3 @@ function showPopupGallery(idPopupGalleryName) {
     popupGallery.style.display = "none";
   }
 }
-
-// popup gallery
-// popupGallery.addEventListener("click", closePopupGallery);

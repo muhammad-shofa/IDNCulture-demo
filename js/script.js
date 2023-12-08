@@ -11,9 +11,11 @@ let backToTop = document.getElementById("back-to-top");
 let menuIcon = document.getElementById("menu-icon");
 let menuIconCultures = document.getElementById("menu-icon-cultures");
 // dropdown
-let triggerDropdown = document.getElementById("dropdown-explore");
+let triggerDropdown = document.getElementById("trigger-dropdown-culture");
+let triggerDropdownTH = document.getElementById("trigger-dropdown-culture-t-h");
 let textCulture = document.getElementById("text-culture");
 let containerDropdown = document.getElementById("container-dropdown");
+let containerDropdownTH = document.getElementById("dropdown-t-h");
 // gallery animation
 let copy1 = document.querySelector(".slide-container-1").cloneNode(true);
 let copy2 = document.querySelector(".slide-container-2").cloneNode(true);
@@ -49,10 +51,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// event dropdown dekstop
 triggerDropdown.addEventListener("mouseover", showDropdown);
 containerDropdown.addEventListener("mouseover", showDropdown);
 triggerDropdown.addEventListener("mouseout", hiddenDropdown);
 containerDropdown.addEventListener("mouseout", hiddenDropdown);
+
+// event tablet & hp
+triggerDropdownTH.addEventListener("click", showDropdownTH);
+// func dropdown dekstop
 function showDropdown() {
   containerDropdown.style.marginTop = "0px";
   textCulture.style.color = "var(--secondary)";
@@ -61,6 +68,12 @@ function showDropdown() {
 function hiddenDropdown() {
   containerDropdown.style.marginTop = "-1000px";
   textCulture.style.color = "";
+}
+
+// func dropdown tablet & hp
+function showDropdownTH() {
+  containerDropdownTH.classList.toggle("show-container-dropdown-t-h");
+  triggerDropdownTH.classList.toggle("rotate-icon-top-up");
 }
 
 window.addEventListener("scroll", () => {
@@ -112,7 +125,7 @@ document.querySelector(".img-gallery-1").appendChild(copy1);
 document.querySelector(".img-gallery-2").appendChild(copy2);
 document.querySelector(".img-gallery-3").appendChild(copy3);
 
-// popop gallery
+// popup gallery
 function showPopupGallery(idPopupGalleryName) {
   let popupGallery = document.getElementById(
     "popup-gallery-" + idPopupGalleryName

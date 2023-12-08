@@ -13,20 +13,26 @@ nav ul li a {
 }
 
 /* Style the tab */
+
 .tab {
-  float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 15%;
   height: 100vh;
+  overflow: scroll;
   padding-top: 80px;
   top: 0;
   left: 0;
   position: fixed;
 }
 
+.tab::-webkit-scrollbar {
+  display: none;
+}
+
 .tab span {
-  font-size: var(--font-size-dekstop-heading-1);
+  font-size: var(--font-size-dekstop-heading-2);
+  margin-left: 10px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -56,8 +62,6 @@ nav ul li a {
 
 /* Style the tab content */
 .tabcontent {
-  /* float: left; */
-  /* padding: 0px 12px; */
   border: 1px solid #ccc;
   width: 85%;
   margin-left: 15%;
@@ -67,11 +71,7 @@ nav ul li a {
   display: none;
 }
 
-/* .tabcontent.active {
-  display:block;
-} */
-
-#Batik {
+#batikJawa {
   display: block;
 }
 
@@ -208,4 +208,3 @@ nav ul li a {
   text-align: start;
   margin-top: 20px;
 }
-

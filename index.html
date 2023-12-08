@@ -31,10 +31,26 @@
             <li>
               <a href="#home">Home</a>
             </li>
-            <li id="dropdown-explore" onmouseover="showDropDown()">
+            <li id="trigger-dropdown-culture" onmouseover="showDropDown()">
               <a id="text-culture" href="#culture"
                 >Culture
-                <img src="./assets/icon/chevron-down-solid.svg" alt="" />
+                <img
+                  id="trigger-dropdown-culture-t-h"
+                  src="./assets/icon/chevron-down-solid.svg"
+                  alt=""
+                />
+                <!-- dropdown tablet dan hp -->
+                <div id="dropdown-t-h" class="container-dropdown-t-h">
+                  <div class="content-dropdown-t-h">
+                    <ul>
+                      <li><a href="#0">Jawa</a></li>
+                      <li><a href="#0">Kalimantan</a></li>
+                      <li><a href="#0">Sumatra</a></li>
+                      <li><a href="#0">Sulawesi</a></li>
+                      <li><a href="#0">Papua</a></li>
+                    </ul>
+                  </div>
+                </div>
               </a>
             </li>
             <li>
@@ -372,6 +388,7 @@
                       saepe, minima vitae.
                     </p>
                   </div>
+
                   <div class="blog-read-more-hot">
                     <a href="#0">Read more</a>
                   </div>
@@ -977,7 +994,14 @@
         />
       </h3>
       <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
-      <p><i>4-11-23</i> <b>(NEW)</b></p>
+      <p><i>8-11-23</i> <b>(NEW)</b></p>
+      <ul>
+        <li>Menambahdropdown pada tampilan tablet dan hp</li>
+        <li>Memperbaiki navbar agar lebih responsive</li>
+        <li>Menambah culture pulau kalimantan di page culture</li>
+      </ul>
+      <br />
+      <p><i>4-11-23</i></p>
       <ul>
         <li>Menambah halaman baru page culture (belum responsive)</li>
         <li>Menambah file js baru untuk page culture</li>
@@ -1024,7 +1048,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         var splide = new Splide(".splide", {
           type: "loop",
-          padding: "5rem",
+          // padding: "5rem",
         });
         splide.mount();
       });

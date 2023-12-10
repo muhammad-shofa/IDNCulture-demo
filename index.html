@@ -248,29 +248,47 @@
       <!-- culture -->
       <div class="container-culture">
         <section class="culture" id="culture">
-          <div class="container-img-culture-1"></div>
-          <div class="text-culture-1">
-            <h1 data-aos="fade-up" data-aos-duration="700">Indonesia</h1>
-            <p data-aos="fade-up" data-aos-duration="750">
+          <div class="all-img-culture">
+            <div class="culture-batik">
+              <div class="border-img-culture"></div>
+              <img src="./assets/images/batik.jpg" alt="batik" />
+            </div>
+            <div class="culture-wayang">
+              <div class="border-img-culture-wayang"></div>
+              <img src="./assets/images/wayang.jpg" alt="wayang" />
+            </div>
+            <div class="culture-kecak">
+              <div class="border-img-culture"></div>
+              <img src="./assets/images/kecak.jpg" alt="kecak" />
+            </div>
+          </div>
+          <div class="text-culture">
+            <h1>About <b>Indonesia</b></h1>
+            <p>
               Indonesia, a vast archipelago in Southeast Asia, boasts a rich and
               diverse cultural tapestry shaped by over 300 ethnic groups. The
               country's cultural landscape is characterized by a harmonious
               blend of traditions, languages, and customs, with predominant
               influences from Islam alongside a spirit of religious tolerance.
-            </p>
-          </div>
-          <div class="text-culture-2">
-            <h1 data-aos="fade-up" data-aos-duration="700">Batik</h1>
-            <p data-aos="fade-up" data-aos-duration="750">
+              <br /><br />
               Traditional arts such as shadow puppetry (Wayang Kulit) and batik
               craftsmanship, as well as region-specific dances and music,
-              contribute to the nation's vibrant heritage. Ceremonies marking
-              life events, a flavorful cuisine featuring aromatic spices, and a
-              deep sense of community through values like "gotong royong"
-              further define Indonesian culture.
+              contribute to the nation's vibrant heritage. <br /><br />
+              Ceremonies marking life events, a flavorful cuisine featuring
+              aromatic spices, and a deep sense of community through values like
+              "gotong royong" further define Indonesian culture.
+              <br /><br />
+              The nation's traditional architecture, rooted in indigenous
+              designs with external influences, and its stunning natural
+              landscapes, including tropical rainforests and beautiful beaches,
+              complement the modern influences seen in urban creativity and
+              innovation. Understanding and embracing this cultural diversity is
+              key to appreciating the richness of Indonesia.
             </p>
+            <a class="more-culture-btn" href="./cultures/culture.html">
+              <button>More Culture</button>
+            </a>
           </div>
-          <div class="container-img-culture-2"></div>
         </section>
       </div>
       <!-- explore -->
@@ -331,8 +349,8 @@
               </div>
             </div>
           </div>
-          <a class="more-culture-btn" href="./cultures/culture.html">
-            <button>More Culture</button>
+          <a class="explore-btn" href="#0">
+            <button>Explore</button>
           </a>
         </section>
       </div>
@@ -848,52 +866,37 @@
       <!-- contact -->
       <div class="container-contact">
         <section class="contact" id="contact">
-          <div class="text-contact">
-            <h1>contact</h1>
+          <div class="bg-contact">
+            <h2>Contact Us</h2>
+            <p>
+              Feel free to contact us if you have any questions, suggestions, or
+              would like to collaborate. <b>We are here to help you.</b>
+            </p>
           </div>
-          <div class="row">
-            <div class="contact-left">
-              <p class="sub-title">Contact Me</p>
-              <p class="penting">
-                <i class="fa-solid fa-paper-plane"></i>
-                indonesia@gmail.com
-              </p>
-              <p class="penting">
-                <i class="fa-solid fa-phone"></i> 08*-*-**77
-              </p>
-              <div class="social-icons">
-                <a href="https://www.youtube.com/@S-CYP/about"
-                  ><i class="fa-brands fa-youtube"></i
-                ></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-              </div>
-              <a href="" class="btn btn2">Do not press</a>
+          <!-- form -->
+          <form class="form">
+            <!-- <h2>CONTACT US</h2> -->
+            <div class="f-l-name">
+              <input type="text" placeholder="First name" />
+              <input type="text" placeholder="Last name" />
             </div>
-            <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-                <textarea
-                  name="Message"
-                  rows="6"
-                  placeholder="Your Message"
-                ></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-              </form>
-              <span id="msg"></span>
-            </div>
-          </div>
+            <select name="region" id="region">
+              <option value="Indonesia">Indonesia</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Singapure">Singapure</option>
+              <option value="Thailand">Thailand</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="number" placeholder="Number" />
+            <input type="email" placeholder="Your Email" />
+            <!-- <input type="text" placeholder="Message here"> -->
+            <textarea
+              name="message"
+              placeholder="Type your Message here"
+            ></textarea>
+            <button type="submit">Send message</button>
+          </form>
         </section>
       </div>
 
@@ -994,14 +997,20 @@
         />
       </h3>
       <p><i>(Hanya sementara untuk mengetahui update terbaru)</i></p>
-      <p><i>8-11-23</i> <b>(NEW)</b></p>
+      <p><i>10-12-23</i> <b>(NEW)</b></p>
+      <ul>
+        <li>Mengubah tampilan culture section pada halaman utama menjadi lebih menarik (belum responsive)</li>
+        <li>Mengubah tampilan contact section pada halaman utama menjadi lebih menarik (sudah responsive)</li>
+      </ul>
+      <br />
+      <p><i>8-12-23</i></p>
       <ul>
         <li>Menambahdropdown pada tampilan tablet dan hp</li>
         <li>Memperbaiki navbar agar lebih responsive</li>
         <li>Menambah culture pulau kalimantan di page culture</li>
       </ul>
       <br />
-      <p><i>4-11-23</i></p>
+      <p><i>4-12-23</i></p>
       <ul>
         <li>Menambah halaman baru page culture (belum responsive)</li>
         <li>Menambah file js baru untuk page culture</li>

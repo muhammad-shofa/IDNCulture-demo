@@ -9,7 +9,6 @@ let containerNavCulture = document.getElementById("container-nav-cultures");
 let backToTop = document.getElementById("back-to-top");
 // icon navbar
 let menuIcon = document.getElementById("menu-icon");
-let menuIconCultures = document.getElementById("menu-icon-cultures");
 // dropdown
 let triggerDropdown = document.getElementById("trigger-dropdown-culture");
 let triggerDropdownTH = document.getElementById("trigger-dropdown-culture-t-h");
@@ -41,6 +40,7 @@ function loadingTime() {
   }
 }
 
+// when windows scroll +20px
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 20) {
     containerNav.classList.add("sticky");
@@ -84,6 +84,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// nav menu
 menuIcon.addEventListener("click", function () {
   this.classList.toggle("close-icon");
   const navUl = document.getElementById("nav-ul");

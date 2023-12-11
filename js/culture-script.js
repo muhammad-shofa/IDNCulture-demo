@@ -7,8 +7,7 @@ let containerNav = document.getElementById("container-nav");
 // back to top
 let backToTop = document.getElementById("back-to-top");
 // icon navbar
-let menuIcon = document.getElementById("menu-icon");
-// let menuIconCultures = document.getElementById("menu-icon-cultures");
+let menuIconCultures = document.getElementById("menu-icon-cultures");
 
 // update
 // let update = document.getElementById("update");
@@ -29,11 +28,25 @@ function loadingTime() {
   }
 }
 
+// when windows scroll +10px
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 10) {
     containerNav.classList.add("sticky");
   } else {
     containerNav.classList.remove("sticky");
+  }
+});
+
+// nav menu
+menuIconCultures.addEventListener("click", function () {
+  this.classList.toggle("close-icon");
+  const navUl = document.getElementById("nav-ul");
+  if (navUl.classList.contains("hidden-ul-culture")) {
+    navUl.classList.remove("hidden-ul-culture");
+    navUl.classList.add("show-ul-culture");
+  } else {
+    navUl.classList.remove("show-ul-culture");
+    navUl.classList.add("hidden-ul-culture");
   }
 });
 
@@ -57,4 +70,21 @@ function openCity(evt, cityName) {
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+const sideBar = document.getElementById("side-bar");
+const containerContentCulture = document.getElementById(
+  "container-content-culture"
+);
+const allArrow = document.getElementById("all-arrow");
+let arrowLeft = document.getElementById("arrow-left");
+let arrowRight = document.getElementById("arrow-right");
+function toggleSideBar() {
+  sideBar.classList.toggle("hidden-side-bar");
+  containerContentCulture.classList.toggle("max-container-content-culture");
+  allArrow.classList.toggle("in-left");
+  arrowLeft.classList.toggle("show-arrow-left");
+  arrowLeft.classList.toggle("hidden-arrow-left");
+  arrowRight.classList.toggle("show-arrow-right");
+  arrowRight.classList.toggle("hidden-arrow-right");
 }

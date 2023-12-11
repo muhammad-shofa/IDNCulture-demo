@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +28,7 @@
               <a href="../index.html#home">Home</a>
             </li>
             <li>
-              <a href="#culture"> Culture </a>
+              <a href="#culture">Culture</a>
             </li>
             <li>
               <a href="#explore">Explore </a>
@@ -71,7 +70,7 @@
 
       <!-- side bar -->
       <div class="container-side">
-        <div class="tab">
+        <div class="tab" id="side-bar">
           <!-- side bar jawa -->
           <span>Jawa</span>
           <button
@@ -121,1460 +120,1515 @@
           <!-- side bar papua -->
           <!-- paste here -->
         </div>
+        <div class="all-arrow" id="all-arrow" onclick="toggleSideBar()">
+          <div class="show-arrow-left" id="arrow-left">
+            <img
+              src="../assets/icon/circle-chevron-left-solid.svg"
+              alt="arrow left"
+            />
+          </div>
+          <div class="hidden-arrow-right" id="arrow-right">
+            <img
+              src="../assets/icon/circle-chevron-right-solid.svg"
+              alt="arrow right"
+            />
+          </div>
+        </div>
       </div>
 
       <!-- content jawa -->
-      <div class="jawa">
-        <div id="batikJawa" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Javanese Batik</h1>
-                <p>
-                  Each batik piece is a masterpiece, reflecting significant
-                  cultural and social importance in Java, often used in
-                  ceremonies, celebrations, and daily wear, symbolizing the
-                  island's unique cultural identity.
-                </p>
-                <div class="batik">
-                  <div class="all-img-batik">
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-cirebon.JPG"
-                      />
-                      <h3>Batik Cirebon (West Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-cianjur.jpg"
-                      />
-                      <h3>Batik Cianjur (West Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-banten.jpg"
-                      />
-                      <h3>Batik Banten (West Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-pekalongan.jpg"
-                      />
-                      <h3>Batik Pekalongan (Central Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-jogja.jpg"
-                      />
-                      <h3>Batik Jogja (Central Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-solo.jpg"
-                      />
-                      <h3>Batik Solo (Central Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-bojonegoro.jpg"
-                      />
-                      <h3>Batik Bojonegoro (East Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-magetan.jpg"
-                      />
-                      <h3>Batik Magetan (East Java)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/jawa/batik-gedhog.jpg"
-                      />
-                      <h3>Batik Gedhog (East Java)</h3>
+      <div class="container-content-culture" id="container-content-culture">
+        <div class="jawa">
+          <div id="batikJawa" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Javanese Batik</h1>
+                  <p>
+                    Each batik piece is a masterpiece, reflecting significant
+                    cultural and social importance in Java, often used in
+                    ceremonies, celebrations, and daily wear, symbolizing the
+                    island's unique cultural identity.
+                  </p>
+                  <div class="batik">
+                    <div class="all-img-batik">
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-cirebon.JPG"
+                        />
+                        <h3>Batik Cirebon (West Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-cianjur.jpg"
+                        />
+                        <h3>Batik Cianjur (West Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-banten.jpg"
+                        />
+                        <h3>Batik Banten (West Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-pekalongan.jpg"
+                        />
+                        <h3>Batik Pekalongan (Central Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-jogja.jpg"
+                        />
+                        <h3>Batik Jogja (Central Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-solo.jpg"
+                        />
+                        <h3>Batik Solo (Central Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-bojonegoro.jpg"
+                        />
+                        <h3>Batik Bojonegoro (East Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-magetan.jpg"
+                        />
+                        <h3>Batik Magetan (East Java)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/jawa/batik-gedhog.jpg"
+                        />
+                        <h3>Batik Gedhog (East Java)</h3>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
+          </div>
+
+          <div id="danceJawa" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional Dances From Java</h1>
+                  <p>
+                    Indonesia is a country known for its diverse and rich
+                    culture, where every ethnic group has its own captivating
+                    traditional dance. This cultural wealth is particularly
+                    evident in Java, an island with a deep cultural history that
+                    hosts a variety of traditional dances. Among these, Javanese
+                    dance forms are especially noteworthy for their grace and
+                    intricacy.
+                  </p>
+                  <div class="dance">
+                    <div class="all-img-dance">
+                      <img
+                        src="../assets/images/cultures/jawa/tari-cokek-jakarta.jpg"
+                      />
+                      <h2>Cokek Dance, DKI Jakarta (West Java)</h2>
+                      <p>
+                        The term "Cokek" is rooted in the Hokkian language and
+                        finds its cultural expression in West Java, Indonesia.
+                        Originating from the Hokkian word "chiou-khek," meaning
+                        "singing a song," Cokek is a captivating dance form that
+                        takes center stage during various entertainment events
+                        in the region. Typically accompanied by the lively tunes
+                        of Gambang Kromong music, this traditional performance
+                        art creates a vibrant and engaging atmosphere.
+                        <br /><br />
+
+                        In the West Java tradition, Cokek dancers showcase their
+                        expertise by seamlessly combining dance and song. The
+                        rhythmic movements are accentuated by the dancers'
+                        skilled synchronization with the Gambang Kromong music,
+                        providing a harmonious blend of auditory and visual
+                        delights. A distinctive feature of Cokek is the emphasis
+                        on expressive hip movements, adding a sensual and
+                        dynamic element to the performance. <br /><br />
+
+                        As the dancers move gracefully, they not only
+                        demonstrate technical proficiency but also use their
+                        movements to convey emotions and tell a compelling
+                        story. This unique combination of singing, dancing, and
+                        expressive storytelling through hip movements makes
+                        Cokek a cherished cultural tradition in West Java,
+                        enchanting audiences during various celebrations and
+                        events in the region.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/tari-jaipong-sunda.jpg"
+                      />
+                      <h2>Jaipong Dance, Sunda (West Java)</h2>
+                      <p>
+                        The Jaipong Dance, a captivating traditional Indonesian
+                        dance, is renowned for its lively and fast-paced rhythm
+                        that echoes the vibrant cultural spirit of the region.
+                        This dynamic dance form is a celebration of the rich
+                        heritage of Indonesia, and its distinctiveness lies in
+                        the dancers' exceptional ability to improvise. Jaipong
+                        dancers, adorned in colorful traditional attire,
+                        skillfully navigate the intricate movements with a
+                        spontaneous flair, creating a performance that is both
+                        visually stunning and culturally significant. The dance
+                        is a testament to the country's artistic diversity, and
+                        it holds a special place in the hearts of Indonesians,
+                        often being featured prominently in traditional
+                        ceremonies and events. <br /><br />
+
+                        The heart of the Jaipong Dance lies in its rhythmic
+                        intensity, captivating audiences with its energetic
+                        beats and expressive choreography. Each performance
+                        becomes a unique and engaging experience as the dancers
+                        skillfully improvise, infusing the dance with a sense of
+                        spontaneity and liveliness. The fast-paced movements
+                        reflect the dynamism of Indonesian culture, creating a
+                        visual spectacle that transcends generations. Whether
+                        performed during festive celebrations or cultural
+                        events, the Jaipong Dance serves as a cultural beacon,
+                        connecting communities and preserving the rich tapestry
+                        of Indonesia's artistic legacy.<br /><br />
+
+                        Beyond its role in traditional ceremonies, the Jaipong
+                        Dance has evolved into a symbol of cultural pride and
+                        identity for the Indonesian people. The dance not only
+                        showcases the country's artistic prowess but also serves
+                        as a means of cultural expression, fostering a sense of
+                        unity and belonging. Passed down through generations,
+                        the Jaipong Dance continues to thrive, captivating
+                        audiences with its mesmerizing blend of tradition and
+                        spontaneity. As an integral part of Indonesia's cultural
+                        heritage, this dance form stands as a testament to the
+                        nation's enduring commitment to preserving and
+                        celebrating its rich cultural legacy.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/tari-serimpi-jogja.jpg"
+                      />
+                      <h2>Serimpi Dance, Jogja (Central Java)</h2>
+                      <p>
+                        The Serimpi Dance, originating from the cultural
+                        heartland of Central Java, Indonesia, stands as a
+                        testament to the rich heritage associated with the royal
+                        palaces of Yogyakarta and Surakarta. This ritualized
+                        dance form is deeply rooted in the traditions of the
+                        Javanese court, particularly epitomizing the elegance
+                        that characterizes the royal Javanese culture. Renowned
+                        for its graceful movements and symbolic significance,
+                        the Serimpi Dance has become an emblem of the ruler's
+                        power and the refined essence of Javanese
+                        civilization.<br /><br />
+
+                        While the Serimpi Dance initially found its place within
+                        the courtly settings of the two Keratons, it has
+                        transcended these boundaries to become a cherished
+                        cultural treasure embraced by common Javanese people.
+                        Beyond the palace walls, the dance is frequently
+                        performed during ceremonies and festivals, symbolizing a
+                        connection between the royal and everyday realms. Even
+                        today, the Serimpi Dance remains an integral part of
+                        court ceremonies, with princesses dedicatedly rehearsing
+                        various forms of Srimpi in the pendopo pavilion within
+                        the palace. This enduring practice underscores the
+                        dance's resilience and its continued significance in
+                        preserving and celebrating the cultural identity of
+                        Central Java.<br /><br />
+
+                        As a dance deeply embedded in the fabric of Indonesian
+                        tradition, the Serimpi Dance reflects the enduring
+                        spirit of Javanese culture. Its graceful and intricate
+                        movements not only serve as a captivating artistic
+                        expression but also carry layers of historical and
+                        symbolic meaning. In essence, the Serimpi Dance is a
+                        living testament to the cultural richness of Central
+                        Java, showcasing a harmonious blend of tradition,
+                        refinement, and the enduring legacy of royal courts.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/tari-remo-jombang.jpg"
+                      />
+                      <h2>Remo Dance, Jombang (East Java)</h2>
+                      <p>
+                        The Remo Dance, originating from the cultural tapestry
+                        of East Java, specifically Jombang, is a captivating
+                        traditional performance deeply embedded in the welcoming
+                        rituals of the region. Traditionally accompanied by the
+                        enchanting melodies of gamelan music, this dance has
+                        evolved over time to embrace both male and female
+                        dancers. Originally a male-dominated art form, the Remo
+                        Dance now boasts the graceful movements of female
+                        performers who have seamlessly integrated the masculine
+                        nuances required for its proper execution. The dance
+                        serves as a vibrant cultural expression that extends a
+                        warm welcome to guests, creating an atmosphere of
+                        celebration and communal joy.<br /><br />
+
+                        At its core, the Remo Dance is distinguished by its
+                        dynamic and lively footwork, which forms the crux of the
+                        performance. The dancers, adorned with bells on their
+                        ankles, create a melodic rhythm as they move, producing
+                        a harmonious symphony that resonates with the spirit of
+                        the dance. These bells, ringing in synchrony with the
+                        dancers' movements, add a layer of auditory delight to
+                        the visual spectacle, enhancing the overall sensory
+                        experience. The dance not only showcases the physical
+                        prowess of the performers but also reflects the cultural
+                        identity and hospitality ingrained in the traditions of
+                        Jombang, East Java.<br /><br />
+
+                        Rooted in the traditions of East Java, the Remo Dance
+                        continues to be a vibrant and evolving cultural
+                        practice. Its ability to transcend gender boundaries and
+                        adapt to contemporary expressions underscores its
+                        enduring significance in the local heritage. As the
+                        dance welcomes guests with its lively and rhythmic
+                        choreography, it becomes a living embodiment of the rich
+                        cultural legacy of Jombang, contributing to the dynamic
+                        tapestry of Indonesia's diverse traditional performing
+                        arts.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/tari-reog-ponorogo.jpg"
+                      />
+                      <h2>Reog Dance, Ponorogo (East Java)</h2>
+                      <p>
+                        The Reog Dance, originating from Ponorogo, East Java,
+                        Indonesia, is a captivating traditional performance that
+                        unfolds a rich narrative through the artistry of a group
+                        of dancers adorned in elaborate costumes and masks. This
+                        mesmerizing dance is deeply rooted in local folklore and
+                        typically recounts the legendary tale of King Kerono and
+                        his valiant soldiers who courageously faced the
+                        formidable Singabarong monster. The dancers skillfully
+                        use their ornate masks to portray characters and express
+                        the emotions of the narrative, creating a visual
+                        spectacle that captivates audiences.<br /><br />
+
+                        This unique dance form is not merely a form of
+                        entertainment but holds cultural significance as it is
+                        often showcased during traditional ceremonies and
+                        events. The Reog Dance has become an integral part of
+                        the cultural fabric in the region, symbolizing bravery,
+                        heroism, and the triumph of good over evil. The
+                        performers, through intricate choreography and dynamic
+                        movements, bring to life the mythical battle between
+                        King Kerono and the monstrous Singabarong, creating an
+                        immersive experience that allows spectators to connect
+                        with the rich cultural heritage of East Java.<br /><br />
+
+                        Beyond its artistic expression, the Reog Dance serves as
+                        a testament to the preservation of local traditions and
+                        folklore, acting as a link between the past and the
+                        present. As communities come together to witness this
+                        mesmerizing performance, they not only celebrate their
+                        cultural identity but also contribute to the continuity
+                        of a cherished art form that has been passed down
+                        through generations in Ponorogo. The Reog Dance, with
+                        its vibrant costumes, compelling narrative, and cultural
+                        significance, stands as a testament to the enduring
+                        beauty of Indonesia's diverse and rich heritage.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div id="musicJawa" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional Musical Instruments From Java</h1>
+                  <p>
+                    In Java, Indonesia, traditional musical instruments play a
+                    vital role in shaping the island's cultural identity. The
+                    music they create isn't just for entertainment; it's deeply
+                    woven into daily life, featured prominently in ceremonies,
+                    celebrations, and rituals. These instruments are more than
+                    just tools for artistic expression; they are living symbols
+                    of Java's rich cultural heritage, connecting the present
+                    generation with their roots and fostering a strong sense of
+                    identity among the Javanese people.
+                  </p>
+                  <div class="music">
+                    <div class="all-img-music">
+                      <img
+                        src="../assets/images/cultures/jawa/musik-angklung-jawabarat.jpg"
+                      />
+                      <h2>Angklung (West Java)</h2>
+                      <p>
+                        Angklung, a traditional instrument originating from
+                        Indonesia, particularly West Java, holds a unique
+                        cultural significance that resonates both nationally and
+                        internationally. Crafted from bamboo, the Angklung is a
+                        musical marvel known for its melodious tones and
+                        distinctive resonant sound. Its name is derived from the
+                        onomatopoeic "ang-klung-klung," representing the sound
+                        produced when the instrument is played. The Angklung is
+                        often associated with communal performances, where
+                        groups of players collaborate to create intricate and
+                        harmonious melodies. This communal aspect not only
+                        showcases the instrument's musical prowess but also
+                        reflects the spirit of togetherness and unity deeply
+                        ingrained in Indonesian culture.<br /><br />
+
+                        The Angklung's rich heritage has earned it a place on
+                        the UNESCO Intangible Cultural Heritage of Humanity
+                        list, recognizing its cultural importance and the
+                        craftsmanship involved in its creation. Each bamboo tube
+                        is meticulously tuned to produce specific pitches,
+                        contributing to the instrument's ability to play complex
+                        compositions. Beyond its cultural roots, the Angklung
+                        has become a symbol of Indonesia's artistic identity,
+                        celebrated both locally and globally. As it continues to
+                        captivate audiences around the world, the Angklung
+                        stands as a testament to the vibrant and diverse musical
+                        traditions that contribute to Indonesia's cultural
+                        tapestry.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/musik-rebab-jawabarat.jpg"
+                      />
+                      <h2>Rebab (West Java)</h2>
+                      <p>
+                        The Rebab, a traditional instrument hailing from
+                        Indonesia with deep roots in West Java, is a stringed
+                        instrument that holds a distinguished place in the
+                        country's musical heritage. Constructed with a slender
+                        wooden body and a unique, rounded soundbox, the Rebab
+                        showcases the meticulous craftsmanship of Indonesian
+                        artisans. Its strings are traditionally made from animal
+                        gut or horsehair, and the instrument is played with a
+                        bow, producing hauntingly beautiful and resonant tones.
+                        Often featured in traditional Gamelan ensembles and
+                        classical Javanese music, the Rebab plays a vital role
+                        in conveying the emotional nuances of the compositions,
+                        adding a touch of melancholy or ecstasy to the overall
+                        musical experience.<br /><br />
+
+                        The Rebab's cultural significance extends beyond its
+                        musical capabilities, embodying the rich history and
+                        traditions of Indonesia. Its presence in various
+                        ceremonies, rituals, and performances underscores its
+                        role as a symbol of cultural identity. The instrument
+                        has also evolved over time, adapting to different
+                        regional styles and musical genres, demonstrating its
+                        versatility and enduring appeal in both traditional and
+                        contemporary Indonesian music. As a testament to its
+                        importance, the Rebab serves as a bridge connecting the
+                        past and present, resonating with the spirit of West
+                        Java's cultural heritage.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/musik-gambang-jawatengah.jpg"
+                      />
+                      <h2>Gambang (Central Java)</h2>
+                      <p>
+                        The Gambang is a traditional musical instrument
+                        originating from Central Java, Indonesia, and holds a
+                        significant place in the rich cultural heritage of the
+                        region. This instrument is a xylophone-like percussion
+                        device made from wooden bars that are struck with
+                        mallets to produce melodious tones. The Gambang
+                        typically features a set of wooden keys arranged in a
+                        specific order, supported by a resonator made from
+                        bamboo or other materials. Musicians play the Gambang by
+                        striking the wooden bars with soft-headed mallets,
+                        creating a distinctive and enchanting sound that is
+                        often associated with Javanese traditional music.<br /><br />
+
+                        In traditional Javanese gamelan ensembles, the Gambang
+                        plays a crucial role, providing a unique timbre and
+                        contributing to the overall harmonic texture of the
+                        music. The instrument is often played in conjunction
+                        with other traditional instruments such as the bonang,
+                        saron, and kendhang, creating a symphony of sounds that
+                        reflect the cultural identity of Central Java. The
+                        Gambang has transcended its historical roots and is
+                        still cherished today, not only for its musical
+                        significance but also for its cultural and artistic
+                        value in preserving the musical traditions of Indonesia.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/musik-bonang-jawatimur.jpg"
+                      />
+                      <h2>Bonang (East Java)</h2>
+                      <p>
+                        The Bonang is a traditional Javanese musical instrument
+                        hailing from East Java, Indonesia, and is a vital
+                        component of the gamelan ensemble. This percussion
+                        instrument consists of a series of small, kettle-shaped
+                        gongs suspended on a wooden frame. The bonang is played
+                        using a pair of mallets, typically made of wood or
+                        bamboo, striking the gongs to produce resonant, metallic
+                        tones. The gongs are arranged in two rows, with the
+                        upper row known as the "panembung" and the lower row as
+                        the "pelog." Each gong in the bonang set is tuned to
+                        specific pitches, creating a complex and layered sound
+                        when played together.<br /><br />
+
+                        In Javanese gamelan music, the bonang plays a crucial
+                        role in establishing the melody and providing intricate
+                        ornamentation. It often serves as a rhythmic and melodic
+                        guide for the entire ensemble, setting the tone and
+                        contributing to the mesmerizing and hypnotic quality of
+                        the music. The bonang is not only a musical instrument
+                        but also a cultural symbol, representing the rich
+                        traditions and artistic expressions of East Java. Its
+                        presence in gamelan orchestras highlights the importance
+                        of this instrument in preserving and showcasing the
+                        unique musical heritage of Indonesia.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/musik-ketipung-jawatimur.jpg"
+                      />
+                      <h2>Ketipung (East Java)</h2>
+                      <p>
+                        The Ketipung is a traditional percussion instrument
+                        originating from East Java, Indonesia, and is an
+                        integral part of the country's rich musical heritage.
+                        This instrument is often used in traditional Javanese
+                        and Balinese gamelan ensembles, contributing to the
+                        rhythmic foundation of the music. The Ketipung typically
+                        consists of a cylindrical body made of wood or metal,
+                        covered with a stretched membrane on one or both ends.
+                        Musicians play the Ketipung by striking the membrane
+                        with their hands or mallets, producing a resonant and
+                        distinctive sound that adds depth and texture to the
+                        ensemble's overall sonic landscape.<br /><br />
+
+                        In traditional Indonesian music, the Ketipung is known
+                        for its versatility and ability to convey a wide range
+                        of emotions. Its rhythmic patterns and dynamic
+                        variations contribute to the lively and expressive
+                        nature of the music, whether it's accompanying dance
+                        performances, wayang kulit (shadow puppetry), or other
+                        cultural events. The Ketipung's presence in Indonesian
+                        music reflects the country's commitment to preserving
+                        and celebrating its cultural identity, providing a
+                        unique auditory experience that continues to captivate
+                        audiences both in Indonesia and around the world.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div id="houseJawa" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional House In Java</h1>
+                  <p>
+                    Traditional houses in Java showcase a unique fusion of
+                    indigenous design and historical influences, featuring
+                    steep-pitched roofs, intricate wooden carvings, and a
+                    seamless integration with the environment. Emphasizing a
+                    connection to nature, these houses embody Javanese aesthetic
+                    values through open spaces, well-ventilated interiors, and
+                    local materials. Beyond their architectural significance,
+                    these dwellings serve as living symbols of Javanese culture,
+                    encapsulating traditions, social structures, and spiritual
+                    beliefs, ensuring the preservation of the island's rich
+                    heritage for generations to come.
+                  </p>
+                  <div class="house">
+                    <div class="all-img-house">
+                      <img
+                        src="../assets/images/cultures/jawa/Rumah-kebaya-betawi.jpg"
+                      />
+                      <h2>Kebaya House, DKI Jakarta (West Java)</h2>
+                      <p>
+                        Rumah Kebaya, a traditional Indonesian house, is a
+                        captivating reflection of Javanese cultural richness and
+                        artistic finesse. The house is adorned with intricate
+                        wooden carvings that portray symbolic motifs and
+                        patterns. These carvings serve as more than mere
+                        decorations; they narrate tales from Javanese mythology,
+                        religious beliefs, and historical events. The vibrant
+                        colors used in the exterior paintwork symbolize the
+                        lively spirit and warmth of the community. Rumah
+                        Kebaya's layout is thoughtfully designed, emphasizing
+                        communal living, fostering strong family bonds, and
+                        creating spaces for various traditional ceremonies and
+                        rituals. As a testament to Indonesia's diverse
+                        architectural heritage, Rumah Kebaya stands proud,
+                        offering a glimpse into the soul of Javanese culture.<br /><br />
+
+                        In addition to its aesthetic charm, Rumah Kebaya
+                        embodies the Javanese philosophy of life. The elevated
+                        foundation and steep roofs provide not only functional
+                        benefits in tropical climates but also carry symbolic
+                        significance, representing protection and spirituality.
+                        The house becomes a canvas for cultural expression,
+                        showcasing the artistic prowess of local craftsmen. The
+                        integration of art and architecture in Rumah Kebaya
+                        reflects the deep connection between the physical and
+                        metaphysical aspects of Javanese life. It stands as a
+                        living heritage, preserving centuries-old traditions and
+                        embodying the enduring spirit of a people deeply rooted
+                        in their cultural identity.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/rumah-badui-banten.jpg"
+                      />
+                      <h2>Badui House, Banten (West Java)</h2>
+                      <p>
+                        Rumah Baduy not only serves as a physical shelter but
+                        encapsulates the very ethos of the Baduy community's
+                        unique way of life. Constructed primarily from bamboo
+                        and thatch, the houses seamlessly blend into the lush
+                        natural surroundings, emphasizing the community's
+                        commitment to sustainability and harmony with nature.
+                        The simplicity of the architecture reflects the Baduy
+                        people's intentional rejection of modern influences,
+                        embodying a dedication to preserving their cultural
+                        identity. In a world marked by rapid urbanization and
+                        technological advancements, Rumah Baduy stands as a
+                        poignant symbol of cultural resilience, emphasizing the
+                        importance of maintaining a delicate balance between
+                        tradition and the environment. Each house becomes a
+                        sanctuary, preserving the age-old customs, rituals, and
+                        values that define the Baduy way of life.<br /><br />
+
+                        The Baduy people's adherence to traditional customs is
+                        not limited to the physical structure of their houses
+                        but extends to every aspect of their lives. Rumah Baduy
+                        becomes a haven where the community fosters a deep
+                        connection with their ancestral roots, ensuring that
+                        their cultural heritage is passed down from generation
+                        to generation. The intentional simplicity of the
+                        architecture is a reflection of the Baduy people's
+                        commitment to a lifestyle that minimizes external
+                        influences, fostering a sense of community and
+                        preserving the intrinsic values that define their
+                        identity.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/rumah-joglo-jateng.jpg"
+                      />
+                      <h2>Joglo House, Jogja (Central Java)</h2>
+                      <p>
+                        The allure of Rumah Joglo extends beyond its
+                        architectural grandeur; it encapsulates the very essence
+                        of Javanese philosophy and cosmology. The four-tiered
+                        roof, a distinct feature of this traditional house,
+                        represents the hierarchical structure of the universe in
+                        Javanese beliefs. Each tier signifies a different realm
+                        – the realm of the divine, the realm of human life, the
+                        realm of plants and animals, and the realm of the
+                        underworld. These layers not only add visual grandiosity
+                        but also imbue the house with profound spiritual
+                        symbolism. The detailed carvings, often showcasing
+                        scenes from epics like the Ramayana and Mahabharata,
+                        serve as visual narratives connecting inhabitants with
+                        their cultural roots. Beyond its aesthetics, Rumah Joglo
+                        is a living testament to the Javanese way of life,
+                        fostering a harmonious coexistence with nature,
+                        community, and the divine.<br /><br />
+
+                        The spatial layout of Rumah Joglo is designed to reflect
+                        the Javanese philosophy of life, emphasizing harmony and
+                        balance in every aspect. The central pavilion and
+                        separate structures for different functions create a
+                        sense of interconnectedness while providing functional
+                        spaces for various activities. The house serves as more
+                        than a dwelling; it becomes a sacred space where
+                        cultural traditions are preserved and celebrated. Rumah
+                        Joglo stands as a living testament to the artistic
+                        brilliance of Javanese craftsmen, embodying the
+                        spiritual and cultural values deeply rooted in Javanese
+                        society.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div id="activityJawa" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore" id="explore">
+                <div class="text-explore">
+                  <h1>Traditional Activites</h1>
+                  <p>
+                    From historic sites to contemporary art centers, we invite
+                    you to immerse yourself in the charm of Indonesia's cultural
+                    destinations. With interactive guides and virtual
+                    experiences, each explore is an unforgettable journey.
+                  </p>
+                  <div class="activity">
+                    <div class="all-img-activity">
+                      <img
+                        src="../assets/images/cultures/jawa/kegiatan-pestalaut-jawabarat.jpg"
+                      />
+                      <h2>Sea Festival (West Java)</h2>
+                      <p>
+                        One of the traditional ceremonies in West Java is the
+                        Sea Festival, a maritime celebration that serves as an
+                        iconic event for the people of West Java. Typically held
+                        in areas such as Ciamis, Pangandaran, Sukabumi,
+                        Pelabuhan Ratu, and other coastal regions of West Java,
+                        the Sea Festival is a vibrant and culturally significant
+                        ceremony.<br /><br />
+
+                        The festivities commence with fishing boats adorned with
+                        colorful accessories transporting offerings to delight
+                        the spectators. Not only do they carry beautifully
+                        decorated offerings, but the fishermen also bring
+                        buffalo heads wrapped in white cloth as symbolic
+                        offerings, which are ceremoniously tossed into the sea
+                        as a gift to the sea deities. This annual ceremony aims
+                        to express gratitude and seek safety for the fishermen
+                        as they embark on their sea journeys.<br /><br />
+
+                        The Sea Festival is a unique cultural spectacle,
+                        captivating both locals and visitors alike with its
+                        vibrant displays and traditional rituals. The annual
+                        event is a heartfelt expression of thanksgiving and a
+                        plea for safety during maritime endeavors, emphasizing
+                        the deep connection between the coastal communities of
+                        West Java and the vast expanse of the ocean.
+                      </p>
+
+                      <img
+                        src="../assets/images/cultures/jawa/kegiatan-wetonan-jawatengah.jpg"
+                      />
+                      <h2>Wetonan (Central Java)</h2>
+                      <p>
+                        Wetonan is a tradition observed by the communities of
+                        Central Java. The Javanese term "wetonan" signifies the
+                        commemoration of one's birth date.<br /><br />
+
+                        Typically, the wetonan ceremony takes place when a baby
+                        reaches the age of 35 days. On the 35th day after the
+                        baby's birth, the family organizes a ceremony known as
+                        "nyelapani." The term "nyelapani" is derived from
+                        "selapan," meaning one month in the Javanese calendar or
+                        35 days.<br /><br />
+                        This calculation aligns with both the conventional day
+                        count and the Gregorian calendar, encompassing Monday,
+                        Tuesday, Wednesday, Thursday, Friday, Saturday, and
+                        Sunday, as well as the Javanese calendar days – Wage,
+                        Pon, Kliwon, Legi, and Pahing.<br /><br />
+                        The combination of these calculations results in a
+                        unique Javanese Central Java community's day-naming
+                        convention, such as Monday Pon, Tuesday Wage, Thursday
+                        Legi, Wednesday Kliwon, Friday Pahing, Friday Kliwon,
+                        and so forth, cyclically restarting from Pon.
+                      </p>
+                      <img
+                        src="../assets/images/cultures/jawa/kegiatan-kebokeboan-jawatimur.jpg"
+                      />
+                      <h2>Kebo-Keboan (East Java)</h2>
+                      <p>
+                        This ceremony is often held during significant
+                        celebrations such as Eid al-Adha or important community
+                        events. Kebo-keboan is a dance performance that involves
+                        several men dressed as buffaloes.<br /><br />
+
+                        In the kebo-keboan ceremony, the dancers emulate the
+                        movements and behavior of a buffalo, donning distinctive
+                        costumes made of woven bamboo and cowhide. They also
+                        wear buffalo head masks designed in such a way that they
+                        truly resemble the animals.<br /><br />
+
+                        Throughout the performance, the dancers form small
+                        groups and engage in captivating actions as if they were
+                        a herd of wild buffaloes. Their agile movements reflect
+                        the stubborn and robust nature of the animals.<br /><br />
+
+                        This dance serves not only as entertainment but also
+                        holds spiritual significance for the people of East
+                        Java. It is believed that the presence of kebo-keboan
+                        can bring good fortune and provide protection from
+                        various natural disasters or malevolent spirits.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
 
-        <div id="danceJawa" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional Dances From Java</h1>
-                <p>
-                  Indonesia is a country known for its diverse and rich culture,
-                  where every ethnic group has its own captivating traditional
-                  dance. This cultural wealth is particularly evident in Java,
-                  an island with a deep cultural history that hosts a variety of
-                  traditional dances. Among these, Javanese dance forms are
-                  especially noteworthy for their grace and intricacy.
-                </p>
-                <div class="dance">
-                  <div class="all-img-dance">
-                    <img
-                      src="../assets/images/cultures/jawa/tari-cokek-jakarta.jpg"
-                    />
-                    <h2>Cokek Dance, DKI Jakarta (West Java)</h2>
-                    <p>
-                      The term "Cokek" is rooted in the Hokkian language and
-                      finds its cultural expression in West Java, Indonesia.
-                      Originating from the Hokkian word "chiou-khek," meaning
-                      "singing a song," Cokek is a captivating dance form that
-                      takes center stage during various entertainment events in
-                      the region. Typically accompanied by the lively tunes of
-                      Gambang Kromong music, this traditional performance art
-                      creates a vibrant and engaging atmosphere. <br /><br />
-
-                      In the West Java tradition, Cokek dancers showcase their
-                      expertise by seamlessly combining dance and song. The
-                      rhythmic movements are accentuated by the dancers' skilled
-                      synchronization with the Gambang Kromong music, providing
-                      a harmonious blend of auditory and visual delights. A
-                      distinctive feature of Cokek is the emphasis on expressive
-                      hip movements, adding a sensual and dynamic element to the
-                      performance. <br /><br />
-
-                      As the dancers move gracefully, they not only demonstrate
-                      technical proficiency but also use their movements to
-                      convey emotions and tell a compelling story. This unique
-                      combination of singing, dancing, and expressive
-                      storytelling through hip movements makes Cokek a cherished
-                      cultural tradition in West Java, enchanting audiences
-                      during various celebrations and events in the region.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/tari-jaipong-sunda.jpg"
-                    />
-                    <h2>Jaipong Dance, Sunda (West Java)</h2>
-                    <p>
-                      The Jaipong Dance, a captivating traditional Indonesian
-                      dance, is renowned for its lively and fast-paced rhythm
-                      that echoes the vibrant cultural spirit of the region.
-                      This dynamic dance form is a celebration of the rich
-                      heritage of Indonesia, and its distinctiveness lies in the
-                      dancers' exceptional ability to improvise. Jaipong
-                      dancers, adorned in colorful traditional attire,
-                      skillfully navigate the intricate movements with a
-                      spontaneous flair, creating a performance that is both
-                      visually stunning and culturally significant. The dance is
-                      a testament to the country's artistic diversity, and it
-                      holds a special place in the hearts of Indonesians, often
-                      being featured prominently in traditional ceremonies and
-                      events. <br /><br />
-
-                      The heart of the Jaipong Dance lies in its rhythmic
-                      intensity, captivating audiences with its energetic beats
-                      and expressive choreography. Each performance becomes a
-                      unique and engaging experience as the dancers skillfully
-                      improvise, infusing the dance with a sense of spontaneity
-                      and liveliness. The fast-paced movements reflect the
-                      dynamism of Indonesian culture, creating a visual
-                      spectacle that transcends generations. Whether performed
-                      during festive celebrations or cultural events, the
-                      Jaipong Dance serves as a cultural beacon, connecting
-                      communities and preserving the rich tapestry of
-                      Indonesia's artistic legacy.<br /><br />
-
-                      Beyond its role in traditional ceremonies, the Jaipong
-                      Dance has evolved into a symbol of cultural pride and
-                      identity for the Indonesian people. The dance not only
-                      showcases the country's artistic prowess but also serves
-                      as a means of cultural expression, fostering a sense of
-                      unity and belonging. Passed down through generations, the
-                      Jaipong Dance continues to thrive, captivating audiences
-                      with its mesmerizing blend of tradition and spontaneity.
-                      As an integral part of Indonesia's cultural heritage, this
-                      dance form stands as a testament to the nation's enduring
-                      commitment to preserving and celebrating its rich cultural
-                      legacy.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/tari-serimpi-jogja.jpg"
-                    />
-                    <h2>Serimpi Dance, Jogja (Central Java)</h2>
-                    <p>
-                      The Serimpi Dance, originating from the cultural heartland
-                      of Central Java, Indonesia, stands as a testament to the
-                      rich heritage associated with the royal palaces of
-                      Yogyakarta and Surakarta. This ritualized dance form is
-                      deeply rooted in the traditions of the Javanese court,
-                      particularly epitomizing the elegance that characterizes
-                      the royal Javanese culture. Renowned for its graceful
-                      movements and symbolic significance, the Serimpi Dance has
-                      become an emblem of the ruler's power and the refined
-                      essence of Javanese civilization.<br /><br />
-
-                      While the Serimpi Dance initially found its place within
-                      the courtly settings of the two Keratons, it has
-                      transcended these boundaries to become a cherished
-                      cultural treasure embraced by common Javanese people.
-                      Beyond the palace walls, the dance is frequently performed
-                      during ceremonies and festivals, symbolizing a connection
-                      between the royal and everyday realms. Even today, the
-                      Serimpi Dance remains an integral part of court
-                      ceremonies, with princesses dedicatedly rehearsing various
-                      forms of Srimpi in the pendopo pavilion within the palace.
-                      This enduring practice underscores the dance's resilience
-                      and its continued significance in preserving and
-                      celebrating the cultural identity of Central Java.<br /><br />
-
-                      As a dance deeply embedded in the fabric of Indonesian
-                      tradition, the Serimpi Dance reflects the enduring spirit
-                      of Javanese culture. Its graceful and intricate movements
-                      not only serve as a captivating artistic expression but
-                      also carry layers of historical and symbolic meaning. In
-                      essence, the Serimpi Dance is a living testament to the
-                      cultural richness of Central Java, showcasing a harmonious
-                      blend of tradition, refinement, and the enduring legacy of
-                      royal courts.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/tari-remo-jombang.jpg"
-                    />
-                    <h2>Remo Dance, Jombang (East Java)</h2>
-                    <p>
-                      The Remo Dance, originating from the cultural tapestry of
-                      East Java, specifically Jombang, is a captivating
-                      traditional performance deeply embedded in the welcoming
-                      rituals of the region. Traditionally accompanied by the
-                      enchanting melodies of gamelan music, this dance has
-                      evolved over time to embrace both male and female dancers.
-                      Originally a male-dominated art form, the Remo Dance now
-                      boasts the graceful movements of female performers who
-                      have seamlessly integrated the masculine nuances required
-                      for its proper execution. The dance serves as a vibrant
-                      cultural expression that extends a warm welcome to guests,
-                      creating an atmosphere of celebration and communal joy.<br /><br />
-
-                      At its core, the Remo Dance is distinguished by its
-                      dynamic and lively footwork, which forms the crux of the
-                      performance. The dancers, adorned with bells on their
-                      ankles, create a melodic rhythm as they move, producing a
-                      harmonious symphony that resonates with the spirit of the
-                      dance. These bells, ringing in synchrony with the dancers'
-                      movements, add a layer of auditory delight to the visual
-                      spectacle, enhancing the overall sensory experience. The
-                      dance not only showcases the physical prowess of the
-                      performers but also reflects the cultural identity and
-                      hospitality ingrained in the traditions of Jombang, East
-                      Java.<br /><br />
-
-                      Rooted in the traditions of East Java, the Remo Dance
-                      continues to be a vibrant and evolving cultural practice.
-                      Its ability to transcend gender boundaries and adapt to
-                      contemporary expressions underscores its enduring
-                      significance in the local heritage. As the dance welcomes
-                      guests with its lively and rhythmic choreography, it
-                      becomes a living embodiment of the rich cultural legacy of
-                      Jombang, contributing to the dynamic tapestry of
-                      Indonesia's diverse traditional performing arts.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/tari-reog-ponorogo.jpg"
-                    />
-                    <h2>Reog Dance, Ponorogo (East Java)</h2>
-                    <p>
-                      The Reog Dance, originating from Ponorogo, East Java,
-                      Indonesia, is a captivating traditional performance that
-                      unfolds a rich narrative through the artistry of a group
-                      of dancers adorned in elaborate costumes and masks. This
-                      mesmerizing dance is deeply rooted in local folklore and
-                      typically recounts the legendary tale of King Kerono and
-                      his valiant soldiers who courageously faced the formidable
-                      Singabarong monster. The dancers skillfully use their
-                      ornate masks to portray characters and express the
-                      emotions of the narrative, creating a visual spectacle
-                      that captivates audiences.<br /><br />
-
-                      This unique dance form is not merely a form of
-                      entertainment but holds cultural significance as it is
-                      often showcased during traditional ceremonies and events.
-                      The Reog Dance has become an integral part of the cultural
-                      fabric in the region, symbolizing bravery, heroism, and
-                      the triumph of good over evil. The performers, through
-                      intricate choreography and dynamic movements, bring to
-                      life the mythical battle between King Kerono and the
-                      monstrous Singabarong, creating an immersive experience
-                      that allows spectators to connect with the rich cultural
-                      heritage of East Java.<br /><br />
-
-                      Beyond its artistic expression, the Reog Dance serves as a
-                      testament to the preservation of local traditions and
-                      folklore, acting as a link between the past and the
-                      present. As communities come together to witness this
-                      mesmerizing performance, they not only celebrate their
-                      cultural identity but also contribute to the continuity of
-                      a cherished art form that has been passed down through
-                      generations in Ponorogo. The Reog Dance, with its vibrant
-                      costumes, compelling narrative, and cultural significance,
-                      stands as a testament to the enduring beauty of
-                      Indonesia's diverse and rich heritage.
-                    </p>
+        <!-- kalimantan -->
+        <div class="kalimantan">
+          <div id="batikKalimantan" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Kalimantan Batik</h1>
+                  <p>
+                    Each batik piece is a masterpiece, reflecting significant
+                    cultural and social importance in Kalimantan, often used in
+                    ceremonies, celebrations, and daily wear, symbolizing the
+                    island's unique cultural identity.
+                  </p>
+                  <div class="batik">
+                    <div class="all-img-batik">
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/kalimantan/kalimantan-batik-bayamraja.jpg"
+                        />
+                        <h3>Bayam Raja <br />(South Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/kalimantan/kalimantan-batik-tampukmanggis.jpg"
+                        />
+                        <h3>Tampuk Manggis <br />(South Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/kalimantan/kalimantan-batik-benangbintik.jpg"
+                        />
+                        <h3>Benang Bintik <br />(Central Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="../assets/images/cultures/kalimantan/kalimantan-batik-awanberarak.jpg"
+                        />
+                        <h3>Awan Berarak <br />(West Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="./assets/images/kalimantan-batik-batanggaring.jpg"
+                        />
+                        <h3>Batang Garing <br />(Central Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img src="./assets/images/kalimantan-batik-shaho.jpg" />
+                        <h3>Shaho (East Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="./assets/images/kalimantan-batik-sasirangan.jpg"
+                        />
+                        <h3>Sasirangan <br />(South Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="./assets/images/kalimantan-batik-tarakan.jpg"
+                        />
+                        <h3>Tarakan <br />(North Kalimantan)</h3>
+                      </div>
+                      <div class="batik-jawa">
+                        <img
+                          src="./assets/images/kalimantan-batik-burungenggang.jpg"
+                        />
+                        <h3>Burung Enggang <br />(East Kalimantan)</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <div id="musicJawa" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional Musical Instruments From Java</h1>
-                <p>
-                  In Java, Indonesia, traditional musical instruments play a
-                  vital role in shaping the island's cultural identity. The
-                  music they create isn't just for entertainment; it's deeply
-                  woven into daily life, featured prominently in ceremonies,
-                  celebrations, and rituals. These instruments are more than
-                  just tools for artistic expression; they are living symbols of
-                  Java's rich cultural heritage, connecting the present
-                  generation with their roots and fostering a strong sense of
-                  identity among the Javanese people.
-                </p>
-                <div class="music">
-                  <div class="all-img-music">
-                    <img
-                      src="../assets/images/cultures/jawa/musik-angklung-jawabarat.jpg"
-                    />
-                    <h2>Angklung (West Java)</h2>
-                    <p>
-                      Angklung, a traditional instrument originating from
-                      Indonesia, particularly West Java, holds a unique cultural
-                      significance that resonates both nationally and
-                      internationally. Crafted from bamboo, the Angklung is a
-                      musical marvel known for its melodious tones and
-                      distinctive resonant sound. Its name is derived from the
-                      onomatopoeic "ang-klung-klung," representing the sound
-                      produced when the instrument is played. The Angklung is
-                      often associated with communal performances, where groups
-                      of players collaborate to create intricate and harmonious
-                      melodies. This communal aspect not only showcases the
-                      instrument's musical prowess but also reflects the spirit
-                      of togetherness and unity deeply ingrained in Indonesian
-                      culture.<br /><br />
-
-                      The Angklung's rich heritage has earned it a place on the
-                      UNESCO Intangible Cultural Heritage of Humanity list,
-                      recognizing its cultural importance and the craftsmanship
-                      involved in its creation. Each bamboo tube is meticulously
-                      tuned to produce specific pitches, contributing to the
-                      instrument's ability to play complex compositions. Beyond
-                      its cultural roots, the Angklung has become a symbol of
-                      Indonesia's artistic identity, celebrated both locally and
-                      globally. As it continues to captivate audiences around
-                      the world, the Angklung stands as a testament to the
-                      vibrant and diverse musical traditions that contribute to
-                      Indonesia's cultural tapestry.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/musik-rebab-jawabarat.jpg"
-                    />
-                    <h2>Rebab (West Java)</h2>
-                    <p>
-                      The Rebab, a traditional instrument hailing from Indonesia
-                      with deep roots in West Java, is a stringed instrument
-                      that holds a distinguished place in the country's musical
-                      heritage. Constructed with a slender wooden body and a
-                      unique, rounded soundbox, the Rebab showcases the
-                      meticulous craftsmanship of Indonesian artisans. Its
-                      strings are traditionally made from animal gut or
-                      horsehair, and the instrument is played with a bow,
-                      producing hauntingly beautiful and resonant tones. Often
-                      featured in traditional Gamelan ensembles and classical
-                      Javanese music, the Rebab plays a vital role in conveying
-                      the emotional nuances of the compositions, adding a touch
-                      of melancholy or ecstasy to the overall musical
-                      experience.<br /><br />
-
-                      The Rebab's cultural significance extends beyond its
-                      musical capabilities, embodying the rich history and
-                      traditions of Indonesia. Its presence in various
-                      ceremonies, rituals, and performances underscores its role
-                      as a symbol of cultural identity. The instrument has also
-                      evolved over time, adapting to different regional styles
-                      and musical genres, demonstrating its versatility and
-                      enduring appeal in both traditional and contemporary
-                      Indonesian music. As a testament to its importance, the
-                      Rebab serves as a bridge connecting the past and present,
-                      resonating with the spirit of West Java's cultural
-                      heritage.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/musik-gambang-jawatengah.jpg"
-                    />
-                    <h2>Gambang (Central Java)</h2>
-                    <p>
-                      The Gambang is a traditional musical instrument
-                      originating from Central Java, Indonesia, and holds a
-                      significant place in the rich cultural heritage of the
-                      region. This instrument is a xylophone-like percussion
-                      device made from wooden bars that are struck with mallets
-                      to produce melodious tones. The Gambang typically features
-                      a set of wooden keys arranged in a specific order,
-                      supported by a resonator made from bamboo or other
-                      materials. Musicians play the Gambang by striking the
-                      wooden bars with soft-headed mallets, creating a
-                      distinctive and enchanting sound that is often associated
-                      with Javanese traditional music.<br /><br />
-
-                      In traditional Javanese gamelan ensembles, the Gambang
-                      plays a crucial role, providing a unique timbre and
-                      contributing to the overall harmonic texture of the music.
-                      The instrument is often played in conjunction with other
-                      traditional instruments such as the bonang, saron, and
-                      kendhang, creating a symphony of sounds that reflect the
-                      cultural identity of Central Java. The Gambang has
-                      transcended its historical roots and is still cherished
-                      today, not only for its musical significance but also for
-                      its cultural and artistic value in preserving the musical
-                      traditions of Indonesia.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/musik-bonang-jawatimur.jpg"
-                    />
-                    <h2>Bonang (East Java)</h2>
-                    <p>
-                      The Bonang is a traditional Javanese musical instrument
-                      hailing from East Java, Indonesia, and is a vital
-                      component of the gamelan ensemble. This percussion
-                      instrument consists of a series of small, kettle-shaped
-                      gongs suspended on a wooden frame. The bonang is played
-                      using a pair of mallets, typically made of wood or bamboo,
-                      striking the gongs to produce resonant, metallic tones.
-                      The gongs are arranged in two rows, with the upper row
-                      known as the "panembung" and the lower row as the "pelog."
-                      Each gong in the bonang set is tuned to specific pitches,
-                      creating a complex and layered sound when played
-                      together.<br /><br />
-
-                      In Javanese gamelan music, the bonang plays a crucial role
-                      in establishing the melody and providing intricate
-                      ornamentation. It often serves as a rhythmic and melodic
-                      guide for the entire ensemble, setting the tone and
-                      contributing to the mesmerizing and hypnotic quality of
-                      the music. The bonang is not only a musical instrument but
-                      also a cultural symbol, representing the rich traditions
-                      and artistic expressions of East Java. Its presence in
-                      gamelan orchestras highlights the importance of this
-                      instrument in preserving and showcasing the unique musical
-                      heritage of Indonesia.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/musik-ketipung-jawatimur.jpg"
-                    />
-                    <h2>Ketipung (East Java)</h2>
-                    <p>
-                      The Ketipung is a traditional percussion instrument
-                      originating from East Java, Indonesia, and is an integral
-                      part of the country's rich musical heritage. This
-                      instrument is often used in traditional Javanese and
-                      Balinese gamelan ensembles, contributing to the rhythmic
-                      foundation of the music. The Ketipung typically consists
-                      of a cylindrical body made of wood or metal, covered with
-                      a stretched membrane on one or both ends. Musicians play
-                      the Ketipung by striking the membrane with their hands or
-                      mallets, producing a resonant and distinctive sound that
-                      adds depth and texture to the ensemble's overall sonic
-                      landscape.<br /><br />
-
-                      In traditional Indonesian music, the Ketipung is known for
-                      its versatility and ability to convey a wide range of
-                      emotions. Its rhythmic patterns and dynamic variations
-                      contribute to the lively and expressive nature of the
-                      music, whether it's accompanying dance performances,
-                      wayang kulit (shadow puppetry), or other cultural events.
-                      The Ketipung's presence in Indonesian music reflects the
-                      country's commitment to preserving and celebrating its
-                      cultural identity, providing a unique auditory experience
-                      that continues to captivate audiences both in Indonesia
-                      and around the world.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <div id="houseJawa" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional House In Java</h1>
-                <p>
-                  Traditional houses in Java showcase a unique fusion of
-                  indigenous design and historical influences, featuring
-                  steep-pitched roofs, intricate wooden carvings, and a seamless
-                  integration with the environment. Emphasizing a connection to
-                  nature, these houses embody Javanese aesthetic values through
-                  open spaces, well-ventilated interiors, and local materials.
-                  Beyond their architectural significance, these dwellings serve
-                  as living symbols of Javanese culture, encapsulating
-                  traditions, social structures, and spiritual beliefs, ensuring
-                  the preservation of the island's rich heritage for generations
-                  to come.
-                </p>
-                <div class="house">
-                  <div class="all-img-house">
-                    <img
-                      src="../assets/images/cultures/jawa/Rumah-kebaya-betawi.jpg"
-                    />
-                    <h2>Kebaya House, DKI Jakarta (West Java)</h2>
-                    <p>
-                      Rumah Kebaya, a traditional Indonesian house, is a
-                      captivating reflection of Javanese cultural richness and
-                      artistic finesse. The house is adorned with intricate
-                      wooden carvings that portray symbolic motifs and patterns.
-                      These carvings serve as more than mere decorations; they
-                      narrate tales from Javanese mythology, religious beliefs,
-                      and historical events. The vibrant colors used in the
-                      exterior paintwork symbolize the lively spirit and warmth
-                      of the community. Rumah Kebaya's layout is thoughtfully
-                      designed, emphasizing communal living, fostering strong
-                      family bonds, and creating spaces for various traditional
-                      ceremonies and rituals. As a testament to Indonesia's
-                      diverse architectural heritage, Rumah Kebaya stands proud,
-                      offering a glimpse into the soul of Javanese culture.<br /><br />
-
-                      In addition to its aesthetic charm, Rumah Kebaya embodies
-                      the Javanese philosophy of life. The elevated foundation
-                      and steep roofs provide not only functional benefits in
-                      tropical climates but also carry symbolic significance,
-                      representing protection and spirituality. The house
-                      becomes a canvas for cultural expression, showcasing the
-                      artistic prowess of local craftsmen. The integration of
-                      art and architecture in Rumah Kebaya reflects the deep
-                      connection between the physical and metaphysical aspects
-                      of Javanese life. It stands as a living heritage,
-                      preserving centuries-old traditions and embodying the
-                      enduring spirit of a people deeply rooted in their
-                      cultural identity.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/rumah-badui-banten.jpg"
-                    />
-                    <h2>Badui House, Banten (West Java)</h2>
-                    <p>
-                      Rumah Baduy not only serves as a physical shelter but
-                      encapsulates the very ethos of the Baduy community's
-                      unique way of life. Constructed primarily from bamboo and
-                      thatch, the houses seamlessly blend into the lush natural
-                      surroundings, emphasizing the community's commitment to
-                      sustainability and harmony with nature. The simplicity of
-                      the architecture reflects the Baduy people's intentional
-                      rejection of modern influences, embodying a dedication to
-                      preserving their cultural identity. In a world marked by
-                      rapid urbanization and technological advancements, Rumah
-                      Baduy stands as a poignant symbol of cultural resilience,
-                      emphasizing the importance of maintaining a delicate
-                      balance between tradition and the environment. Each house
-                      becomes a sanctuary, preserving the age-old customs,
-                      rituals, and values that define the Baduy way of life.<br /><br />
-
-                      The Baduy people's adherence to traditional customs is not
-                      limited to the physical structure of their houses but
-                      extends to every aspect of their lives. Rumah Baduy
-                      becomes a haven where the community fosters a deep
-                      connection with their ancestral roots, ensuring that their
-                      cultural heritage is passed down from generation to
-                      generation. The intentional simplicity of the architecture
-                      is a reflection of the Baduy people's commitment to a
-                      lifestyle that minimizes external influences, fostering a
-                      sense of community and preserving the intrinsic values
-                      that define their identity.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/rumah-joglo-jateng.jpg"
-                    />
-                    <h2>Joglo House, Jogja (Central Java)</h2>
-                    <p>
-                      The allure of Rumah Joglo extends beyond its architectural
-                      grandeur; it encapsulates the very essence of Javanese
-                      philosophy and cosmology. The four-tiered roof, a distinct
-                      feature of this traditional house, represents the
-                      hierarchical structure of the universe in Javanese
-                      beliefs. Each tier signifies a different realm – the realm
-                      of the divine, the realm of human life, the realm of
-                      plants and animals, and the realm of the underworld. These
-                      layers not only add visual grandiosity but also imbue the
-                      house with profound spiritual symbolism. The detailed
-                      carvings, often showcasing scenes from epics like the
-                      Ramayana and Mahabharata, serve as visual narratives
-                      connecting inhabitants with their cultural roots. Beyond
-                      its aesthetics, Rumah Joglo is a living testament to the
-                      Javanese way of life, fostering a harmonious coexistence
-                      with nature, community, and the divine.<br /><br />
-
-                      The spatial layout of Rumah Joglo is designed to reflect
-                      the Javanese philosophy of life, emphasizing harmony and
-                      balance in every aspect. The central pavilion and separate
-                      structures for different functions create a sense of
-                      interconnectedness while providing functional spaces for
-                      various activities. The house serves as more than a
-                      dwelling; it becomes a sacred space where cultural
-                      traditions are preserved and celebrated. Rumah Joglo
-                      stands as a living testament to the artistic brilliance of
-                      Javanese craftsmen, embodying the spiritual and cultural
-                      values deeply rooted in Javanese society.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <div id="activityJawa" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore" id="explore">
-              <div class="text-explore">
-                <h1>Traditional Activites</h1>
-                <p>
-                  From historic sites to contemporary art centers, we invite you
-                  to immerse yourself in the charm of Indonesia's cultural
-                  destinations. With interactive guides and virtual experiences,
-                  each explore is an unforgettable journey.
-                </p>
-                <div class="activity">
-                  <div class="all-img-activity">
-                    <img
-                      src="../assets/images/cultures/jawa/kegiatan-pestalaut-jawabarat.jpg"
-                    />
-                    <h2>Sea Festival (West Java)</h2>
-                    <p>
-                      One of the traditional ceremonies in West Java is the Sea
-                      Festival, a maritime celebration that serves as an iconic
-                      event for the people of West Java. Typically held in areas
-                      such as Ciamis, Pangandaran, Sukabumi, Pelabuhan Ratu, and
-                      other coastal regions of West Java, the Sea Festival is a
-                      vibrant and culturally significant ceremony.<br /><br />
-
-                      The festivities commence with fishing boats adorned with
-                      colorful accessories transporting offerings to delight the
-                      spectators. Not only do they carry beautifully decorated
-                      offerings, but the fishermen also bring buffalo heads
-                      wrapped in white cloth as symbolic offerings, which are
-                      ceremoniously tossed into the sea as a gift to the sea
-                      deities. This annual ceremony aims to express gratitude
-                      and seek safety for the fishermen as they embark on their
-                      sea journeys.<br /><br />
-
-                      The Sea Festival is a unique cultural spectacle,
-                      captivating both locals and visitors alike with its
-                      vibrant displays and traditional rituals. The annual event
-                      is a heartfelt expression of thanksgiving and a plea for
-                      safety during maritime endeavors, emphasizing the deep
-                      connection between the coastal communities of West Java
-                      and the vast expanse of the ocean.
-                    </p>
-
-                    <img
-                      src="../assets/images/cultures/jawa/kegiatan-wetonan-jawatengah.jpg"
-                    />
-                    <h2>Wetonan (Central Java)</h2>
-                    <p>
-                      Wetonan is a tradition observed by the communities of
-                      Central Java. The Javanese term "wetonan" signifies the
-                      commemoration of one's birth date.<br /><br />
-
-                      Typically, the wetonan ceremony takes place when a baby
-                      reaches the age of 35 days. On the 35th day after the
-                      baby's birth, the family organizes a ceremony known as
-                      "nyelapani." The term "nyelapani" is derived from
-                      "selapan," meaning one month in the Javanese calendar or
-                      35 days.<br /><br />
-                      This calculation aligns with both the conventional day
-                      count and the Gregorian calendar, encompassing Monday,
-                      Tuesday, Wednesday, Thursday, Friday, Saturday, and
-                      Sunday, as well as the Javanese calendar days – Wage, Pon,
-                      Kliwon, Legi, and Pahing.<br /><br />
-                      The combination of these calculations results in a unique
-                      Javanese Central Java community's day-naming convention,
-                      such as Monday Pon, Tuesday Wage, Thursday Legi, Wednesday
-                      Kliwon, Friday Pahing, Friday Kliwon, and so forth,
-                      cyclically restarting from Pon.
-                    </p>
-                    <img
-                      src="../assets/images/cultures/jawa/kegiatan-kebokeboan-jawatimur.jpg"
-                    />
-                    <h2>Kebo-Keboan (East Java)</h2>
-                    <p>
-                      This ceremony is often held during significant
-                      celebrations such as Eid al-Adha or important community
-                      events. Kebo-keboan is a dance performance that involves
-                      several men dressed as buffaloes.<br /><br />
-
-                      In the kebo-keboan ceremony, the dancers emulate the
-                      movements and behavior of a buffalo, donning distinctive
-                      costumes made of woven bamboo and cowhide. They also wear
-                      buffalo head masks designed in such a way that they truly
-                      resemble the animals.<br /><br />
-
-                      Throughout the performance, the dancers form small groups
-                      and engage in captivating actions as if they were a herd
-                      of wild buffaloes. Their agile movements reflect the
-                      stubborn and robust nature of the animals.<br /><br />
-
-                      This dance serves not only as entertainment but also holds
-                      spiritual significance for the people of East Java. It is
-                      believed that the presence of kebo-keboan can bring good
-                      fortune and provide protection from various natural
-                      disasters or malevolent spirits.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-
-      <!-- kalimantan -->
-      <div class="kalimantan">
-        <div id="batikKalimantan" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Kalimantan Batik</h1>
-                <p>
-                  Each batik piece is a masterpiece, reflecting significant
-                  cultural and social importance in Kalimantan, often used in
-                  ceremonies, celebrations, and daily wear, symbolizing the
-                  island's unique cultural identity.
-                </p>
-                <div class="batik">
-                  <div class="all-img-batik">
-                    <div class="batik-jawa">
+          <div id="danceKalimantan" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional Dances From Kalimantan</h1>
+                  <p>
+                    Indonesia is a country known for its diverse and rich
+                    culture, where every ethnic group has its own captivating
+                    traditional dance. Kalimantan, an island known about their
+                    cultural history that hosts a variety of traditional dances.
+                    Among these, Kalimantan dance forms are especially
+                    noteworthy for their grace and intricacy.
+                  </p>
+                  <div class="dance">
+                    <div class="all-img-dance">
                       <img
-                        src="../assets/images/cultures/kalimantan/kalimantan-batik-bayamraja.jpg"
+                        src="./assets/images/kalimantan-tari-kancetledo.jpg"
                       />
-                      <h3>Bayam Raja <br />(South Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
+                      <h2>Kancet Ledo, Dayak (East Kalimantan)</h2>
+                      <p>
+                        Kancet Ledo Dance, also known as Gong Dance, holds a
+                        special place in the cultural tapestry of East
+                        Kalimantan, Indonesia. This traditional dance is
+                        characterized by its unique performance on a Gong, a
+                        renowned musical instrument in the region. The dance
+                        unfolds as a captivating contest between a young girl
+                        gracefully dancing on the Gong and two Dayak youths
+                        vying for her attention. The Gong, with its resonant
+                        tones, is a symbol of cultural significance and often
+                        accompanies various musical ensembles, enriching the
+                        auditory experience of the performance. Additionally,
+                        the dance is accompanied by the melodious sounds of the
+                        Sampe, a traditional Dayak musical instrument, further
+                        enhancing the rhythmic and harmonious atmosphere.<br /><br />
+
+                        The Kancet Ledo Dance is not merely a display of musical
+                        prowess; it is deeply rooted in cultural ceremonies.
+                        Typically, it takes center stage during important events
+                        such as welcoming guests or celebrating the birth of a
+                        baby chief. The dance serves as a vibrant expression of
+                        the region's hospitality and joyous celebrations.
+                        Executing the Kancet Ledo Dance requires a high level of
+                        skill and grace from the performers. The intricate
+                        choreography places emphasis on delicate hand movements,
+                        precise body motions, and intricate footwork, reflecting
+                        the cultural heritage and artistic finesse of the Dayak
+                        people.<br /><br />
+
+                        As the rhythmic beats of the Gong echo through the air
+                        and the dancers move in harmony, the Kancet Ledo Dance
+                        becomes a captivating spectacle that not only entertains
+                        but also preserves the rich cultural traditions of East
+                        Kalimantan, creating a timeless connection between the
+                        past and the present.
+                      </p>
                       <img
-                        src="../assets/images/cultures/kalimantan/kalimantan-batik-tampukmanggis.jpg"
+                        src="./assets/images/kalimantan-tari-ngerangkau.jpg"
                       />
-                      <h3>Tampuk Manggis <br />(South Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/kalimantan/kalimantan-batik-benangbintik.jpg"
-                      />
-                      <h3>Benang Bintik <br />(Central Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="../assets/images/cultures/kalimantan/kalimantan-batik-awanberarak.jpg"
-                      />
-                      <h3>Awan Berarak <br />(West Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="./assets/images/kalimantan-batik-batanggaring.jpg"
-                      />
-                      <h3>Batang Garing <br />(Central Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img src="./assets/images/kalimantan-batik-shaho.jpg" />
-                      <h3>Shaho (East Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="./assets/images/kalimantan-batik-sasirangan.jpg"
-                      />
-                      <h3>Sasirangan <br />(South Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img src="./assets/images/kalimantan-batik-tarakan.jpg" />
-                      <h3>Tarakan <br />(North Kalimantan)</h3>
-                    </div>
-                    <div class="batik-jawa">
-                      <img
-                        src="./assets/images/kalimantan-batik-burungenggang.jpg"
-                      />
-                      <h3>Burung Enggang <br />(East Kalimantan)</h3>
+                      <h2>Ngerangkau, Dayak (East Kalimantan)</h2>
+                      <p>
+                        In the cultural landscape of East Kalimantan, the
+                        Ngerangkau dance stands as a poignant and meaningful
+                        expression of the Dayak Tunjung and Benuaq tribes'
+                        reverence for the departed. This traditional dance is
+                        intricately woven into funeral ceremonies, serving as a
+                        symbolic ritual to honor and remember the deceased. The
+                        dance's unique feature lies in the use of rice pounding
+                        tools, which are rhythmically struck in a horizontal
+                        position, creating a distinctive beat that resonates
+                        through the air. The rhythmic cadence of the pounding
+                        tools adds a solemn yet rhythmic dimension to the
+                        Ngerangkau dance, reflecting the deep connection between
+                        the living and the spirits of their ancestors.<br /><br />
+
+                        The Ngerangkau dance is a collective performance,
+                        bringing together both male and female dancers who share
+                        familial ties with the ceremony organizers and the
+                        ancestors of the departed. As a group, they encircle the
+                        coffin, forming a long line that moves backward in a
+                        synchronized manner. This symbolic march is a poignant
+                        representation of the journey of the departed soul,
+                        accompanied by a rich ensemble of traditional musical
+                        instruments. The resonant tones of bodies, gongs, and
+                        large drums interweave to create a sonic landscape that
+                        amplifies the emotional gravity of the occasion,
+                        fostering a communal atmosphere of remembrance and
+                        respect.<br /><br />
+
+                        Embedded in the cultural heritage of the Dayak Tunjung
+                        and Benuaq tribes, the Ngerangkau dance transcends mere
+                        entertainment, serving as a powerful cultural vessel
+                        that preserves and passes on the spiritual beliefs and
+                        customs related to the afterlife. Through its evocative
+                        movements and melodic accompaniment, the dance becomes a
+                        timeless expression of the East Kalimantan communities'
+                        deep-rooted connection to their ancestors and a
+                        testament to the enduring legacy of their traditions.
+                      </p>
+                      <img src="./assets/images/kalimantan-tari-mandau.jpg" />
+                      <h2>Mandau, Dayak (Central Kalimantan)</h2>
+                      <p>
+                        In the heart of Central Kalimantan, the Kinyah Mandau
+                        Dance emerges as a cultural testament to the historical
+                        traditions of the Dayak tribe. Rooted in the ancient
+                        Dayak custom of kinyah, a term denoting a war dance
+                        practiced in preparation for headhunting and targeting
+                        enemies, this dance has evolved over time into a
+                        symbolic and artistic expression. The origin of the
+                        dance is deeply connected to the Dayak tribe's
+                        historical practices, specifically the tradition of
+                        headhunting. However, this martial tradition ceased
+                        following the Tumbang Anoi peace agreement in 1894,
+                        marking a significant turning point in the region's
+                        history.<br /><br />
+
+                        Despite its historical martial connotations, the Kinyah
+                        Mandau Dance has transformed into a cultural phenomenon,
+                        embracing a new purpose in the preservation of Dayak
+                        traditions. The dance, once a preparation for war, has
+                        metamorphosed into a captivating art form, celebrating
+                        the heritage and identity of the Dayak people. In
+                        contemporary times, Kinyah Mandau serves as a vital
+                        means for the Dayak community to express and safeguard
+                        their cultural legacy. It stands as a living testament
+                        to the resilience of traditions, adapting to the
+                        changing times while maintaining a connection to the
+                        rich history and values of the Dayak tribe.<br /><br />
+
+                        As the rhythmic movements of the Kinyah Mandau Dance
+                        unfold, accompanied by traditional music and symbolic
+                        gestures, the dance becomes a vibrant celebration of
+                        Central Kalimantan's cultural diversity. Beyond its
+                        historical roots, the dance encapsulates the spirit of
+                        unity, resilience, and the enduring strength of the
+                        Dayak people. In embracing this dance as a cultural
+                        expression, the Dayak community not only pays homage to
+                        its historical roots but also ensures that the legacy of
+                        Kinyah lives on, captivating audiences with a
+                        captivating blend of tradition and artistic innovation.
+                      </p>
+                      <img src="./assets/images/kalimantan-tari-giring.jpg" />
+                      <h2>
+                        Giring-Giring, Dayak <br />(Central and South
+                        Kalimantan)
+                      </h2>
+                      <p>
+                        The Giring-Giring Dance, a traditional Dayak dance
+                        hailing from Central Kalimantan, is a captivating
+                        cultural expression that also finds resonance in South
+                        Kalimantan, where it is known as the Gintur Dance. This
+                        vibrant dance form is distinguished by the use of two
+                        types of sticks—long sticks and short sticks—that play a
+                        pivotal role in creating its distinctive rhythm and
+                        visual appeal. Serving as a lively manifestation of joy
+                        and communal pleasure, the Giring-Giring Dance reflects
+                        the celebratory spirit of the Dayak people in both
+                        regions.<br /><br />
+
+                        In the Giring-Giring Dance, the choreography involves
+                        skillful manipulation of the sticks, with the long stick
+                        held in the left hand used to rhythmically stomp the
+                        floor. Simultaneously, the short stick in the right hand
+                        is swung with finesse, producing a unique sound that
+                        harmonizes with the beats of the long stick. The
+                        synchronized movements of the dancers, coupled with the
+                        rhythmic interplay of the sticks, create a dynamic and
+                        engaging performance that encapsulates the cultural
+                        vibrancy and unity of the Dayak communities in both
+                        Central and South Kalimantan.<br /><br />
+
+                        Beyond its rhythmic complexity, the Giring-Giring Dance
+                        is a cultural treasure that embodies the shared
+                        traditions and values of the Dayak people across
+                        regions. It serves as a testament to the resilience of
+                        cultural practices, adapting to regional nuances while
+                        maintaining a fundamental connection to the spirit of
+                        festivity and togetherness. As the dancers move in
+                        harmony, wielding their sticks with precision, the
+                        Giring-Giring Dance becomes a living celebration of the
+                        rich heritage and artistic expression of the Dayak
+                        culture, fostering a sense of pride and continuity among
+                        the communities in Central and South Kalimantan.
+                      </p>
+                      <img src="./assets/images/kalimantan-tari-gantar.jpg" />
+                      <h2>Gantar, Dayak (East Kalimantan)</h2>
+                      <p>
+                        Originating from the Benuaq and Tunjung Dayak tribes in
+                        the West Kutai Regency of East Kalimantan, the Gantar
+                        Dance is a cultural gem that intricately weaves together
+                        movement, tradition, and symbolism. The dance finds its
+                        roots in the ancient practice of pounding rice, a
+                        rhythmic and laborious task undertaken to seek blessings
+                        from Dewi Sri or Dewi Padi, the revered goddess
+                        associated with rice and fertility. This dance,
+                        therefore, serves as a poignant expression of gratitude
+                        and supplication for the prosperity of the land and its
+                        people, embodying a connection between the spiritual and
+                        the agricultural aspects of Dayak life.<br /><br />
+
+                        The attire worn during the Gantar Dance is as rich in
+                        cultural significance as the movements themselves. Doyo
+                        ulap, a woven cloth crafted from the fibers of the doyo
+                        leaf—a robust pandanus plant—comprises the traditional
+                        costume. The use of such materials not only reflects the
+                        resourcefulness of the Dayak people but also symbolizes
+                        their deep connection with the natural environment. The
+                        Gantar Dance's props, including the Senak (long stick),
+                        Kusak (Bamboo filled with seeds), and Pesapu (head tie
+                        made of cloth or batik), further contribute to the
+                        visual and auditory spectacle of the performance,
+                        creating a multi-sensory experience that immerses
+                        participants and spectators alike in the cultural
+                        richness of East Kalimantan.<br /><br />
+
+                        As the Gantar Dance unfolds, the rhythmic movements,
+                        accompanied by the percussive sounds of pounding and the
+                        rustle of woven fabric, create a mesmerizing tapestry of
+                        cultural expression. Beyond being a form of
+                        entertainment, the dance is a living tradition that
+                        bridges the past and present, fostering a sense of
+                        identity and continuity among the Benuaq and Tunjung
+                        Dayak tribes. The Gantar Dance, with its elaborate
+                        rituals and symbolic gestures, is a testament to the
+                        resilience of Dayak culture, preserving age-old customs
+                        in the vibrant tapestry of East Kalimantan's cultural
+                        heritage.
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <div id="danceKalimantan" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional Dances From Kalimantan</h1>
-                <p>
-                  Indonesia is a country known for its diverse and rich culture,
-                  where every ethnic group has its own captivating traditional
-                  dance. Kalimantan, an island known about their cultural
-                  history that hosts a variety of traditional dances. Among
-                  these, Kalimantan dance forms are especially noteworthy for
-                  their grace and intricacy.
-                </p>
-                <div class="dance">
-                  <div class="all-img-dance">
-                    <img src="./assets/images/kalimantan-tari-kancetledo.jpg" />
-                    <h2>Kancet Ledo, Dayak (East Kalimantan)</h2>
-                    <p>
-                      Kancet Ledo Dance, also known as Gong Dance, holds a
-                      special place in the cultural tapestry of East Kalimantan,
-                      Indonesia. This traditional dance is characterized by its
-                      unique performance on a Gong, a renowned musical
-                      instrument in the region. The dance unfolds as a
-                      captivating contest between a young girl gracefully
-                      dancing on the Gong and two Dayak youths vying for her
-                      attention. The Gong, with its resonant tones, is a symbol
-                      of cultural significance and often accompanies various
-                      musical ensembles, enriching the auditory experience of
-                      the performance. Additionally, the dance is accompanied by
-                      the melodious sounds of the Sampe, a traditional Dayak
-                      musical instrument, further enhancing the rhythmic and
-                      harmonious atmosphere.<br /><br />
+          <div id="musicKalimantan" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional Musical Instruments From Kalimantan</h1>
+                  <p>
+                    In Kalimantan, Indonesia, traditional musical instruments
+                    play a crucial role in defining the island's unique cultural
+                    identity. The music crafted from these instruments goes
+                    beyond mere entertainment, becoming an integral part of
+                    daily life and finding prominence in various ceremonies,
+                    celebrations, and rituals. These traditional Kalimantan
+                    instruments serve as more than just artistic tools; they
+                    stand as living symbols of the region's diverse cultural
+                    heritage, forging a connection between the present
+                    generation and their ancestral roots. In doing so, they
+                    contribute to the preservation of Kalimantan's rich
+                    traditions, fostering a profound sense of identity and pride
+                    among the diverse communities that call the island home.
+                  </p>
+                  <div class="music">
+                    <div class="all-img-music">
+                      <img src="./assets/images/kalimantan-musik-sapeh.jpg" />
+                      <h2>Sape (West and East Kalimantan)</h2>
+                      <p>
+                        Originating from the Dayak Kayaan tribe in the upper
+                        Kapuas River region of West Kalimantan, the Sape is a
+                        distinctive stringed musical instrument. This plucked
+                        instrument, measuring approximately one meter in length,
+                        features two strings capable of producing four different
+                        pitches. Traditionally crafted and hailing from the lush
+                        landscapes of Kalimantan, the Sape is commonly utilized
+                        as an accompaniment for dances or in the ritual
+                        ceremonies of the Dayak ethnic group. There are
+                        different varieties of Sape, including the Sape Kayaan
+                        and Sape Kenyah, each associated with distinct Dayak
+                        subcultures. Crafted from robust woods such as
+                        jackfruit, corkwood, or belian, the instrument
+                        exemplifies the traditional craftsmanship and natural
+                        resource utilization of the Dayak people.<br /><br />
 
-                      The Kancet Ledo Dance is not merely a display of musical
-                      prowess; it is deeply rooted in cultural ceremonies.
-                      Typically, it takes center stage during important events
-                      such as welcoming guests or celebrating the birth of a
-                      baby chief. The dance serves as a vibrant expression of
-                      the region's hospitality and joyous celebrations.
-                      Executing the Kancet Ledo Dance requires a high level of
-                      skill and grace from the performers. The intricate
-                      choreography places emphasis on delicate hand movements,
-                      precise body motions, and intricate footwork, reflecting
-                      the cultural heritage and artistic finesse of the Dayak
-                      people.<br /><br />
+                        The Sape's significance extends beyond its musical
+                        function; it serves as a cultural emblem deeply embedded
+                        in the fabric of Dayak heritage. Its melodic tones are
+                        intricately woven into the tapestry of rituals and
+                        traditions, offering a sonic backdrop to the spiritual
+                        and communal expressions of the Dayak people. The
+                        craftsmanship involved in creating a Sape reflects a
+                        harmonious relationship between the artisan and the
+                        environment, as the instrument is meticulously carved
+                        from select hardwoods. Thus, the Sape becomes not only a
+                        conduit for musical expression but also a tangible link
+                        to the ancestral practices and natural resources that
+                        have shaped the cultural identity of the Dayak Kayaan
+                        tribe in the verdant landscapes of West Kalimantan.
+                      </p>
+                      <img
+                        src="./assets/images/kalimantan-musik-klentangan.jpg"
+                      />
+                      <h2>Klentangan (East Kalimantan)</h2>
+                      <p>
+                        Belonging to the percussion family, the Sluding or
+                        Klentangan is a traditional instrument distinguished by
+                        its eight wooden blades arranged within a wooden frame.
+                        Positioned on both the right and left sides of the
+                        instrument are motifs depicting the sacred Enggang
+                        bird's head, revered by the Dayak Modang tribe. This
+                        percussion instrument carries both cultural and symbolic
+                        significance, serving as a tangible representation of
+                        the spiritual beliefs and heritage of the Dayak Modang
+                        community in East Kalimantan.<br /><br />
 
-                      As the rhythmic beats of the Gong echo through the air and
-                      the dancers move in harmony, the Kancet Ledo Dance becomes
-                      a captivating spectacle that not only entertains but also
-                      preserves the rich cultural traditions of East Kalimantan,
-                      creating a timeless connection between the past and the
-                      present.
-                    </p>
-                    <img src="./assets/images/kalimantan-tari-ngerangkau.jpg" />
-                    <h2>Ngerangkau, Dayak (East Kalimantan)</h2>
-                    <p>
-                      In the cultural landscape of East Kalimantan, the
-                      Ngerangkau dance stands as a poignant and meaningful
-                      expression of the Dayak Tunjung and Benuaq tribes'
-                      reverence for the departed. This traditional dance is
-                      intricately woven into funeral ceremonies, serving as a
-                      symbolic ritual to honor and remember the deceased. The
-                      dance's unique feature lies in the use of rice pounding
-                      tools, which are rhythmically struck in a horizontal
-                      position, creating a distinctive beat that resonates
-                      through the air. The rhythmic cadence of the pounding
-                      tools adds a solemn yet rhythmic dimension to the
-                      Ngerangkau dance, reflecting the deep connection between
-                      the living and the spirits of their ancestors.<br /><br />
+                        The intricate design of the Klentangan, with its
+                        carefully arranged wooden blades and sacred motifs,
+                        reflects the artisanal craftsmanship and cultural
+                        aesthetics of the Dayak Modang people. Beyond its
+                        musical function, the Klentangan is an integral part of
+                        ceremonial and ritualistic practices, contributing to
+                        the spiritual ambiance of various events. The presence
+                        of the Enggang bird motifs not only adds artistic beauty
+                        but also infuses the instrument with a sense of
+                        reverence and connection to the natural world,
+                        underlining the profound relationship between the Dayak
+                        Modang community and their cultural identity as
+                        expressed through the Klentangan.
+                      </p>
+                      <img
+                        class="khusus"
+                        src="./assets/images/kalimantan-musik-lulung.jpg"
+                      />
+                      <h2>Lulung (East Kalimantan)</h2>
+                      <p>
+                        Lulung is a traditional musical instrument akin to a
+                        sitar, classified as an idiophonic instrument. This
+                        plucked string instrument is crafted from wood, although
+                        variations made from bamboo also exist. What sets the
+                        Lulung apart is the unique cultural tradition
+                        surrounding its performance – only women from the Dayak
+                        Kenyah tribe are permitted to play this distinctive
+                        musical instrument. The Lulung holds a special place
+                        within the cultural practices of the Dayak Kenyah,
+                        serving as both a musical expression and a symbol of
+                        gender-specific roles within the community.<br /><br />
 
-                      The Ngerangkau dance is a collective performance, bringing
-                      together both male and female dancers who share familial
-                      ties with the ceremony organizers and the ancestors of the
-                      departed. As a group, they encircle the coffin, forming a
-                      long line that moves backward in a synchronized manner.
-                      This symbolic march is a poignant representation of the
-                      journey of the departed soul, accompanied by a rich
-                      ensemble of traditional musical instruments. The resonant
-                      tones of bodies, gongs, and large drums interweave to
-                      create a sonic landscape that amplifies the emotional
-                      gravity of the occasion, fostering a communal atmosphere
-                      of remembrance and respect.<br /><br />
+                        Constructed with precision and care, the Lulung embodies
+                        the skilled craftsmanship and cultural heritage of the
+                        Dayak Kenyah people in East Kalimantan. The choice of
+                        materials, be it wood or bamboo, reflects a harmonious
+                        relationship with the natural resources of the region.
+                        Beyond its musical capabilities, the instrument becomes
+                        a vessel for cultural transmission, reinforcing the
+                        gender-specific roles and traditions unique to the Dayak
+                        Kenyah. The exclusivity of Lulung to female performers
+                        not only showcases the cultural significance of the
+                        instrument but also underscores the importance of
+                        preserving and passing on this tradition through
+                        generations, contributing to the rich tapestry of East
+                        Kalimantan's musical and cultural diversity.
+                      </p>
+                      <img
+                        src="./assets/images/kalimantan-musik-sarunaibanjar.jpg"
+                      />
+                      <h2>Sarunai Banjar (South Kalimantan)</h2>
+                      <p>
+                        Sarunai Banjar is a distinctive musical instrument
+                        unique to the Banjar tribe in South Kalimantan, taking
+                        on a trumpet-like form. Characterized by its small size
+                        and a rounded end, this instrument plays a significant
+                        role in accompanying traditional dances, harmonizing
+                        seamlessly with other traditional instruments. Crafted
+                        with precision and cultural significance, the Sarunai
+                        Banjar stands as a symbol of the Banjar tribe's rich
+                        musical heritage, showcasing the intricate craftsmanship
+                        and artistic expression inherent in the region's
+                        cultural identity.<br /><br />
 
-                      Embedded in the cultural heritage of the Dayak Tunjung and
-                      Benuaq tribes, the Ngerangkau dance transcends mere
-                      entertainment, serving as a powerful cultural vessel that
-                      preserves and passes on the spiritual beliefs and customs
-                      related to the afterlife. Through its evocative movements
-                      and melodic accompaniment, the dance becomes a timeless
-                      expression of the East Kalimantan communities' deep-rooted
-                      connection to their ancestors and a testament to the
-                      enduring legacy of their traditions.
-                    </p>
-                    <img src="./assets/images/kalimantan-tari-mandau.jpg" />
-                    <h2>Mandau, Dayak (Central Kalimantan)</h2>
-                    <p>
-                      In the heart of Central Kalimantan, the Kinyah Mandau
-                      Dance emerges as a cultural testament to the historical
-                      traditions of the Dayak tribe. Rooted in the ancient Dayak
-                      custom of kinyah, a term denoting a war dance practiced in
-                      preparation for headhunting and targeting enemies, this
-                      dance has evolved over time into a symbolic and artistic
-                      expression. The origin of the dance is deeply connected to
-                      the Dayak tribe's historical practices, specifically the
-                      tradition of headhunting. However, this martial tradition
-                      ceased following the Tumbang Anoi peace agreement in 1894,
-                      marking a significant turning point in the region's
-                      history.<br /><br />
+                        The small, trumpet-shaped Sarunai Banjar becomes an
+                        essential component of traditional dances, adding a
+                        melodic layer to the rhythmic tapestry of South
+                        Kalimantan's cultural performances. Its distinctive form
+                        and purposeful use in ceremonial contexts highlight the
+                        intersection of artistry and tradition within the Banjar
+                        community. The instrument's role extends beyond mere
+                        accompaniment; it becomes a cultural ambassador,
+                        transmitting the unique musical traditions and the
+                        expressive spirit of the Banjar tribe to audiences, both
+                        within the community and beyond. As the Sarunai Banjar
+                        resonates with the beats of other traditional
+                        instruments, it weaves a narrative that connects the
+                        past and present, celebrating the enduring cultural
+                        legacy of the Banjar people in the vibrant landscapes of
+                        South Kalimantan.
+                      </p>
+                      <img
+                        src="./assets/images/kalimantan-musik-kalangkupak.jpg"
+                      />
+                      <h2>Kalang Kupak (South Kalimantan)</h2>
+                      <p>
+                        Kalang Kupak originates from the Bukit tribe in South
+                        Kalimantan. Referred to as Salung by the Dayak Maanyan
+                        community, this traditional instrument holds cultural
+                        significance within the rich tapestry of South
+                        Kalimantan's musical heritage. Crafted with meticulous
+                        attention to detail, Kalang Kupak represents not only a
+                        musical instrument but also a cultural artifact,
+                        embodying the artistic expression and identity of the
+                        Bukit tribe.<br /><br />
 
-                      Despite its historical martial connotations, the Kinyah
-                      Mandau Dance has transformed into a cultural phenomenon,
-                      embracing a new purpose in the preservation of Dayak
-                      traditions. The dance, once a preparation for war, has
-                      metamorphosed into a captivating art form, celebrating the
-                      heritage and identity of the Dayak people. In contemporary
-                      times, Kinyah Mandau serves as a vital means for the Dayak
-                      community to express and safeguard their cultural legacy.
-                      It stands as a living testament to the resilience of
-                      traditions, adapting to the changing times while
-                      maintaining a connection to the rich history and values of
-                      the Dayak tribe.<br /><br />
-
-                      As the rhythmic movements of the Kinyah Mandau Dance
-                      unfold, accompanied by traditional music and symbolic
-                      gestures, the dance becomes a vibrant celebration of
-                      Central Kalimantan's cultural diversity. Beyond its
-                      historical roots, the dance encapsulates the spirit of
-                      unity, resilience, and the enduring strength of the Dayak
-                      people. In embracing this dance as a cultural expression,
-                      the Dayak community not only pays homage to its historical
-                      roots but also ensures that the legacy of Kinyah lives on,
-                      captivating audiences with a captivating blend of
-                      tradition and artistic innovation.
-                    </p>
-                    <img src="./assets/images/kalimantan-tari-giring.jpg" />
-                    <h2>
-                      Giring-Giring, Dayak <br />(Central and South Kalimantan)
-                    </h2>
-                    <p>
-                      The Giring-Giring Dance, a traditional Dayak dance hailing
-                      from Central Kalimantan, is a captivating cultural
-                      expression that also finds resonance in South Kalimantan,
-                      where it is known as the Gintur Dance. This vibrant dance
-                      form is distinguished by the use of two types of
-                      sticks—long sticks and short sticks—that play a pivotal
-                      role in creating its distinctive rhythm and visual appeal.
-                      Serving as a lively manifestation of joy and communal
-                      pleasure, the Giring-Giring Dance reflects the celebratory
-                      spirit of the Dayak people in both regions.<br /><br />
-
-                      In the Giring-Giring Dance, the choreography involves
-                      skillful manipulation of the sticks, with the long stick
-                      held in the left hand used to rhythmically stomp the
-                      floor. Simultaneously, the short stick in the right hand
-                      is swung with finesse, producing a unique sound that
-                      harmonizes with the beats of the long stick. The
-                      synchronized movements of the dancers, coupled with the
-                      rhythmic interplay of the sticks, create a dynamic and
-                      engaging performance that encapsulates the cultural
-                      vibrancy and unity of the Dayak communities in both
-                      Central and South Kalimantan.<br /><br />
-
-                      Beyond its rhythmic complexity, the Giring-Giring Dance is
-                      a cultural treasure that embodies the shared traditions
-                      and values of the Dayak people across regions. It serves
-                      as a testament to the resilience of cultural practices,
-                      adapting to regional nuances while maintaining a
-                      fundamental connection to the spirit of festivity and
-                      togetherness. As the dancers move in harmony, wielding
-                      their sticks with precision, the Giring-Giring Dance
-                      becomes a living celebration of the rich heritage and
-                      artistic expression of the Dayak culture, fostering a
-                      sense of pride and continuity among the communities in
-                      Central and South Kalimantan.
-                    </p>
-                    <img src="./assets/images/kalimantan-tari-gantar.jpg" />
-                    <h2>Gantar, Dayak (East Kalimantan)</h2>
-                    <p>
-                      Originating from the Benuaq and Tunjung Dayak tribes in
-                      the West Kutai Regency of East Kalimantan, the Gantar
-                      Dance is a cultural gem that intricately weaves together
-                      movement, tradition, and symbolism. The dance finds its
-                      roots in the ancient practice of pounding rice, a rhythmic
-                      and laborious task undertaken to seek blessings from Dewi
-                      Sri or Dewi Padi, the revered goddess associated with rice
-                      and fertility. This dance, therefore, serves as a poignant
-                      expression of gratitude and supplication for the
-                      prosperity of the land and its people, embodying a
-                      connection between the spiritual and the agricultural
-                      aspects of Dayak life.<br /><br />
-
-                      The attire worn during the Gantar Dance is as rich in
-                      cultural significance as the movements themselves. Doyo
-                      ulap, a woven cloth crafted from the fibers of the doyo
-                      leaf—a robust pandanus plant—comprises the traditional
-                      costume. The use of such materials not only reflects the
-                      resourcefulness of the Dayak people but also symbolizes
-                      their deep connection with the natural environment. The
-                      Gantar Dance's props, including the Senak (long stick),
-                      Kusak (Bamboo filled with seeds), and Pesapu (head tie
-                      made of cloth or batik), further contribute to the visual
-                      and auditory spectacle of the performance, creating a
-                      multi-sensory experience that immerses participants and
-                      spectators alike in the cultural richness of East
-                      Kalimantan.<br /><br />
-
-                      As the Gantar Dance unfolds, the rhythmic movements,
-                      accompanied by the percussive sounds of pounding and the
-                      rustle of woven fabric, create a mesmerizing tapestry of
-                      cultural expression. Beyond being a form of entertainment,
-                      the dance is a living tradition that bridges the past and
-                      present, fostering a sense of identity and continuity
-                      among the Benuaq and Tunjung Dayak tribes. The Gantar
-                      Dance, with its elaborate rituals and symbolic gestures,
-                      is a testament to the resilience of Dayak culture,
-                      preserving age-old customs in the vibrant tapestry of East
-                      Kalimantan's cultural heritage.
-                    </p>
+                        This unique instrument is made with local materials,
+                        showcasing the resourcefulness of the Bukit tribe in
+                        utilizing natural elements to create instruments that
+                        resonate with their cultural roots. The name Kalang
+                        Kupak is synonymous with the cultural practices of the
+                        community, playing a role in various ceremonies and
+                        cultural events. It is not merely a means of producing
+                        music; rather, it serves as a bridge between
+                        generations, preserving the traditional knowledge and
+                        skills passed down through the ages. As the Bukit tribe
+                        imparts cultural wisdom through the Kalang Kupak, the
+                        instrument becomes a living testament to the resilience
+                        and continuity of South Kalimantan's indigenous
+                        traditions.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <div id="musicKalimantan" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional Musical Instruments From Kalimantan</h1>
-                <p>
-                  In Kalimantan, Indonesia, traditional musical instruments play
-                  a crucial role in defining the island's unique cultural
-                  identity. The music crafted from these instruments goes beyond
-                  mere entertainment, becoming an integral part of daily life
-                  and finding prominence in various ceremonies, celebrations,
-                  and rituals. These traditional Kalimantan instruments serve as
-                  more than just artistic tools; they stand as living symbols of
-                  the region's diverse cultural heritage, forging a connection
-                  between the present generation and their ancestral roots. In
-                  doing so, they contribute to the preservation of Kalimantan's
-                  rich traditions, fostering a profound sense of identity and
-                  pride among the diverse communities that call the island home.
-                </p>
-                <div class="music">
-                  <div class="all-img-music">
-                    <img src="./assets/images/kalimantan-musik-sapeh.jpg" />
-                    <h2>Sape (West and East Kalimantan)</h2>
-                    <p>
-                      Originating from the Dayak Kayaan tribe in the upper
-                      Kapuas River region of West Kalimantan, the Sape is a
-                      distinctive stringed musical instrument. This plucked
-                      instrument, measuring approximately one meter in length,
-                      features two strings capable of producing four different
-                      pitches. Traditionally crafted and hailing from the lush
-                      landscapes of Kalimantan, the Sape is commonly utilized as
-                      an accompaniment for dances or in the ritual ceremonies of
-                      the Dayak ethnic group. There are different varieties of
-                      Sape, including the Sape Kayaan and Sape Kenyah, each
-                      associated with distinct Dayak subcultures. Crafted from
-                      robust woods such as jackfruit, corkwood, or belian, the
-                      instrument exemplifies the traditional craftsmanship and
-                      natural resource utilization of the Dayak people.<br /><br />
+          <div id="houseKalimantan" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional House In Kalimantan</h1>
+                  <p>
+                    Traditional houses in Kalimantan blend indigenous design
+                    with historical influences, featuring steep roofs, wooden
+                    carvings, and integration with the environment. Rooted in a
+                    deep connection to nature, these dwellings symbolize
+                    Kalimantan's culture, encapsulating traditions and spiritual
+                    beliefs. Beyond their architectural significance, they
+                    ensure the preservation of the island's rich heritage for
+                    future generations.
+                  </p>
+                  <div class="house">
+                    <div class="all-img-house">
+                      <img src="./assets/images/kalimantan-rumah-lamin.jpg" />
+                      <h2>Lamin House (East Kalimantan)</h2>
+                      <p>
+                        Distinctive features of the traditional Lamin house can
+                        be observed in its decor adorned with multicolored fern
+                        stripe motifs. These colors hold specific meanings
+                        within the cultural context, with yellow symbolizing
+                        wealth and grandeur, red signifying eternity, white
+                        representing purity and simplicity, and black serving as
+                        a ward against misfortune. Beyond the vibrant colors,
+                        Lamin houses are characterized by intricate carvings on
+                        the supporting pillars, often depicting human or animal
+                        heads. Furthermore, the roof of the Lamin house is
+                        embellished with statues in the form of dragons or
+                        hornbills.<br /><br />
 
-                      The Sape's significance extends beyond its musical
-                      function; it serves as a cultural emblem deeply embedded
-                      in the fabric of Dayak heritage. Its melodic tones are
-                      intricately woven into the tapestry of rituals and
-                      traditions, offering a sonic backdrop to the spiritual and
-                      communal expressions of the Dayak people. The
-                      craftsmanship involved in creating a Sape reflects a
-                      harmonious relationship between the artisan and the
-                      environment, as the instrument is meticulously carved from
-                      select hardwoods. Thus, the Sape becomes not only a
-                      conduit for musical expression but also a tangible link to
-                      the ancestral practices and natural resources that have
-                      shaped the cultural identity of the Dayak Kayaan tribe in
-                      the verdant landscapes of West Kalimantan.
-                    </p>
-                    <img
-                      src="./assets/images/kalimantan-musik-klentangan.jpg"
-                    />
-                    <h2>Klentangan (East Kalimantan)</h2>
-                    <p>
-                      Belonging to the percussion family, the Sluding or
-                      Klentangan is a traditional instrument distinguished by
-                      its eight wooden blades arranged within a wooden frame.
-                      Positioned on both the right and left sides of the
-                      instrument are motifs depicting the sacred Enggang bird's
-                      head, revered by the Dayak Modang tribe. This percussion
-                      instrument carries both cultural and symbolic
-                      significance, serving as a tangible representation of the
-                      spiritual beliefs and heritage of the Dayak Modang
-                      community in East Kalimantan.<br /><br />
+                        The cultural richness of the Lamin house extends beyond
+                        its aesthetic appeal. Intricately carved pillars and
+                        decorative motifs contribute to a narrative that
+                        reflects the cultural identity of East Kalimantan.
+                        Additionally, the presence of blonthang statues,
+                        designed to ward off malevolent spirits, and
+                        status-signifying sculptures enhance the multifaceted
+                        symbolism embedded in the Lamin house. As a cultural
+                        artifact, the Lamin house becomes a living testament to
+                        the values, beliefs, and social structures of the
+                        region, encapsulating the essence of East Kalimantan's
+                        heritage and providing insight into the intricate
+                        symbolism woven into the architectural fabric of the
+                        community.
+                      </p>
+                      <img src="./assets/images/kalimantan-rumah-betang.jpg" />
+                      <h2>Betang House <br />(Central Kalimantan)</h2>
+                      <p>
+                        The traditional Betang house is a remarkable creation of
+                        the Dayak people residing in the interior of Kalimantan,
+                        embodying the concept of communal living. The Dayak's
+                        Betang house stretches approximately 180 meters,
+                        featuring an impressive arrangement of 35 doors, each
+                        gate serving as the entrance to a distinct household.
+                        Constructed primarily with ulin wood, chosen for its
+                        resistance to termite infestation, the Betang house
+                        stands as a testament to the architectural prowess of
+                        the Dayak community, with the ability to endure for
+                        decades, if not centuries.<br /><br />
 
-                      The intricate design of the Klentangan, with its carefully
-                      arranged wooden blades and sacred motifs, reflects the
-                      artisanal craftsmanship and cultural aesthetics of the
-                      Dayak Modang people. Beyond its musical function, the
-                      Klentangan is an integral part of ceremonial and
-                      ritualistic practices, contributing to the spiritual
-                      ambiance of various events. The presence of the Enggang
-                      bird motifs not only adds artistic beauty but also infuses
-                      the instrument with a sense of reverence and connection to
-                      the natural world, underlining the profound relationship
-                      between the Dayak Modang community and their cultural
-                      identity as expressed through the Klentangan.
-                    </p>
-                    <img
-                      class="khusus"
-                      src="./assets/images/kalimantan-musik-lulung.jpg"
-                    />
-                    <h2>Lulung (East Kalimantan)</h2>
-                    <p>
-                      Lulung is a traditional musical instrument akin to a
-                      sitar, classified as an idiophonic instrument. This
-                      plucked string instrument is crafted from wood, although
-                      variations made from bamboo also exist. What sets the
-                      Lulung apart is the unique cultural tradition surrounding
-                      its performance – only women from the Dayak Kenyah tribe
-                      are permitted to play this distinctive musical instrument.
-                      The Lulung holds a special place within the cultural
-                      practices of the Dayak Kenyah, serving as both a musical
-                      expression and a symbol of gender-specific roles within
-                      the community.<br /><br />
+                        Built upon the ethos of communal living, the Betang
+                        house not only serves as a physical dwelling but also
+                        encapsulates the cultural practices of the Dayak people.
+                        The Dayak's affinity for nurturing animals such as dogs,
+                        birds, cats, pigs, or cows adds an additional layer to
+                        their way of life. This practice extends beyond mere
+                        utility, as animals are regarded as companions during
+                        hunting expeditions in the forest. The wisdom and
+                        hospitality embedded in the Betang community make it an
+                        alluring attraction for tourists seeking a deeper
+                        understanding of the Dayak cultural heritage in Central
+                        Kalimantan. The communal living space becomes a window
+                        into the rich traditions, social dynamics, and cultural
+                        values of the Dayak people, fostering a unique and
+                        immersive experience for those eager to explore the
+                        depths of Central Kalimantan's indigenous culture.
+                      </p>
+                      <img src="./assets/images/kalimantan-rumah-baluk.jpg" />
+                      <h2>Baluk House (West Kalimantan)</h2>
+                      <p>
+                        The Baluk traditional house stands out as a distinctive
+                        architectural marvel among the Dayak tribes, showcasing
+                        a form unlike any other. Its unique design serves
+                        specific purposes, primarily employed during annual
+                        rituals and the nibak’ng season. Nibak’ng marks the
+                        period following the cultivation of fields in
+                        preparation for the upcoming year and is typically
+                        conducted on the 15th of June each year. The Baluk house
+                        plays a vital role during these ceremonies, contributing
+                        to the cultural and spiritual fabric of the Dayak
+                        community in West Kalimantan.<br /><br />
 
-                      Constructed with precision and care, the Lulung embodies
-                      the skilled craftsmanship and cultural heritage of the
-                      Dayak Kenyah people in East Kalimantan. The choice of
-                      materials, be it wood or bamboo, reflects a harmonious
-                      relationship with the natural resources of the region.
-                      Beyond its musical capabilities, the instrument becomes a
-                      vessel for cultural transmission, reinforcing the
-                      gender-specific roles and traditions unique to the Dayak
-                      Kenyah. The exclusivity of Lulung to female performers not
-                      only showcases the cultural significance of the instrument
-                      but also underscores the importance of preserving and
-                      passing on this tradition through generations,
-                      contributing to the rich tapestry of East Kalimantan's
-                      musical and cultural diversity.
-                    </p>
-                    <img
-                      src="./assets/images/kalimantan-musik-sarunaibanjar.jpg"
-                    />
-                    <h2>Sarunai Banjar (South Kalimantan)</h2>
-                    <p>
-                      Sarunai Banjar is a distinctive musical instrument unique
-                      to the Banjar tribe in South Kalimantan, taking on a
-                      trumpet-like form. Characterized by its small size and a
-                      rounded end, this instrument plays a significant role in
-                      accompanying traditional dances, harmonizing seamlessly
-                      with other traditional instruments. Crafted with precision
-                      and cultural significance, the Sarunai Banjar stands as a
-                      symbol of the Banjar tribe's rich musical heritage,
-                      showcasing the intricate craftsmanship and artistic
-                      expression inherent in the region's cultural identity.<br /><br />
-
-                      The small, trumpet-shaped Sarunai Banjar becomes an
-                      essential component of traditional dances, adding a
-                      melodic layer to the rhythmic tapestry of South
-                      Kalimantan's cultural performances. Its distinctive form
-                      and purposeful use in ceremonial contexts highlight the
-                      intersection of artistry and tradition within the Banjar
-                      community. The instrument's role extends beyond mere
-                      accompaniment; it becomes a cultural ambassador,
-                      transmitting the unique musical traditions and the
-                      expressive spirit of the Banjar tribe to audiences, both
-                      within the community and beyond. As the Sarunai Banjar
-                      resonates with the beats of other traditional instruments,
-                      it weaves a narrative that connects the past and present,
-                      celebrating the enduring cultural legacy of the Banjar
-                      people in the vibrant landscapes of South Kalimantan.
-                    </p>
-                    <img
-                      src="./assets/images/kalimantan-musik-kalangkupak.jpg"
-                    />
-                    <h2>Kalang Kupak (South Kalimantan)</h2>
-                    <p>
-                      Kalang Kupak originates from the Bukit tribe in South
-                      Kalimantan. Referred to as Salung by the Dayak Maanyan
-                      community, this traditional instrument holds cultural
-                      significance within the rich tapestry of South
-                      Kalimantan's musical heritage. Crafted with meticulous
-                      attention to detail, Kalang Kupak represents not only a
-                      musical instrument but also a cultural artifact, embodying
-                      the artistic expression and identity of the Bukit
-                      tribe.<br /><br />
-
-                      This unique instrument is made with local materials,
-                      showcasing the resourcefulness of the Bukit tribe in
-                      utilizing natural elements to create instruments that
-                      resonate with their cultural roots. The name Kalang Kupak
-                      is synonymous with the cultural practices of the
-                      community, playing a role in various ceremonies and
-                      cultural events. It is not merely a means of producing
-                      music; rather, it serves as a bridge between generations,
-                      preserving the traditional knowledge and skills passed
-                      down through the ages. As the Bukit tribe imparts cultural
-                      wisdom through the Kalang Kupak, the instrument becomes a
-                      living testament to the resilience and continuity of South
-                      Kalimantan's indigenous traditions.
-                    </p>
+                        What sets the Baluk house apart is not only its
+                        functional significance but also its intriguing circular
+                        structure. With a diameter of around 10 meters and a
+                        height of 10 meters, the Baluk house becomes an
+                        architectural centerpiece, symbolizing the
+                        interconnectedness of the community and their
+                        deep-rooted connection to the cycles of nature. The
+                        unique blend of form and function in the Baluk house
+                        makes it a compelling subject for exploration, offering
+                        insights into the indigenous rituals, traditions, and
+                        architectural ingenuity of the Dayak people in West
+                        Kalimantan.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <div id="houseKalimantan" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional House In Kalimantan</h1>
-                <p>
-                  Traditional houses in Kalimantan blend indigenous design with
-                  historical influences, featuring steep roofs, wooden carvings,
-                  and integration with the environment. Rooted in a deep
-                  connection to nature, these dwellings symbolize Kalimantan's
-                  culture, encapsulating traditions and spiritual beliefs.
-                  Beyond their architectural significance, they ensure the
-                  preservation of the island's rich heritage for future
-                  generations.
-                </p>
-                <div class="house">
-                  <div class="all-img-house">
-                    <img src="./assets/images/kalimantan-rumah-lamin.jpg" />
-                    <h2>Lamin House (East Kalimantan)</h2>
-                    <p>
-                      Distinctive features of the traditional Lamin house can be
-                      observed in its decor adorned with multicolored fern
-                      stripe motifs. These colors hold specific meanings within
-                      the cultural context, with yellow symbolizing wealth and
-                      grandeur, red signifying eternity, white representing
-                      purity and simplicity, and black serving as a ward against
-                      misfortune. Beyond the vibrant colors, Lamin houses are
-                      characterized by intricate carvings on the supporting
-                      pillars, often depicting human or animal heads.
-                      Furthermore, the roof of the Lamin house is embellished
-                      with statues in the form of dragons or hornbills.<br /><br />
+          <div id="activityKalimantan" class="tabcontent">
+            <div class="container-explore">
+              <section class="explore">
+                <div class="text-explore">
+                  <h1>Traditional Activites</h1>
+                  <p>
+                    Kalimantan beckons with a variety of activities that blend
+                    adventure and cultural exploration. From trekking through
+                    lush rainforests and cruising along scenic rivers to
+                    immersing in indigenous ceremonies and visiting traditional
+                    Dayak villages, the island offers a rich tapestry of
+                    experiences. Vibrant markets and authentic local cuisine
+                    further enhance the charm of this Indonesian destination,
+                    ensuring that visitors leave with a blend of natural wonders
+                    and cultural insights.
+                  </p>
+                  <div class="activity">
+                    <div class="all-img-activity">
+                      <img
+                        src="./assets/images/kalimantan-kegiatan-nondoi.jpg"
+                      />
+                      <h2>Nondoi (East Kalimantan)</h2>
+                      <p>
+                        Nondoi is a revered annual tradition conducted by the
+                        Paser tribe in the North Penajam Paser Regency of East
+                        Kalimantan Province, Indonesia. This cultural ritual,
+                        rooted in the customs of the Paser people, revolves
+                        around a collective village cleanup. Passed down through
+                        generations, Nondoi is a testament to the enduring
+                        cultural practices and strong community bonds among the
+                        Paser tribe. The ritual symbolizes more than just a
+                        physical act of tidying; it embodies a spiritual
+                        connection to their ancestral heritage and a commitment
+                        to environmental stewardship deeply ingrained in their
+                        way of life.<br /><br />
 
-                      The cultural richness of the Lamin house extends beyond
-                      its aesthetic appeal. Intricately carved pillars and
-                      decorative motifs contribute to a narrative that reflects
-                      the cultural identity of East Kalimantan. Additionally,
-                      the presence of blonthang statues, designed to ward off
-                      malevolent spirits, and status-signifying sculptures
-                      enhance the multifaceted symbolism embedded in the Lamin
-                      house. As a cultural artifact, the Lamin house becomes a
-                      living testament to the values, beliefs, and social
-                      structures of the region, encapsulating the essence of
-                      East Kalimantan's heritage and providing insight into the
-                      intricate symbolism woven into the architectural fabric of
-                      the community.
-                    </p>
-                    <img src="./assets/images/kalimantan-rumah-betang.jpg" />
-                    <h2>Betang House <br />(Central Kalimantan)</h2>
-                    <p>
-                      The traditional Betang house is a remarkable creation of
-                      the Dayak people residing in the interior of Kalimantan,
-                      embodying the concept of communal living. The Dayak's
-                      Betang house stretches approximately 180 meters, featuring
-                      an impressive arrangement of 35 doors, each gate serving
-                      as the entrance to a distinct household. Constructed
-                      primarily with ulin wood, chosen for its resistance to
-                      termite infestation, the Betang house stands as a
-                      testament to the architectural prowess of the Dayak
-                      community, with the ability to endure for decades, if not
-                      centuries.<br /><br />
+                        During the Nondoi ritual, the entire village actively
+                        participates in cleaning and beautifying their communal
+                        spaces. This collective effort not only ensures the
+                        cleanliness and orderliness of their surroundings but
+                        also reinforces the sense of unity and mutual
+                        responsibility within the Paser community. Beyond its
+                        practical implications, Nondoi serves as a cultural
+                        beacon, fostering social cohesion and preserving the
+                        rich tapestry of Paser traditions. The ritual becomes a
+                        communal celebration of identity, passed down from
+                        elders to the younger generation, thereby ensuring the
+                        continuity of cultural values in the vibrant landscapes
+                        of East Kalimantan.<br /><br />
 
-                      Built upon the ethos of communal living, the Betang house
-                      not only serves as a physical dwelling but also
-                      encapsulates the cultural practices of the Dayak people.
-                      The Dayak's affinity for nurturing animals such as dogs,
-                      birds, cats, pigs, or cows adds an additional layer to
-                      their way of life. This practice extends beyond mere
-                      utility, as animals are regarded as companions during
-                      hunting expeditions in the forest. The wisdom and
-                      hospitality embedded in the Betang community make it an
-                      alluring attraction for tourists seeking a deeper
-                      understanding of the Dayak cultural heritage in Central
-                      Kalimantan. The communal living space becomes a window
-                      into the rich traditions, social dynamics, and cultural
-                      values of the Dayak people, fostering a unique and
-                      immersive experience for those eager to explore the depths
-                      of Central Kalimantan's indigenous culture.
-                    </p>
-                    <img src="./assets/images/kalimantan-rumah-baluk.jpg" />
-                    <h2>Baluk House (West Kalimantan)</h2>
-                    <p>
-                      The Baluk traditional house stands out as a distinctive
-                      architectural marvel among the Dayak tribes, showcasing a
-                      form unlike any other. Its unique design serves specific
-                      purposes, primarily employed during annual rituals and the
-                      nibak’ng season. Nibak’ng marks the period following the
-                      cultivation of fields in preparation for the upcoming year
-                      and is typically conducted on the 15th of June each year.
-                      The Baluk house plays a vital role during these
-                      ceremonies, contributing to the cultural and spiritual
-                      fabric of the Dayak community in West Kalimantan.<br /><br />
+                        As the Paser tribe engages in the annual Nondoi ritual,
+                        the event becomes a living testimony to the enduring
+                        connection between the Paser people and their
+                        environment. Beyond the physical act of cleaning, Nondoi
+                        represents a spiritual renewal and a reaffirmation of
+                        the symbiotic relationship between the community and the
+                        land they inhabit. The ritual's significance extends
+                        beyond its immediate context, offering a profound
+                        insight into the cultural resilience and environmental
+                        consciousness of the Paser tribe in East Kalimantan.
+                      </p>
 
-                      What sets the Baluk house apart is not only its functional
-                      significance but also its intriguing circular structure.
-                      With a diameter of around 10 meters and a height of 10
-                      meters, the Baluk house becomes an architectural
-                      centerpiece, symbolizing the interconnectedness of the
-                      community and their deep-rooted connection to the cycles
-                      of nature. The unique blend of form and function in the
-                      Baluk house makes it a compelling subject for exploration,
-                      offering insights into the indigenous rituals, traditions,
-                      and architectural ingenuity of the Dayak people in West
-                      Kalimantan.
-                    </p>
+                      <img
+                        src="./assets/images/kalimantan-kegiatan-naikdango.jpg"
+                      />
+                      <h2>Naik Dango (West Kalimantan)</h2>
+                      <p>
+                        Naik Dango, or Gawai Dayak, is a traditional ceremonial
+                        event observed by the indigenous communities of West
+                        Kalimantan, specifically the Dayak Kanayatn people. This
+                        cultural celebration takes place across various regions,
+                        spanning from the Landak Regency to Pontianak Regency
+                        and Sanggau Regency. Naik Dango holds profound cultural
+                        significance, serving as a collective expression of the
+                        Dayak Kanayatn people's identity, spirituality, and
+                        communal unity.<br /><br />
+
+                        The Naik Dango ceremony is deeply rooted in the
+                        traditional beliefs and practices of the Dayak Kanayatn,
+                        marking important milestones in the community's
+                        agricultural calendar. This cultural celebration often
+                        coincides with the rice planting season, symbolizing a
+                        connection between the spiritual realm and the
+                        agricultural cycles crucial to the livelihood of the
+                        Dayak people. The ceremony involves intricate rituals,
+                        traditional dances, and communal feasts, creating a
+                        vibrant tapestry of cultural expression. It serves as a
+                        platform for the passing down of indigenous knowledge
+                        from elders to the younger generation, fostering a sense
+                        of continuity and shared cultural values.<br /><br />
+
+                        Beyond its agricultural symbolism, Naik Dango is a
+                        manifestation of the Dayak Kanayatn's harmonious
+                        relationship with nature and their deep-rooted
+                        spirituality. The ceremony reflects a holistic worldview
+                        that recognizes the interconnectedness of the community
+                        with the natural environment. As participants engage in
+                        ritualistic practices and celebrate their cultural
+                        heritage, Naik Dango becomes a living testament to the
+                        resilience and cultural richness of the Dayak Kanayatn
+                        people in West Kalimantan.
+                      </p>
+
+                      <img
+                        src="./assets/images/kalimantan-kegiatan-ritualtiwah.jpg"
+                      />
+                      <h2>Ritual Tiwah (Central Kalimantan)</h2>
+                      <p>
+                        Tiwah Ritual is a significant indigenous ceremony in
+                        Kalimantan that continues to be conducted to this day.
+                        Originating from the Dayak Ngaju community in Central
+                        Kalimantan, the Tiwah Ritual is a traditional funeral
+                        ceremony and the largest sacred ritual among the Dayak
+                        Ngaju people. This cultural event serves as a unique
+                        intersection between spirituality, social customs, and
+                        the communal identity of the Dayak Ngaju, showcasing the
+                        rich tapestry of their cultural heritage.<br /><br />
+
+                        The Tiwah Ritual holds a central place in the lifecycle
+                        of the Dayak Ngaju, representing a profound journey of
+                        the soul after death. This elaborate ceremony involves
+                        intricate rituals and symbolic activities conducted over
+                        several days. It is characterized by the elaborate
+                        construction of a Tiwah tower, where the remains of the
+                        deceased are placed. The tower, adorned with various
+                        carvings and decorations, becomes a sacred focal point
+                        during the ritual. Participants, clad in traditional
+                        attire, engage in dances, chants, and offerings,
+                        creating a spiritually charged atmosphere. The Tiwah
+                        Ritual also involves the symbolic release of the soul,
+                        signifying its transition to the afterlife. Through
+                        these customs, the Dayak Ngaju honor their departed,
+                        strengthen community bonds, and express a deep reverence
+                        for the cycles of life and death.<br /><br />
+                        Beyond its religious and communal dimensions, the Tiwah
+                        Ritual also reflects the Dayak Ngaju's intricate
+                        artistic expressions. The construction of the Tiwah
+                        tower itself is a masterpiece of traditional
+                        craftsmanship, with its intricate carvings depicting
+                        cultural motifs and ancestral symbols. The ritual music,
+                        dance, and attire contribute to the vibrant cultural
+                        tapestry, creating an immersive experience that
+                        transcends the boundaries of time. The Tiwah Ritual
+                        stands as a testament to the resilience and continuity
+                        of the Dayak Ngaju's cultural practices, providing a
+                        window into the spiritual beliefs and artistic
+                        expressions that define Central Kalimantan's indigenous
+                        identity.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <div id="activityKalimantan" class="tabcontent">
-          <div class="container-explore">
-            <section class="explore">
-              <div class="text-explore">
-                <h1>Traditional Activites</h1>
-                <p>
-                  Kalimantan beckons with a variety of activities that blend
-                  adventure and cultural exploration. From trekking through lush
-                  rainforests and cruising along scenic rivers to immersing in
-                  indigenous ceremonies and visiting traditional Dayak villages,
-                  the island offers a rich tapestry of experiences. Vibrant
-                  markets and authentic local cuisine further enhance the charm
-                  of this Indonesian destination, ensuring that visitors leave
-                  with a blend of natural wonders and cultural insights.
-                </p>
-                <div class="activity">
-                  <div class="all-img-activity">
-                    <img src="./assets/images/kalimantan-kegiatan-nondoi.jpg" />
-                    <h2>Nondoi (East Kalimantan)</h2>
-                    <p>
-                      Nondoi is a revered annual tradition conducted by the
-                      Paser tribe in the North Penajam Paser Regency of East
-                      Kalimantan Province, Indonesia. This cultural ritual,
-                      rooted in the customs of the Paser people, revolves around
-                      a collective village cleanup. Passed down through
-                      generations, Nondoi is a testament to the enduring
-                      cultural practices and strong community bonds among the
-                      Paser tribe. The ritual symbolizes more than just a
-                      physical act of tidying; it embodies a spiritual
-                      connection to their ancestral heritage and a commitment to
-                      environmental stewardship deeply ingrained in their way of
-                      life.<br /><br />
-
-                      During the Nondoi ritual, the entire village actively
-                      participates in cleaning and beautifying their communal
-                      spaces. This collective effort not only ensures the
-                      cleanliness and orderliness of their surroundings but also
-                      reinforces the sense of unity and mutual responsibility
-                      within the Paser community. Beyond its practical
-                      implications, Nondoi serves as a cultural beacon,
-                      fostering social cohesion and preserving the rich tapestry
-                      of Paser traditions. The ritual becomes a communal
-                      celebration of identity, passed down from elders to the
-                      younger generation, thereby ensuring the continuity of
-                      cultural values in the vibrant landscapes of East
-                      Kalimantan.<br /><br />
-
-                      As the Paser tribe engages in the annual Nondoi ritual,
-                      the event becomes a living testimony to the enduring
-                      connection between the Paser people and their environment.
-                      Beyond the physical act of cleaning, Nondoi represents a
-                      spiritual renewal and a reaffirmation of the symbiotic
-                      relationship between the community and the land they
-                      inhabit. The ritual's significance extends beyond its
-                      immediate context, offering a profound insight into the
-                      cultural resilience and environmental consciousness of the
-                      Paser tribe in East Kalimantan.
-                    </p>
-
-                    <img
-                      src="./assets/images/kalimantan-kegiatan-naikdango.jpg"
-                    />
-                    <h2>Naik Dango (West Kalimantan)</h2>
-                    <p>
-                      Naik Dango, or Gawai Dayak, is a traditional ceremonial
-                      event observed by the indigenous communities of West
-                      Kalimantan, specifically the Dayak Kanayatn people. This
-                      cultural celebration takes place across various regions,
-                      spanning from the Landak Regency to Pontianak Regency and
-                      Sanggau Regency. Naik Dango holds profound cultural
-                      significance, serving as a collective expression of the
-                      Dayak Kanayatn people's identity, spirituality, and
-                      communal unity.<br /><br />
-
-                      The Naik Dango ceremony is deeply rooted in the
-                      traditional beliefs and practices of the Dayak Kanayatn,
-                      marking important milestones in the community's
-                      agricultural calendar. This cultural celebration often
-                      coincides with the rice planting season, symbolizing a
-                      connection between the spiritual realm and the
-                      agricultural cycles crucial to the livelihood of the Dayak
-                      people. The ceremony involves intricate rituals,
-                      traditional dances, and communal feasts, creating a
-                      vibrant tapestry of cultural expression. It serves as a
-                      platform for the passing down of indigenous knowledge from
-                      elders to the younger generation, fostering a sense of
-                      continuity and shared cultural values.<br /><br />
-
-                      Beyond its agricultural symbolism, Naik Dango is a
-                      manifestation of the Dayak Kanayatn's harmonious
-                      relationship with nature and their deep-rooted
-                      spirituality. The ceremony reflects a holistic worldview
-                      that recognizes the interconnectedness of the community
-                      with the natural environment. As participants engage in
-                      ritualistic practices and celebrate their cultural
-                      heritage, Naik Dango becomes a living testament to the
-                      resilience and cultural richness of the Dayak Kanayatn
-                      people in West Kalimantan.
-                    </p>
-
-                    <img
-                      src="./assets/images/kalimantan-kegiatan-ritualtiwah.jpg"
-                    />
-                    <h2>Ritual Tiwah (Central Kalimantan)</h2>
-                    <p>
-                      Tiwah Ritual is a significant indigenous ceremony in
-                      Kalimantan that continues to be conducted to this day.
-                      Originating from the Dayak Ngaju community in Central
-                      Kalimantan, the Tiwah Ritual is a traditional funeral
-                      ceremony and the largest sacred ritual among the Dayak
-                      Ngaju people. This cultural event serves as a unique
-                      intersection between spirituality, social customs, and the
-                      communal identity of the Dayak Ngaju, showcasing the rich
-                      tapestry of their cultural heritage.<br /><br />
-
-                      The Tiwah Ritual holds a central place in the lifecycle of
-                      the Dayak Ngaju, representing a profound journey of the
-                      soul after death. This elaborate ceremony involves
-                      intricate rituals and symbolic activities conducted over
-                      several days. It is characterized by the elaborate
-                      construction of a Tiwah tower, where the remains of the
-                      deceased are placed. The tower, adorned with various
-                      carvings and decorations, becomes a sacred focal point
-                      during the ritual. Participants, clad in traditional
-                      attire, engage in dances, chants, and offerings, creating
-                      a spiritually charged atmosphere. The Tiwah Ritual also
-                      involves the symbolic release of the soul, signifying its
-                      transition to the afterlife. Through these customs, the
-                      Dayak Ngaju honor their departed, strengthen community
-                      bonds, and express a deep reverence for the cycles of life
-                      and death.<br /><br />
-                      Beyond its religious and communal dimensions, the Tiwah
-                      Ritual also reflects the Dayak Ngaju's intricate artistic
-                      expressions. The construction of the Tiwah tower itself is
-                      a masterpiece of traditional craftsmanship, with its
-                      intricate carvings depicting cultural motifs and ancestral
-                      symbols. The ritual music, dance, and attire contribute to
-                      the vibrant cultural tapestry, creating an immersive
-                      experience that transcends the boundaries of time. The
-                      Tiwah Ritual stands as a testament to the resilience and
-                      continuity of the Dayak Ngaju's cultural practices,
-                      providing a window into the spiritual beliefs and artistic
-                      expressions that define Central Kalimantan's indigenous
-                      identity.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
       </div>

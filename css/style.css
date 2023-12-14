@@ -1236,6 +1236,7 @@ footer {
   padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 30px;
   color: var(--white-accent);
 }
@@ -1294,12 +1295,6 @@ footer .about-idnculture {
   height: max-content;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 footer .navigation {
   max-width: 350px;
   height: max-content;
@@ -1310,7 +1305,8 @@ footer ul {
 }
 
 footer ul li a {
-  color: var(--white-accent);
+  color: var(--gainsboro-accent);
+  /* color: var(--white-accent); */
 }
 
 footer ul li a:hover {
@@ -1322,15 +1318,11 @@ footer ul li a:hover {
   max-width: 350px;
 }
 
-.sosmed {
-  width: 100%;
-  height: max-content;
-  display: flex;
-  gap: 10px;
-}
-
-.sosmed img {
-  width: 20px;
+.container-footer .copyright {
+  padding: 5px 0;
+  color: var(--white-accent);
+  text-align: center;
+  font-size: 16px;
 }
 
 /* back to top */

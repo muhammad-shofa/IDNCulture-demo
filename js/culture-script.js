@@ -8,14 +8,14 @@ let containerNav = document.getElementById("container-nav");
 let backToTop = document.getElementById("back-to-top");
 // icon navbar
 let menuIconCultures = document.getElementById("menu-icon-cultures");
-
-// update
-// let update = document.getElementById("update");
-// let closeUpdate = document.getElementById("close-update");
-
-// closeUpdate.addEventListener("click", () => {
-//   update.style.display = "none";
-// });
+// side bar
+const sideBar = document.getElementById("side-bar");
+const containerContentCulture = document.getElementById(
+  "container-content-culture"
+);
+const allArrow = document.getElementById("all-arrow");
+let arrowLeft = document.getElementById("arrow-left");
+let arrowRight = document.getElementById("arrow-right");
 
 document.addEventListener("DOMContentLoaded", loadingTime);
 function loadingTime() {
@@ -28,14 +28,16 @@ function loadingTime() {
   }
 }
 
-// when windows scroll +10px
-window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 10) {
+// when windows or side bar scroll > 10px
+window.addEventListener("scroll", stickyNav);
+sideBar.addEventListener("scroll", stickyNav);
+function stickyNav() {
+  if (document.documentElement.scrollTop || sideBar.scrollTop > 10) {
     containerNav.classList.add("sticky");
   } else {
     containerNav.classList.remove("sticky");
   }
-});
+}
 
 // nav menu
 menuIconCultures.addEventListener("click", function () {
@@ -72,13 +74,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-const sideBar = document.getElementById("side-bar");
-const containerContentCulture = document.getElementById(
-  "container-content-culture"
-);
-const allArrow = document.getElementById("all-arrow");
-let arrowLeft = document.getElementById("arrow-left");
-let arrowRight = document.getElementById("arrow-right");
 function toggleSideBar() {
   sideBar.classList.toggle("hidden-side-bar");
   containerContentCulture.classList.toggle("max-container-content-culture");

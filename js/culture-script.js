@@ -20,7 +20,7 @@ let arrowRight = document.getElementById("arrow-right");
 document.addEventListener("DOMContentLoaded", loadingTime);
 function loadingTime() {
   allContent.style.display = "none";
-  setTimeout(showAllContent, 200); // 2500
+  setTimeout(showAllContent, 2500); // 2500
 
   function showAllContent() {
     loading.classList.add("hiddenToTop");

@@ -1362,6 +1362,7 @@ footer ul li a:hover {
   display: block;
   overflow-y: scroll;
 }
+
 .update::-webkit-scrollbar {
   display: none;
 }
@@ -1384,6 +1385,10 @@ footer ul li a:hover {
 
 .update ul {
   margin-left: 15px;
+}
+
+.update ul i {
+  opacity: 0.3;
 }
 
 /* media query laptop */

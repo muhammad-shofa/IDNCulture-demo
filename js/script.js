@@ -16,9 +16,9 @@ let textCulture = document.getElementById("text-culture");
 let containerDropdown = document.getElementById("container-dropdown");
 let containerDropdownTH = document.getElementById("dropdown-t-h");
 // gallery animation
-let copy1 = document.querySelector(".slide-container-1").cloneNode(true);
-let copy2 = document.querySelector(".slide-container-2").cloneNode(true);
-let copy3 = document.querySelector(".slide-container-3").cloneNode(true);
+// let copy1 = document.querySelector(".slide-container-1").cloneNode(true);
+// let copy2 = document.querySelector(".slide-container-2").cloneNode(true);
+// let copy3 = document.querySelector(".slide-container-3").cloneNode(true);
 // popup gallery
 let imgPopupGallery = document.getElementById("img-popup-gallery");
 // update
@@ -122,9 +122,9 @@ function closePopup(popupId) {
 }
 
 // gallery animation
-document.querySelector(".img-gallery-1").appendChild(copy1);
-document.querySelector(".img-gallery-2").appendChild(copy2);
-document.querySelector(".img-gallery-3").appendChild(copy3);
+// document.querySelector(".img-gallery-1").appendChild(copy1);
+// document.querySelector(".img-gallery-2").appendChild(copy2);
+// document.querySelector(".img-gallery-3").appendChild(copy3);
 
 // popup gallery
 function showPopupGallery(idPopupGalleryName) {

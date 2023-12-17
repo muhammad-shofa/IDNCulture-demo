@@ -389,7 +389,6 @@ nav .change-lang {
 }
 
 .text-hero a .hero-contact-btn:hover {
-  color: var(--primary);
   background-color: var(--secondary);
   color: var(--white-accent);
 }
@@ -949,136 +948,77 @@ nav .change-lang {
 }
 
 .gallery {
-  max-width: 100%;
+  max-width: 1200px;
   min-height: 700px;
   margin: auto;
-  padding: 100px 0px;
+  padding: 50px 20px 100px 20px;
 }
 
 .text-gallery {
-  max-width: 900px;
-  color: var(--secondary);
   text-align: center;
-  margin: auto;
+  margin-bottom: 20px;
+  color: var(--secondary);
 }
 
-.all-img-gallery {
+.container-img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "main main img-1"
+    "main main img-2"
+    "img-5 img-4 img-3"
+    "img-6 main-2 main-2"
+    "img-7 main-2 main-2";
+}
+
+.container-img-gallery img {
   width: 100%;
-  margin-top: 50px;
-}
-
-.slide-container-1 {
-  display: inline-flex;
-  animation: 90s slide infinite linear;
-}
-
-.slide-container-2 {
-  display: inline-flex;
-  animation: 70s slide infinite linear;
-}
-
-.slide-container-3 {
-  display: inline-flex;
-  animation: 80s slide infinite linear;
-}
-
-.slide-container-1 img,
-.slide-container-2 img,
-.slide-container-3 img {
-  width: 360px;
-  height: 260px;
-  object-fit: cover;
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.49);
-  transition: all 0.3s ease-in-out;
-}
-
-.frame-zoom {
-  width: 350px;
-  height: 250px;
-  overflow: hidden;
-  margin: 5px 5px;
-  border: 1px solid var(--black-accent);
-  transition: transform 0.3s ease-in-out;
-}
-
-.all-img-gallery .frame-zoom:hover img {
-  cursor: zoom-in;
-  transform: scale(1.06);
-}
-
-.img-gallery-1 {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--white-accent);
-  white-space: nowrap;
-  position: relative;
-}
-
-.img-gallery-1:hover .slide-container-1 {
-  animation-play-state: paused;
-}
-
-.img-gallery-2 {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--white-accent);
-  white-space: nowrap;
-  position: relative;
-}
-
-.img-gallery-2:hover .slide-container-2 {
-  animation-play-state: paused;
-}
-
-.img-gallery-3 {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--white-accent);
-  white-space: nowrap;
-  position: relative;
-}
-
-.img-gallery-3:hover .slide-container-3 {
-  animation-play-state: paused;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-/* popup gallery */
-
-.popup-gallery {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 90px 200px;
-  z-index: 1;
-}
-
-.popup-gallery:hover {
-  cursor: zoom-out;
-}
-
-.popup-gallery img {
-  width: 100%;
-  max-height: 480px;
+  height: 100%;
   object-fit: cover;
 }
 
-.container-popup-gallery img {
-  cursor: default;
+.main {
+  grid-area: main;
+}
+
+.main-2 {
+  grid-area: main-2;
+}
+
+.img-1 {
+  grid-area: img-1;
+}
+
+.img-2 {
+  grid-area: img-2;
+}
+
+.img-3 {
+  grid-area: img-3;
+}
+
+.img-4 {
+  grid-area: img-4;
+}
+
+.img-5 {
+  grid-area: img-5;
+}
+
+.img-6 {
+  grid-area: img-6;
+}
+
+.img-7 {
+  grid-area: img-7;
+}
+
+.container-img-gallery {
+  height: 100%;
+  margin: 0;
 }
 
 /* contact */
@@ -1646,15 +1586,6 @@ footer ul li a:hover {
     height: 250px;
     object-fit: cover;
   }
-
-  /* gallery */
-
-  .gallery {
-    max-width: 100%;
-    min-height: 700px;
-    margin: auto;
-    padding: 250px 0px 100px 0px;
-  }
 }
 
 /* media query smartphone */
@@ -1757,21 +1688,6 @@ footer ul li a:hover {
 
   .blog {
     padding: 100px 20px;
-  }
-
-  /* gallery */
-
-  .gallery {
-    padding: 250px 0px 100px 0px;
-  }
-
-  .gallery .text-gallery h1 {
-    margin-top: 50px;
-    font-size: var(--font-size-mobile-heading-1);
-  }
-
-  .popup-gallery {
-    padding: 250px 30px;
   }
 
   /* contact */
